@@ -35,9 +35,8 @@ a{
 ul,ol{
 	list-style: none;
 }
-img{
-	border:none;
-	display: block;
+#app{
+  height:100%;
 }
 /* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
