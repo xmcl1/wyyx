@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
@@ -26,11 +25,13 @@ html,body{
 body{
 	font-family: "Microsoft Yahei",Arial;
 	background: #f6f6f6;
+  font-size:.12rem;
 	/* display: -webkit-flex; */
 	/* -webkit-flex-direction:column; */
 }
 a{
 	text-decoration: none;
+  font-size:.12rem;
 }
 ul,ol{
 	list-style: none;
