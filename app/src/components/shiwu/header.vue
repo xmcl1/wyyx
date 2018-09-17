@@ -20,6 +20,6 @@ header{
 }
 header a{
     font-size: .18rem;
-    color:#323232;
+    color:#404040;
 }
 </style>

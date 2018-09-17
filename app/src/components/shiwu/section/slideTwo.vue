@@ -30,5 +30,6 @@ img{
 }
 span{
     margin:.11rem 0;
+    color:#787878;
 }
 </style>
