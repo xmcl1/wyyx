@@ -1,24 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
-import test from '@/components/test'
-import shiwu from '@/pages/shiwu'
+import newPro from '@/pages/newPro'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'test',
-      component: test
-    },
     // 以下是冯炳权的页面路由
-    {
-      path: '/shiwu',
-      name: 'shiwu',
-      component: shiwu
-    },
+    // {
+    //   path: '/shiwu',
+    //   name: 'shiwu',
+    //   component: shiwu
+    // },
     // 以下是张廷杰的页面路由
     // {
     //   path: '/shiwu',
@@ -27,11 +21,11 @@ export default new Router({
     // },
 
     // 以下是李欣媛的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // },
+    {
+      path: '/',
+      name: 'newPro',
+      component: newPro
+    }
 
     // 以下是张鹏斌的页面路由
     // {

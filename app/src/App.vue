@@ -35,10 +35,10 @@ a{
 ul,ol{
 	list-style: none;
 }
-/* img{
+img{
 	border:none;
 	display: block;
-} */
+}
 /* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
