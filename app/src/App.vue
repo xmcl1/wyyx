@@ -35,6 +35,9 @@ a{
 ul,ol{
 	list-style: none;
 }
+#app{
+  height:100%;
+}
 /* img{
 	border:none;
 	display: block;

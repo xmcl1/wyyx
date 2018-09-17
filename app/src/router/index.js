@@ -22,13 +22,13 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/test',
       name: 'test',
       component: test
     },
     // 以下是冯炳权的页面路由
     {
-      path: '/shiwu',
+      path: '/',
       name: 'shiwu',
       component: shiwu
     },
