@@ -23,7 +23,6 @@ html,body{
 	height: 100%;
 }
 body{
-	/*font-family: "Microsoft Yahei",Arial;*/
 	background: #f6f6f6;
   font-size:.12rem;
 	/* display: -webkit-flex; */
