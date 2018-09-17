@@ -1,9 +1,9 @@
 <template>
     <swiper :options="swiperOption" ref="mySwiper">
-        <swiper-slide><img src="../../assets/img/img1/slide1.jpg"/></swiper-slide>
-        <swiper-slide><img src="../../assets/img/img1/slide2.jpg"/></swiper-slide>
-        <swiper-slide><img src="../../assets/img/img1/slide3.jpg"/></swiper-slide>
-        <swiper-slide><img src="../../assets/img/img1/slide4.jpg"/></swiper-slide>
+        <swiper-slide><img src="../../../assets/img/img1/slide1.jpg"/></swiper-slide>
+        <swiper-slide><img src="../../../assets/img/img1/slide2.jpg"/></swiper-slide>
+        <swiper-slide><img src="../../../assets/img/img1/slide3.jpg"/></swiper-slide>
+        <swiper-slide><img src="../../../assets/img/img1/slide4.jpg"/></swiper-slide>
     </swiper>
 </template>
 

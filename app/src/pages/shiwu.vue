@@ -1,20 +1,18 @@
 <template>
     <div class="shiwu">
         <header-h></header-h>
-        <div class="slideTop">
-            <slide-one></slide-one>
-        </div>
+        <section-s class="section"></section-s>
     </div>
 </template>
 
 <script>
 import headerH from "../components/shiwu/header"
-import slideOne from "../components/shiwu/slideOne"
+import sectionS from "../components/shiwu/section"
 export default {
     name:"shiwu",
     components:{
         headerH,
-        slideOne
+        sectionS
     }
 }
 </script>
@@ -23,8 +21,11 @@ export default {
 .shiwu{
     width:100%;
     height:100%;
+    display: flex;
+    flex-direction:column;
 }
-.slideTop{
-    padding:.13rem 0;
+.section{
+    flex:1;
+    overflow-x:scroll;
 }
 </style>
