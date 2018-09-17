@@ -21,14 +21,9 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/test',
-      name: 'test',
-      component: test
-    },
     // 以下是冯炳权的页面路由
     {
-      path: '/',
+      path: '/shiwu',
       name: 'shiwu',
       component: shiwu
     },
@@ -47,7 +42,7 @@ export default new Router({
 
     // 以下是李欣媛的页面路由
     {
-      path: '/',
+      path: '/newPro',
       name: 'newPro',
       component: newPro
     }

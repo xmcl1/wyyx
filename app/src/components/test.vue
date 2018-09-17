@@ -9,10 +9,9 @@
 <script>
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
-  name: "test",
+  name: "",
   data() {
     return {
-      //msg: 'Welcome to Your e.js App',
       swiperOption: {
         autoplay: true,
         loop: true
