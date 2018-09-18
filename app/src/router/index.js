@@ -30,6 +30,11 @@ export default new Router({
       name: 'index',
       component: index
     },
+    {
+      path: '/index',
+      name: 'index',
+      component: index
+    },
     // 以下是冯炳权的页面路由
     {
       path: '/shiwu',

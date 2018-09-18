@@ -1,24 +1,24 @@
 <template>
     <div class="">
         <footer>
-            <a href="" class="checked">
+            <a href="#/index" class="checked">
                 <i class="iconfont icon-shouye"></i>
                 <span>首页</span>
             </a>
-            <a href="">
+            <a href="#/index">
                 <i class="iconfont icon-chouti"></i>
                 <span>分类</span>
             </a>
-            <a href="">
+            <a href="#/shiwu">
                 <i class="iconfont icon-top"></i>
                 <span>识物</span>
             </a>
-            <a href="">
+            <a href="#/index">
                 <i class="iconfont icon-tubiaozhizuomoban"></i>
                 <span>购物车</span>
                 <b></b>
             </a>
-            <a href="">
+            <a href="#/index">
                 <i class="iconfont icon-geren"></i>
                 <span>个人</span>
             </a>
