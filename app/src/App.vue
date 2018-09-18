@@ -30,7 +30,6 @@ html,body{
 	height: 100%;
 }
 body{
-	font-family: "Microsoft Yahei",Arial;
 	background: #f6f6f6;
 }
 a{
@@ -48,4 +47,5 @@ img{
     flex-direction: column;
     height: 100%;
 }
+
 </style>
