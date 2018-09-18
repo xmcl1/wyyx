@@ -30,14 +30,43 @@
                 </div>
             </div>
         </div>
+        <div class="secOne">
+            <p><a href="javascripy:;">品牌制造商提供</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
+            <index-section-one></index-section-one>
+        </div>
+        <div class="secTwo">
+            <img src="../../assets/img/img2/index-secTwo.png" alt="">
+            <index-section-one></index-section-one>
+        </div>
+        <div class="secThree">
+            <p><a href="javascript:;">限时购<span>12</span>:<span>00</span>:<span>00</span></a>
+            <a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
+            <index-time-limit></index-time-limit>
+        </div>
+        <div class="secFour">
+            <img src="../../assets/img/img2/index-secFour-1.png" alt="">
+            <img src="../../assets/img/img2/index-secFour-2.png" alt="">
+            <img src="../../assets/img/img2/index-secFour-3.png" alt="">
+            <img src="../../assets/img/img2/index-secFour-4.png" alt="">
+        </div>
+        <div class="secFive">
+            <p><a href="javascripy:;">品牌制造商提供</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
+            <index-people-like></index-people-like>
+        </div>
     </div>
 </template>
 
 <script>
     import indexSwiper from '../index/indexSwiper.vue';
+    import indexTimeLimit from '../index/indexTimeLimit.vue';
+    import indexSectionOne from '../index/indexSectionOne.vue';
+    import indexPeopleLike from '../index/indexPeopleLike.vue';
     export default {
         components: {
             indexSwiper,
+            indexSectionOne,
+            indexTimeLimit,
+            indexPeopleLike
         }
     
     }
@@ -129,5 +158,121 @@
     }
     .newVipPresent div p span b{
         font-weight:500;
+    }
+    .secOne{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0.16rem 0.16rem;
+        background: #fff;
+    }
+    .secOne p{
+        display: block;
+        width:100%;
+        line-height: 0.52rem;
+        font-size: 0.15rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .secOne p a{
+        color: #444444;
+    }
+    .secOne p a i{
+        color: #444444;
+    }
+    .secOne>div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .secTwo{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0.16rem 0.16rem;
+        background: #fff;
+        margin-top: 0.1rem;
+    }
+    .secTwo>img{
+        width: 100%;
+        padding-top: 0.1rem;
+        padding-bottom: 0.15rem;
+    }
+    .secTwo>div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .secThree{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0.16rem 0.16rem;
+        background: #fff;
+        margin-top: 0.1rem;
+    }
+    .secThree p{
+        display: block;
+        width:100%;
+        line-height: 0.52rem;
+        font-size: 0.15rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .secThree p a{
+        color: #444444;
+    }
+    .secThree p a i{
+        color: #444444;
+    }
+    .secThree p span{
+        width: 0.2rem;
+        height: 0.2rem;
+        background: #333333;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        line-height: 0.2rem;
+        margin: 0 0.02rem;
+        border-radius: 0.02rem;
+        font-size: 0.1rem;
+    }
+    .secThree p span:first-of-type{
+        margin-left: 0.05rem;
+    }
+    .secFour{
+        margin-top: 0.1rem;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0.16rem;
+        background: #fff;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .secFour img{
+        margin-bottom: 0.02rem;
+    }
+    .secFive{
+        margin-top: 0.1rem;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0.16rem 0.16rem;
+        background: #fff;
+        flex-direction: column;
+    }
+    .secFive p{
+        display: block;
+        width:100%;
+        line-height: 0.52rem;
+        font-size: 0.15rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .secFive p a{
+        color: #444444;
+    }
+    .secFive p a i{
+        color: #444444;
     }
 </style>
