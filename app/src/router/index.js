@@ -12,8 +12,8 @@ import shiwu from '@/pages/shiwu'
 // import shiwu from '@/pages/shiwu'
 
 // 以下是李欣媛的页面路由引入文件
-// import shiwu from '@/pages/shiwu'
 import newPro from '@/pages/newPro'
+
 // 以下是张鹏斌的页面路由引入文件
 // import shiwu from '@/pages/shiwu'
 
@@ -37,7 +37,7 @@ export default new Router({
     },
     // 以下是冯炳权的页面路由
     {
-      path: '/',
+      path: '/shiwu',
       name: 'shiwu',
       component: shiwu
     },
