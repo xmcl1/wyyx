@@ -23,6 +23,7 @@ export default {
     height:100%;
     display: flex;
     flex-direction:column;
+    font-size: 0.12rem;
 }
 .section{
     flex:1;
