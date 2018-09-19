@@ -12,8 +12,8 @@ import shiwu from '@/pages/shiwu'
 // import shiwu from '@/pages/shiwu'
 
 // 以下是李欣媛的页面路由引入文件
-// import shiwu from '@/pages/shiwu'
 import newPro from '@/pages/newPro'
+
 // 以下是张鹏斌的页面路由引入文件
 import fenlei from '@/pages/fenlei'
 import shoppingcart from '@/pages/shoppingCart'
