@@ -13,13 +13,15 @@ import shiwu from '@/pages/shiwu'
 // import shiwu from '@/pages/shiwu'
 
 // 以下是李欣媛的页面路由引入文件
-// import shiwu from '@/pages/shiwu'
 import newPro from '@/pages/newPro'
+
 // 以下是张鹏斌的页面路由引入文件
-// import shiwu from '@/pages/shiwu'
+import fenlei from '@/pages/fenlei'
+import shoppingcart from '@/pages/shoppingCart'
+import product from '@/pages/productGoods'
 
  // 以下是贺康的页面路由引入文件
-//  import shiwu from '@/pages/shiwu'
+ import geren from '@/pages/geren'
 
 Vue.use(Router)
 
@@ -65,20 +67,29 @@ export default new Router({
       path: '/newPro',
       name: 'newPro',
       component: newPro
-    }
+    },
 
     // 以下是张鹏斌的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // },
-    
+    {
+      path: '/fenlei',
+      name: 'fenlei',
+      component: fenlei
+    },
+    {
+      path: '/shoppingcart',
+      name: 'shoppingcart',
+      component: shoppingcart
+    },
+    {
+      path: '/product',
+      name: 'product',
+      component: product
+    },
     // 以下是贺康的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // }
+    {
+      path: '/geren',
+      name: 'geren',
+      component: geren
+    }
   ]
 })

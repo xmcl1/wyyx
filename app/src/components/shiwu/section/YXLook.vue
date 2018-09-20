@@ -1,17 +1,15 @@
 <template>
     <div class="YXLookCon">
-        <h3>严选LOOK</h3>
+        <h3>{{YXLook.title}}</h3>
         <div class="picOne">
-            <img src="../../../assets/img/img1/yx9.jpg" alt="">
+            <img :src="YXLook.pic" alt="">
         </div>
         <div class="bottom">
             <div class="top">
-                <div>
-                    <img src="../../../assets/img/img1/pic1.jpg" alt="">
-                    <span>B****N</span>
-                </div>
+                <img :src="YXLook.photo" alt="">
+                <span>{{YXLook.span}}</span>
             </div>
-            <p>很好用，质感很好。</p>
+            <p>{{YXLook.p}}</p>
         </div>
     </div>
 </template>
@@ -19,6 +17,7 @@
 <script>
 export default {
     name:'',
+    props:["YXLook"],
     components:{
         
     }
@@ -55,6 +54,11 @@ export default {
 }
 .YXLookCon>.bottom>.top{
     margin:.12rem 0;
+    display: flex;
+    align-items: center;
+}
+.YXLookCon>.bottom>.top>img{
+    margin-right:.05rem;
 }
 .YXLookCon>.bottom>p{
     line-height: .2rem;

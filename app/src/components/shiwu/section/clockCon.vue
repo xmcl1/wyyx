@@ -1,21 +1,21 @@
 <template>
     <div>
-        <div class="con1">
+        <div class="con1" v-if="this.clock">
             <div class="top">
                 <span></span>
-                <span>今日话题</span>
+                <span>{{clock.topic}}</span>
                 <span></span>
             </div>
-            <h1>你有哪些租房经历</h1>
-            <p>聊聊你用过的租房神器</p>
+            <h1>{{clock.h1}}</h1>
+            <p>{{clock.p}}</p>
             <div class="bottom">
                 <div class="imgs">
-                    <img src="../../../assets/img/img1/pic1.jpg" alt="">
-                    <img src="../../../assets/img/img1/pic2.jpg" alt="">
+                    <img v-for="(val,index) in clock.img" :key="index" :src="val" alt="">
+                    <!-- <img src="../../../assets/img/img1/pic2.jpg" alt="">
                     <img src="../../../assets/img/img1/pic3.jpg" alt="">
-                    <img src="../../../assets/img/img1/pic4.jpg" alt="">
+                    <img src="../../../assets/img/img1/pic4.jpg" alt=""> -->
                 </div>
-                <p><span>1167</span>人参与话题</p>
+                <p><span>{{clock.count}}</span>人参与话题</p>
             </div>
         </div>
     </div>
@@ -24,6 +24,7 @@
 <script>
 export default {
     name:'',
+    props:["clock"],
     components:{
     }
 }
@@ -82,6 +83,7 @@ export default {
     position: relative;
     left:0;
     z-index: 100;
+    display: inline-block;
 }
 .con1>.bottom>.imgs>img:nth-of-type(2){
     left:-.1rem;
