@@ -12,21 +12,15 @@
         <div class="bottom">
             <div>
                 <img src="../../assets/img/img2/idnex-secFivr-down1.png" alt="">
-                <p>
-                    <span><b></b></span>
-                </p>
+                <p>即食燕窝 70g*6瓶 30%<span>￥<b>258</b></span></p>
             </div>
             <div>
                 <img src="../../assets/img/img2/idnex-secFivr-down1.png" alt="">
-                <p>
-                    <span><b></b></span>
-                </p>
+                <p>即食燕窝 70g*6瓶 30%<span>￥<b>258</b></span></p>
             </div>
             <div>
                 <img src="../../assets/img/img2/idnex-secFivr-down1.png" alt="">
-                <p>
-                    <span><b></b></span>
-                </p>
+                <p>网易云音乐苹果速数据线MF...<span>￥<b>258</b></span></p>
             </div>
         </div>
     </div>
@@ -36,9 +30,7 @@
     export default {
     
         components: {
-    
-    
-    
+
         }
     
     }
@@ -89,8 +81,18 @@
     .peopleLike .bottom{
         display: flex;
         justify-content: space-between;
+        margin-top: 0.1rem;
     }
     .peopleLike .bottom div{
         width: 1.07rem;
+    }
+    .peopleLike .bottom div p{
+        width: 100%;
+        color: #909090;
+        font-size: 0.11rem;
+        /* display: flex;  */
+    }
+    .peopleLike .bottom div p span{
+        color: #bc3b40;
     }
 </style>

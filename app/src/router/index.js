@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import index from '@/pages/index'
+import IntegralCenter from '@/pages/IntegralCenter'
 
 // import HelloWorld from '@/components/HelloWorld'
 
@@ -35,9 +36,14 @@ export default new Router({
       name: 'index',
       component: index
     },
+    {
+      path: '/IntegralCenter',
+      name: 'IntegralCenter',
+      component: IntegralCenter
+    },
     // 以下是冯炳权的页面路由
     {
-      path: '/',
+      path: '/shiwu',
       name: 'shiwu',
       component: shiwu
     },

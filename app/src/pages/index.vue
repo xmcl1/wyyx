@@ -13,7 +13,6 @@
             indexHeader,
             indexRecommend,
         }
-    
     }
 </script>
 
