@@ -4,13 +4,8 @@ import Router from 'vue-router'
 import index from '@/pages/index'
 import IntegralCenter from '@/pages/IntegralCenter'
 
-// import HelloWorld from '@/components/HelloWorld'
-
 // 以下是冯炳权的页面路由引入文件
 import shiwu from '@/pages/shiwu'
-
-// 以下是张廷杰的页面路由引入文件
-// import shiwu from '@/pages/shiwu'
 
 // 以下是李欣媛的页面路由引入文件
 import newPro from '@/pages/newPro'
@@ -49,19 +44,6 @@ export default new Router({
       name: 'shiwu',
       component: shiwu
     },
-    // 以下是张廷杰的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // },
-    // 以下是张廷杰的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // },
-
     // 以下是李欣媛的页面路由
     {
       path: '/newPro',
