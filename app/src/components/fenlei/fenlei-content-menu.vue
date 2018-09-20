@@ -848,13 +848,14 @@
                 }
               }
             ]
-          }
+          } 
+        }, 
+        mounted(){
+            $(function (){
+              alert("你好好")
+            })
         },
-      mounted(){
-          $(function (){
-            alert(1)
-          })
-      }
+        name: "fenlei-content-menu" 
     }
 </script>
 
