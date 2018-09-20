@@ -52,6 +52,7 @@
         display: flex;
         background: #fff;
         border-top: 1px solid #e3e3e3;
+      overflow: hidden;
     }
     footer a{
         display: block;
