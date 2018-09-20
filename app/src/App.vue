@@ -29,11 +29,9 @@ html{
 html,body{
 	height: 100%;
 }
-body{
-	background: #f6f6f6;
-}
 a{
 	text-decoration: none;
+  color: #000;
 }
 ul,ol{
 	list-style: none;

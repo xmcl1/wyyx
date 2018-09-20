@@ -5,7 +5,7 @@
                 <i class="iconfont icon-shouye"></i>
                 <span>首页</span>
             </a>
-            <a href="#/index">
+            <a href="#/fenlei">
                 <i class="iconfont icon-chouti"></i>
                 <span>分类</span>
             </a>
@@ -13,12 +13,12 @@
                 <i class="iconfont icon-top"></i>
                 <span>识物</span>
             </a>
-            <a href="#/index">
+            <a href="#/shoppingcart">
                 <i class="iconfont icon-tubiaozhizuomoban"></i>
                 <span>购物车</span>
                 <b></b>
             </a>
-            <a href="#/index">
+            <a href="#/geren">
                 <i class="iconfont icon-geren"></i>
                 <span>个人</span>
             </a>
@@ -28,19 +28,19 @@
 
 <script>
     export default {
-    
+
         data() {
-    
+
             return {
-  
+
             }
-    
+
         },
-    
+
         components: {
 
         }
-    
+
     }
 </script>
 
@@ -70,7 +70,7 @@
     footer a span{
         display: block;
         width: 100%;
-        text-align: center; 
+        text-align: center;
         font-size: 0.12rem;
         line-height: 0.22rem;
     }
