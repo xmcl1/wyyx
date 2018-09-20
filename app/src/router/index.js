@@ -18,7 +18,7 @@ import newPro from '@/pages/newPro'
 // import shiwu from '@/pages/shiwu'
 
  // 以下是贺康的页面路由引入文件
-//  import shiwu from '@/pages/shiwu'
+ import geren from '@/pages/geren'
 
 Vue.use(Router)
 
@@ -59,7 +59,7 @@ export default new Router({
       path: '/newPro',
       name: 'newPro',
       component: newPro
-    }
+    },
 
     // 以下是张鹏斌的页面路由
     // {
@@ -67,12 +67,12 @@ export default new Router({
     //   name: 'shiwu',
     //   component: shiwu
     // },
-    
+
     // 以下是贺康的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // }
+    {
+      path: '/geren',
+      name: 'geren',
+      component: geren
+    }
   ]
 })
