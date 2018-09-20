@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import index from '@/pages/index'
+import IntegralCenter from '@/pages/IntegralCenter'
 
 // import HelloWorld from '@/components/HelloWorld'
 
@@ -20,7 +21,7 @@ import shoppingcart from '@/pages/shoppingCart'
 import product from '@/pages/productGoods'
 
  // 以下是贺康的页面路由引入文件
-//  import shiwu from '@/pages/shiwu'
+ import geren from '@/pages/geren'
 
 Vue.use(Router)
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/index',
       name: 'index',
       component: index
+    },
+    {
+      path: '/IntegralCenter',
+      name: 'IntegralCenter',
+      component: IntegralCenter
     },
     // 以下是冯炳权的页面路由
     {
@@ -80,10 +86,10 @@ export default new Router({
       component: product
     },
     // 以下是贺康的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // }
+    {
+      path: '/geren',
+      name: 'geren',
+      component: geren
+    }
   ]
 })

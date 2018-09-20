@@ -1,16 +1,17 @@
 <template>
     <div class="moreOne">
         <div>
-            <img src="../../../assets/img/img1/more2.jpg" alt="">
+            <img :src="more.img" alt="">
         </div>
-        <h3>日用品更替频次小贴士</h3>
-        <p>毛巾、袜子、内裤换新指南</p>
+        <h3>{{more.h3}}</h3>
+        <p>{{more.p}}</p>
     </div>
 </template>
 
 <script>
 export default {
     name:'',
+    props:["more"],
     components:{
     }
 }
