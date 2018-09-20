@@ -849,7 +849,12 @@
               }
             ]
           }
-        }
+        },
+      mounted(){
+          $(function (){
+            alert(1)
+          })
+      }
     }
 </script>
 
