@@ -875,8 +875,14 @@
                 }
               }
             ]
-          }
-        }
+          } 
+        }, 
+        mounted(){
+            $(function (){
+              alert("你好好")
+            })
+        },
+        name: "fenlei-content-menu" 
     }
 </script>
 
