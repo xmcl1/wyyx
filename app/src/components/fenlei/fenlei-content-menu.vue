@@ -2,7 +2,7 @@
       <div v-if="tuijianzhuanqu.length != 0" class="fenleiMenu">
         <div class="fenlei-left">
           <div class="fenlei-left-content">
-            <p v-for="(val,index) in tuijianzhuanqu">{{ val.leftMenu }}</p>
+            <p v-for="(val,index) in tuijianzhuanqu" :key="index">{{ val.leftMenu }}</p>
             <!--<p>精品区</p>-->
             <!--<p>秋季专场</p>-->
             <!--<p>居家</p>-->
@@ -74,16 +74,16 @@
               <!--</div>-->
             <!--</div>-->
 
-              <div class="baopinqu" v-for="(value,index) in tuijianzhuanqu">
+              <div class="baopinqu" v-for="(value,index) in tuijianzhuanqu" :key="index">
                 <div>
                   <a href="#">
                     <img :src="value.rightContent.contentBanner" alt="" />
                   </a>
                 </div>
-                <div v-for="(val,index) in value.rightContent.fenleiContent">
+                <div v-for="(val,index) in value.rightContent.fenleiContent" :key="index">
                   <p v-if="val.fenleitext != null">{{ val.fenleitext }}</p>
                   <div>
-                    <a v-for="(vas,index) in val.fenleiContent" href="#" >
+                    <a v-for="(vas,index) in val.fenleiContent" href="#"  :key="index">
                       <img :src="vas.imgs" alt="" />
                       <span>{{ vas.text }}</span>
                     </a>
