@@ -18,7 +18,7 @@
                 <span>购物车</span>
                 <b></b>
             </a>
-            <a href="#/geren" >
+            <a href="#/geren">
                 <i class="iconfont icon-geren"></i>
                 <span>个人</span>
             </a>
