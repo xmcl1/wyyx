@@ -82,11 +82,13 @@ export default {
         text-align: center;
         line-height: 0.14rem;
         display: block;
+        color: #b4b4b4;
     }
     header div:nth-of-type(1) i,header div:nth-of-type(3) i{
         font-size: 0.19rem;
         display: block;
         text-align: center;
+        color: #b4b4b4;
     }
     header div:nth-of-type(1) i{
         font-size: 0.16rem;
@@ -109,6 +111,7 @@ export default {
         display: block;
         font-size: 0.14rem;
         white-space: nowrap;
+        color: #464646;
     }
     .indexList .show{
         color: #8d0108;

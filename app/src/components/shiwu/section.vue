@@ -1,53 +1,33 @@
 <template>
-    <div class="sectionInner">
+    <div v-if="this.shiwu" class="sectionInner">
         <div class="slideOne">
-            <slide-one></slide-one>
+            <slide-one :shiwu="shiwu"></slide-one>
             <div class="slideTwo">
-                <div class="slide1">
-                    <img src="../../assets/img/img1/slide5.jpg"/>
-                    <span>严选推荐</span>
-                </div>
-                <div class="slide1 slide2">
-                    <img src="../../assets/img/img1/slide6.jpg"/>
-                    <span>丁磊的好货</span>
-                </div>
-                <div class="slide1 slide3">
-                    <img src="../../assets/img/img1/slide7.jpg"/>
-                    <span>挑款师推荐</span>
-                </div>
-                <div class="slide1">
-                    <img src="../../assets/img/img1/slide5.jpg"/>
-                    <span>严选HOME</span>
-                </div>
-                <div class="slide1 slide2">
-                    <img src="../../assets/img/img1/slide6.jpg"/>
-                    <span>丁磊的好货</span>
-                </div>
-                <div class="slide1 slide3">
-                    <img src="../../assets/img/img1/slide7.jpg"/>
-                    <span>挑款师推荐</span>
+                <div class="slide1" v-for="(val,index) in shiwu.slideTwo" :key="index">
+                    <img :src="val.img"/>
+                    <span>{{val.span}}</span>
                 </div>
             </div>
         </div>
         <div class="recommandForYou">
             <h3>为你推荐</h3>
-            <recommand-for-you></recommand-for-you>
-            <recommand-for-you></recommand-for-you>
+            <recommand-for-you :shiwu="shiwu"></recommand-for-you>
+            <!-- <recommand-for-you></recommand-for-you> -->
         </div>
         <div class="clock">
-            <h3>十点一刻</h3>
+            <h3>{{shiwu.clock.title}}</h3>
             <swiper :options="swiperOption" ref="mySwiper">
-                <swiper-slide><clock-con></clock-con></swiper-slide>
+                <swiper-slide><clock-con  :clock="shiwu.clock"></clock-con></swiper-slide>
                 <swiper-slide><clock-con></clock-con></swiper-slide>
                 <swiper-slide><clock-con></clock-con></swiper-slide>
             </swiper>
         </div>
         <div class="YXZhenPin">
             <h3>严选甄品</h3>
-            <y-x-zhen-pin></y-x-zhen-pin>
+            <y-x-zhen-pin :YXZhenPin="shiwu.YXZhenPin"></y-x-zhen-pin>
         </div>
         <div class="YXLook">
-            <y-x-look></y-x-look>
+            <y-x-look :YXLook="shiwu.YXLook"></y-x-look>
         </div>
         <div class="more">
             <h3>
@@ -55,11 +35,7 @@
                 <span>更对精彩</span>
                 <span></span>
             </h3>
-            <more-one></more-one>
-            <more-one></more-one>
-            <more-one></more-one>
-            <more-one></more-one>
-            <more-one></more-one>
+            <more-one v-for="(val,index) in shiwu.more" :key="index" :more="val"></more-one>
         </div>
     </div>
 </template>
@@ -86,12 +62,24 @@ export default {
         moreOne
     },
     data() {
-    return {
-        swiperOption: {
-            autoplay: false,
-        }
-    };
-  }
+        return {
+            swiperOption: {
+                autoplay: false,
+            },
+            shiwu:null
+        };
+    },
+    mounted:function(){
+        fetch("http://localhost:3000/shiwu").then(data=>{
+            return data.json();
+            // console.log(data.text())
+        }).then(result=>{ 
+            this.shiwu=result; 
+        });
+        // setTimeout(() => {
+        //     console.log(this.shiwu)
+        // }, 0);
+    }
 }
 
 </script>

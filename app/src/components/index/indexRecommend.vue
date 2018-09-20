@@ -1,5 +1,6 @@
 <template>
     <div class="recommend">
+        <a class="ClickCheck" href="#/IntegralCenter"><i class="iconfont icon-rili"></i>签到</a>
         <index-swiper></index-swiper>
         <div class="knowWyyx">
             <p>
@@ -53,6 +54,35 @@
             <p><a href="javascripy:;">品牌制造商提供</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
             <index-people-like></index-people-like>
         </div>
+        <div class="secSix">
+            <p>类目热销榜</p>
+            <div>
+                <img src="../../assets/img/img2/index-hotBuy-1.png" alt="">
+                <img src="../../assets/img/img2/index-hotBuy-2.png" alt="">
+                <img src="../../assets/img/img2/index-hotBuy-3.png" alt="">
+                <img src="../../assets/img/img2/index-hotBuy-4.png" alt="">
+                <img src="../../assets/img/img2/index-hotBuy-5.png" alt="">
+                <img src="../../assets/img/img2/index-hotBuy-6.png" alt="">
+                <img src="../../assets/img/img2/index-hotBuy-7.png" alt="">
+                <img src="../../assets/img/img2/index-hotBuy-8.png" alt="">
+                <img src="../../assets/img/img2/index-hotBuy-9.png" alt="">
+                <img src="../../assets/img/img2/index-hotBuy-10.png" alt="">
+            </div>
+        </div>
+        <div class="secSeven">
+            <p><a href="javascripy:;">新品首发</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
+            <index-sec-seven></index-sec-seven> 
+        </div>
+        <div class="SecEight">
+            <p><a href="javascripy:;">专题精选</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
+            <index-sec-eight></index-sec-eight>
+        </div>
+        <div class="secNine">
+            <p><a href="javascripy:;">众筹</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
+            <index-sec-nine></index-sec-nine>
+        </div>
+        <index-sec-ten></index-sec-ten>
+        <may-be-like></may-be-like>
     </div>
 </template>
 
@@ -61,12 +91,22 @@
     import indexTimeLimit from '../index/indexTimeLimit.vue';
     import indexSectionOne from '../index/indexSectionOne.vue';
     import indexPeopleLike from '../index/indexPeopleLike.vue';
+    import indexSecSeven from '../index/indexSecSeven.vue';
+    import indexSecEight from '../index/indexSecEight.vue';
+    import indexSecNine from '../index/indexSecNine.vue';
+    import indexSecTen from '../index/indexSecTen.vue';
+    import mayBeLike from '../index/mayBeLike.vue';
     export default {
         components: {
             indexSwiper,
             indexSectionOne,
             indexTimeLimit,
-            indexPeopleLike
+            indexPeopleLike,
+            indexSecSeven,
+            indexSecEight,
+            indexSecNine,
+            indexSecTen,
+            mayBeLike
         }
     
     }
@@ -274,5 +314,127 @@
     }
     .secFive p a i{
         color: #444444;
+    }
+    .secSix{
+        margin-top: 0.1rem;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0.16rem 0.16rem;
+        background: #fff;
+        flex-direction: column;
+    }
+    .secSix p{
+        display: block;
+        width:100%;
+        line-height: 0.52rem;
+        font-size: 0.15rem;
+        display: flex;
+        justify-content: space-between;
+        color:#444444;
+    }
+    .secSix div{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .secSix div img{
+        margin-bottom: 0.04rem;
+    }
+    .secSeven{
+        margin-top: 0.1rem;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0.16rem 0.16rem;
+        background: #fff;
+        flex-direction: column;
+    }
+    .secSeven p{
+        display: block;
+        width:100%;
+        line-height: 0.52rem;
+        font-size: 0.15rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .secSeven p a{
+        color: #444444;
+    }
+    .secSeven p a i{
+        color: #444444;
+    }
+    .SecEight{
+        margin-top: 0.1rem;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0.16rem 0.16rem;
+        background: #fff;
+        flex-direction: column;
+    }
+    .SecEight p{
+        display: block;
+        width:100%;
+        line-height: 0.52rem;
+        font-size: 0.15rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .SecEight p a{
+        color: #444444;
+    }
+    .SecEight p a i{
+        color: #444444;
+    }
+    .secNine{
+        margin-top: 0.1rem;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        background: #fff;
+        flex-direction: column;
+    }
+    .secNine p{
+        display: block;
+        width:100%;
+        line-height: 0.52rem;
+        font-size: 0.15rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.02rem solid #e9e9e9;
+        box-sizing: border-box;
+        padding: 0 0.16rem; 
+    }
+    .secNine p a{
+        color: #444444;
+    }
+    .secNine p a i{
+        color: #444444;
+    }
+    .ClickCheck{
+        display: block;
+        width: 0.6rem;
+        height: 0.34rem;
+        box-sizing: border-box;
+        border-top-left-radius: 0.15rem;
+        border-bottom-left-radius: 0.15rem;
+        position: fixed;
+        z-index: 999;
+        background: #fff;
+        right: 0;
+        top: 1rem;
+    }
+    .ClickCheck {
+        font-size: 0.12rem;
+        color: #7a7e81;
+        line-height: 0.34rem;
+        text-align: center;
+    }
+    .ClickCheck i{
+        font-size: 0.2rem;
+        color:#bb241a;
+        vertical-align: sub;
     }
 </style>
