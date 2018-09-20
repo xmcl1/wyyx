@@ -852,7 +852,7 @@
         },
       mounted(){
           $(function (){
-            alert(1)
+            alert("你好好")
           })
       }
     }
