@@ -1,0 +1,181 @@
+{
+    "slideOneImg": [
+        "http://localhost:3000/images/slide1.jpg",
+        "http://localhost:3000/images/slide2.jpg",
+        "http://localhost:3000/images/slide3.jpg",
+        "http://localhost:3000/images/slide4.jpg"
+    ],
+    "slideTwo": [
+        {
+            "img": "http://localhost:3000/images/005.jpg",
+            "span": "严选推荐"
+        },
+        {
+            "img": "http://localhost:3000/images/006.jpg",
+            "span": "丁磊的好货"
+        },
+        {
+            "img": "http://localhost:3000/images/007.jpg",
+            "span": "挑款师推荐"
+        },
+        {
+            "img": "http://localhost:3000/images/008.jpg",
+            "span": "严选HOME"
+        },
+        {
+            "img": "http://localhost:3000/images/009.jpg",
+            "span": "新品放映室"
+        },
+        {
+            "img": "http://localhost:3000/images/010.jpg",
+            "span": "甄选家"
+        },
+        {
+            "img": "http://localhost:3000/images/011.jpg",
+            "span": "严选LOOK"
+        },
+        {
+            "img": "http://localhost:3000/images/012.jpg",
+            "span": "口碑商品"
+        },
+        {
+            "img": "http://localhost:3000/images/013.jpg",
+            "span": "特色系列"
+        }
+    ],
+    "recommandForYou": [
+        {
+            "img": "http://localhost:3000/images/recommend1.jpg",
+            "topBottom": {
+                "h3": {
+                    "span1": "严选原创设计系列",
+                    "price": "39元起"
+                },
+                "p": "用设计点亮生活"
+            },
+            "topBottom2": {
+                "photo": "http://localhost:3000/images/pic1.jpg",
+                "name": "电器组：素素",
+                "h3": "送爸妈不会错的中秋礼物。",
+                "p": "中秋节快到了，远在他乡的时候心中总是惦念着，好不容易放一次中秋假。",
+                "pic": "http://localhost:3000/images/pic5.jpg"
+            }
+        },
+        {
+            "img": "http://localhost:3000/images/recommend2.jpg",
+            "topBottom": {
+                "h3": {
+                    "span1": "9月服饰鞋包上新",
+                    "price": "59元起"
+                },
+                "p": "秋天从现在开始，更有超值换季折扣等你瞧"
+            },
+            "topBottom2": {
+                "photo": "http://localhost:3000/images/pic2.jpg",
+                "name": "丁磊",
+                "h3": "颈枕耳罩二合一，国际名牌。",
+                "p": "带帽多功能颈枕，限时7.5折",
+                "pic": "http://localhost:3000/images/pic6.jpg"
+            }
+        }
+    ],
+    "clock": {
+        "title": "十点一刻",
+        "topic": "今日话题",
+        "h1": "你有哪些租房经历",
+        "p": "聊聊你用过的租房神器",
+        "img": [
+            "http://localhost:3000/images/pic1.jpg",
+            "http://localhost:3000/images/pic2.jpg",
+            "http://localhost:3000/images/pic3.jpg",
+            "http://localhost:3000/images/pic4.jpg"
+        ],
+        "count": "1167"
+    },
+    "YXZhenPin": {
+        "YXZhenPinTop": {
+            "photo": "http://localhost:3000/images/021.jpg",
+            "h3": "严选按摩神奇大公开",
+            "p": "解开每一款的秘技绝学"
+        },
+        "YXZhenPinCon": [
+            {
+                "h3": "这款蓝牙耳机，升级后",
+                "p": "之前推出X3点时候，我尽全力让",
+                "pic": "http://localhost:3000/images/59.jpg"
+            },
+            {
+                "h3": "让洗衣变成一种享受",
+                "p": "在洗衣这种细微之事上，也要有技巧",
+                "pic": "http://localhost:3000/images/022.jpg"
+            }
+        ]
+    },
+    "YXLook": {
+        "title": "严选LOOK",
+        "pic": "http://localhost:3000/images/yx9.jpg",
+        "photo": "http://localhost:3000/images/pic1.jpg",
+        "span": "B****N",
+        "p": "很好用，质感很好。"
+    },
+    "more": [
+        {
+            "img": "http://localhost:3000/images/more1.jpg",
+            "h3": "蓝调治愈系空间打造攻略",
+            "p": "愿为你造出家的美好与梦幻"
+        },
+        {
+            "img": "http://localhost:3000/images/more2.jpg",
+            "h3": "日用品更替频次小贴士",
+            "p": "毛巾、袜子、内裤换新指南"
+        },
+        {
+            "img": "http://localhost:3000/images/more3.jpg",
+            "h3": "严选HOME@万科智谷",
+            "p": "LOFT公寓舒心软装指南"
+        },
+        {
+            "img": "http://localhost:3000/images/more4.jpg",
+            "h3": "9月14日新品放映室",
+            "p": "秋天了，用陶瓷煲熬个鸡汤补一下吧。"
+        },
+        {
+            "img": "http://localhost:3000/images/more5.jpg",
+            "h3": "你的鞋，代表了你是谁",
+            "p": "入秋新品 | 经典爆款 限时5折起"
+        },
+        {
+            "img": "http://localhost:3000/images/more6.jpg",
+            "h3": "除甲醛，这些小妙招来帮你",
+            "p": "甲醛这种空气污染物，在日常生活中无处不在。无论是人造"
+        },
+        {
+            "img": "http://localhost:3000/images/more7.jpg",
+            "h3": "不好吃的月饼，不适合送礼",
+            "p": "茗月夜月饼礼盒，中秋送礼直选"
+        },
+        {
+            "img": "http://localhost:3000/images/more8.jpg",
+            "h3": "精选礼物感恩父亲节",
+            "p": "别让老爸在朋友圈过节"
+        },
+        {
+            "img": "http://localhost:3000/images/more9.jpg",
+            "h3": "拯救僵硬酸痛全靠它",
+            "p": "按摩仪器的选品，经历了在办公区遍地找样品的尴尬。原因"
+        },
+        {
+            "img": "http://localhost:3000/images/more10.jpg",
+            "h3": "教师节，感谢那个帮我们打开世界的人",
+            "p": "网易邮箱终身VIP+严选会员卡免费领"
+        },
+        {
+            "img": "http://localhost:3000/images/more11.jpg",
+            "h3": "午睡必备十大神器",
+            "p": "用午睡按下生活暂停键"
+        },
+        {
+            "img": "http://localhost:3000/images/more12.jpg"
+        }
+    ]
+}

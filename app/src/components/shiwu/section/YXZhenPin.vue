@@ -1,26 +1,17 @@
 <template>
         <div class="top">
-            <img src="../../../assets/img/img1/recommend1.jpg" alt="">
+            <img :src="YXZhenPin.YXZhenPinTop.photo" alt="">
             <div class="topBottom">
-                <h3><span>严选原创设计系列</span></h3>
-                <p>用设计点亮生活光</p>
+                <h3><span>{{YXZhenPin.YXZhenPinTop.h3}}</span></h3>
+                <p>{{YXZhenPin.YXZhenPinTop.p}}</p>
             </div>
-            <div class="topBottom2">
+            <div class="topBottom2" v-for="(val,index) in YXZhenPin.YXZhenPinCon" :key="index">
                 <div class="left">
-                    <h3>送爸妈不会错的中秋礼物。</h3>
-                    <p>中秋节快到了，远在他乡的时候心中总是惦念着，好不容易放一次中秋假。</p>
+                    <h3>{{val.h3}}</h3>
+                    <p>{{val.p}}</p>
                 </div>
                 <div class="right">
-                    <img src="../../../assets/img/img1/pic5.jpg" alt="">
-                </div>
-            </div>
-            <div class="topBottom2">
-                <div class="left">
-                    <h3>送爸妈不会错的中秋礼物。</h3>
-                    <p>中秋节快到了，远在他乡的时候心中总是惦念着。</p>
-                </div>
-                <div class="right">
-                    <img src="../../../assets/img/img1/pic6.jpg" alt="">
+                    <img :src="val.pic" alt="">
                 </div>
             </div>
         </div>
@@ -29,6 +20,7 @@
 <script>
 export default {
     name:'',
+    props:["YXZhenPin"],
     components:{
         
     }
@@ -40,8 +32,11 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 .15rem;
     box-sizing: border-box;
+}
+.top>img{
+    width:3.44rem;
+    height:2rem;
 }
 .top>div{
     margin-bottom:.14rem;

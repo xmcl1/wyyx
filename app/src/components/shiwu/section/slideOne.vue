@@ -1,9 +1,8 @@
 <template>
-    <swiper :options="swiperOption" ref="mySwiper">
-        <swiper-slide><img src="../../../assets/img/img1/slide1.jpg"/></swiper-slide>
-        <swiper-slide><img src="../../../assets/img/img1/slide2.jpg"/></swiper-slide>
-        <swiper-slide><img src="../../../assets/img/img1/slide3.jpg"/></swiper-slide>
-        <swiper-slide><img src="../../../assets/img/img1/slide4.jpg"/></swiper-slide>
+    <swiper :options="swiperOption" ref="mySwiper"> 
+       <swiper-slide v-for="(val,index) in shiwu.slideOneImg"  :key="index">
+          <img :src="val" />
+       </swiper-slide>  
     </swiper>
 </template>
 
@@ -11,13 +10,14 @@
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
   name: "test",
+  props:["shiwu"],
   data() {
     return {
       //msg: 'Welcome to Your e.js App',
       swiperOption: {
         autoplay: true,
         loop: true
-      }
+      },
     };
   },
   components: {

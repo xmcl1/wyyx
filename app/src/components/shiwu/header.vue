@@ -14,7 +14,7 @@ header{
     width:100%;
     height:.43rem;
     background:#fbfbfb;
-    border-bottom:2px solid #dadada;
+    border-bottom:2px solid #e0e0e0;
     text-align: center;
     line-height: .43rem;
 }
