@@ -20,7 +20,7 @@ import shoppingcart from '@/pages/shoppingCart'
 import product from '@/pages/productGoods'
 
  // 以下是贺康的页面路由引入文件
-//  import shiwu from '@/pages/shiwu'
+ import geren from '@/pages/geren'
 
 Vue.use(Router)
 
@@ -80,10 +80,10 @@ export default new Router({
       component: product
     },
     // 以下是贺康的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // }
+    {
+      path: '/geren',
+      name: 'geren',
+      component: geren
+    }
   ]
 })
