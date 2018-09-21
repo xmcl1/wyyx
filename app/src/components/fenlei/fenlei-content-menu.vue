@@ -2,79 +2,13 @@
       <div v-if="tuijianzhuanqu.length != 0" class="fenleiMenu">
         <div class="fenlei-left">
           <div class="fenlei-left-content">
-            <p v-for="(val,index) in tuijianzhuanqu" :key="index">{{ val.leftMenu }}</p>
-            <!--<p>精品区</p>-->
-            <!--<p>秋季专场</p>-->
-            <!--<p>居家</p>-->
-            <!--<p>鞋包配饰</p>-->
-            <!--<p>服装</p>-->
-            <!--<p>电器</p>-->
-            <!--<p>洗护</p>-->
-            <!--<p>饮食</p>-->
-            <!--<p>餐厨</p>-->
-            <!--<p>婴童</p>-->
-            <!--<p>文体</p>-->
-            <!--<p>特色区</p>-->
+            <a class="fenlei-left-menus" v-for="(val,index) in tuijianzhuanqu" :key="index" @click="custormAnchor(`${index}`);huanse(index)" >{{ val.leftMenu }}</a>
           </div>
         </div>
         <div class="fenlei-right">
-          <div class="fenlei-right-content">
+          <div @scroll="gundong($event.target.scrollTop)" class="fenlei-right-content">
 
-            <!--比较特殊的页面-->
-            <!--<div style="display: none;"  class="baopinqu">-->
-              <!--<div>-->
-                <!--<a href="#">-->
-                  <!--<img src="../../assets/img/img4/fenlei-baopin-00.png" alt="" />-->
-                <!--</a>-->
-              <!--</div>-->
-              <!--<div>-->
-                <!--<p>床品</p>-->
-                <!--<div>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-0.png" alt="" />-->
-                    <!--<span>居家床品</span>-->
-                  <!--</a>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-1.png" alt="" />-->
-                    <!--<span>功能箱包</span>-->
-                  <!--</a>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-2.png" alt="" />-->
-                    <!--<span>女装</span>-->
-                  <!--</a>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-3.png" alt="" />-->
-                    <!--<span>男装</span>-->
-                  <!--</a>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-4.png" alt="" />-->
-                    <!--<span>男鞋女鞋</span>-->
-                  <!--</a>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-5.png" alt="" />-->
-                    <!--<span>保健养生</span>-->
-                  <!--</a>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-6.png" alt="" />-->
-                    <!--<span>清洁日用</span>-->
-                  <!--</a>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-7.png" alt="" />-->
-                    <!--<span>宝贝专用</span>-->
-                  <!--</a>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-8.png" alt="" />-->
-                    <!--<span>游戏周边</span>-->
-                  <!--</a>-->
-                  <!--<a href="#">-->
-                    <!--<img src="../../assets/img/img4/fenlei-baopin-9.png" alt="" />-->
-                    <!--<span>海外好物</span>-->
-                  <!--</a>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-
-              <div class="baopinqu" v-for="(value,index) in tuijianzhuanqu" :key="index">
+              <div  class="baopinqu" v-for="(value,index) in tuijianzhuanqu" :key="index" :id="index">
                 <div>
                   <a href="#">
                     <img :src="value.rightContent.contentBanner" alt="" />
@@ -101,6 +35,7 @@
         name: "fenlei-content-menu",
         data(){
           return{
+            "targetMenu":[],
             "tuijianzhuanqu":[
               {
                 "leftMenu":"精品专区",
@@ -849,13 +784,42 @@
               }
             ]
           } 
-        }, 
-        mounted(){
-            $(function (){
-              alert("你好好")
-            })
         },
-        name: "fenlei-content-menu" 
+        mounted(){
+          this.initData()
+        },
+        methods:{
+          custormAnchor(anchorName) {
+            // 找到锚点
+            let anchorElement = document.getElementById(anchorName);
+            // 如果对应id的锚点存在，就跳转到锚点
+            if(anchorElement) { anchorElement.scrollIntoView(); }
+          },
+          initData(){
+            var _this = this;
+            $(function (){
+              $(".baopinqu").each(function(index){
+                _this.targetMenu.push({"index":index,"height":this.offsetTop});
+              })
+            })
+          },
+          gundong(height){
+            let index = 0;
+            let tepData = this.targetMenu;
+            for(let j=0;j<tepData.length;j ++){
+              let heights = (parseInt(tepData[j].height)-69);
+              if(heights==height || (parseInt(tepData[j].height)-69)<=height){
+                index = tepData[j].index;
+              }
+            }
+            this.huanse(index);
+          },
+          huanse(index){
+            $(".fenlei-left-menus").siblings().removeClass("sign")
+            $(".fenlei-left-menus").eq(index).addClass("sign")
+            return;
+          }
+        }
     }
 </script>
 
@@ -886,7 +850,8 @@
     flex-direction: column;
     border-right: 1px solid #e7e7e7;
   }
-  .fenleiMenu .fenlei-left-content > p{
+  .fenleiMenu .fenlei-left-content > a{
+    display: block;
     width: 100%;
     text-align: center;
     margin: 0.06rem 0;
@@ -895,12 +860,18 @@
     border-left: 4px solid transparent;
   }
   .fenleiMenu .fenlei-left-content .sign{
-    border-left: 2px solid #b51d24;
+    border-left-color: #b51d24;
     color: #b51d24;
   }
   .fenleiMenu .fenlei-right-content > div > div:nth-of-type(1) img{
     width: 2.7rem;
   }
+  .fenleiMenu .fenlei-right-content{
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+
   .fenleiMenu .fenlei-right-content > div > div > div{
     display: flex;
     flex-wrap: wrap;

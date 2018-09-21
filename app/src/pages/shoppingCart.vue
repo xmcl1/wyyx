@@ -2,7 +2,7 @@
     <div class="index">
       <shoppcart-header></shoppcart-header>
       <div class="contents">
-        <shoppcart-content></shoppcart-content>
+        <shoppcart-content :temp="temp"></shoppcart-content>
         <shoppcart-tuijian></shoppcart-tuijian>
        </div>
       <shoppcart-jiesuan></shoppcart-jiesuan>
@@ -21,7 +21,14 @@
           shoppcartContent,
           shoppcartTuijian,
           shoppcartJiesuan
+        },
+      data(){
+        return{
+          gouwuches:[
+            { "id":"1001" }
+          ]
         }
+      }
     }
 </script>
 
