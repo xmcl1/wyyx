@@ -71,7 +71,11 @@
 
 <script>
     export default {
-        name: "shoppcart-content"
+        name: "shoppcart-content",
+        props:["temp"],
+        mounted(){
+          this.temp = "asdaaaaaaaaaaaaaaaaaaaa"
+        }
     }
 </script>
 

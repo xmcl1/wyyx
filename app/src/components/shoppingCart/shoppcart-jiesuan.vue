@@ -12,7 +12,7 @@
         <span>活动优惠:￥<em>69.00</em></span>
       </p>
       <a style="display: block;" href="#">
-        下单
+        {{ temp }}
       </a>
     </div>
   </div>
@@ -20,7 +20,9 @@
 
 <script>
     export default {
-        name: "shoppcart-jiesuan"
+        name: "shoppcart-jiesuan",
+      props:["temp"]
+
     }
 </script>
 
