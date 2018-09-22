@@ -52,20 +52,19 @@
 		"products": [
 			{
 				"index": "0",
-				"img": "http://localhost:3000/images/juJiaImg/chuangPin0.jpg",
+				"img": [
+					"http://localhost:3000/images/juJiaImg/chuangPin0.jpg",
+					"http://localhost:3000/images/juJiaImg/chuangPin001.jpg",
+					"http://localhost:3000/images/juJiaImg/chuangPin002.jpg",
+					"http://localhost:3000/images/juJiaImg/chuangPin003.jpg",
+					"http://localhost:3000/images/juJiaImg/chuangPin004.jpg"
+				],
 				"disc": "全棉生态磨毛，温和厚软细腻",
 				"name": "秋遇·待叶归磨毛四件套",
 				"price": "499",
-				"status": "新品",
+				"status":{ "xinPin":"新品"},
 				"productDetails": {
 					"pro":{
-						"lunbo": [
-							"http://localhost:3000/images/juJiaImg/chuangPin0.jpg",
-							"http://localhost:3000/images/juJiaImg/chuangPin001.jpg",
-							"http://localhost:3000/images/juJiaImg/chuangPin002.jpg",
-							"http://localhost:3000/images/juJiaImg/chuangPin003.jpg",
-							"http://localhost:3000/images/juJiaImg/chuangPin004.jpg"
-						],
 						"imgWord": [
 							{
 								"img": "http://localhost:3000/images/juJiaImg/productMiaoshu0.jpg",
@@ -141,9 +140,6 @@
 								"status":"新品"
 							}
 						]
-					},
-					"details":{
-						"vvvvvv":"vvvvvv"
 					}
 				}
 			},

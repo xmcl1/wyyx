@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-var shiwu = require('../data/shiwu')
-var jujia = require('../data/jujia')
+var shiWu = require('../data/shiWu')
+var juJia = require('../data/juJia')
 var WYYX = require('../data/WYYX')
 var limitTime = require("../data/limitTime");
 var newPro = require("../data/newPro");
@@ -27,17 +27,17 @@ router.get('/', function (req, res, next) {
   });
 });
 
-router.get("/shiwu", function (req, res, next) {
+router.get("/shiWu", function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With,Origin,Content-Type,Accept");
   res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
-  res.json(shiwu);
+  res.json(shiWu);
 });
-router.get("/jujia", function (req, res, next) {
+router.get("/juJia", function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With,Origin,Content-Type,Accept");
   res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
-  res.json(jujia);
+  res.json(juJia);
 });
 router.get("/WYYX", function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");

@@ -4,10 +4,10 @@ import Router from 'vue-router'
 import index from '@/pages/index'
 
 // 以下是冯炳权的页面路由引入文件
-import shiwu from '@/pages/shiwu'
+import shiWu from '@/pages/shiWu'
 
 // 以下是张廷杰的页面路由引入文件
-// import shiwu from '@/pages/shiwu'
+// import shiWu from '@/pages/shiWu'
 
 // 以下是李欣媛的页面路由引入文件
 import newPro from '@/pages/newPro'
@@ -39,21 +39,21 @@ export default new Router({
     },
     // 以下是冯炳权的页面路由
     {
-      path: '/shiwu',
-      name: 'shiwu',
-      component: shiwu
+      path: '/shiWu',
+      name: 'shiWu',
+      component: shiWu
     },
     // 以下是张廷杰的页面路由
     // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
+    //   path: '/shiWu',
+    //   name: 'shiWu',
+    //   component: shiWu
     // },
     // 以下是张廷杰的页面路由
     // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
+    //   path: '/shiWu',
+    //   name: 'shiWu',
+    //   component: shiWu
     // },
 
     // 以下是李欣媛的页面路由

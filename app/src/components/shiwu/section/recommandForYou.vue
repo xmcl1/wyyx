@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="topCon">
-            <div class="topBottom2"  v-for="(val,index) in shiwu.recommandForYou" :key='index'>
+            <div class="topBottom2"  v-for="(val,index) in shiWu.recommandForYou" :key='index'>
                 <img :src="val.img" alt="">
                 <div class="topBottom">
                     <h3><span>{{val.topBottom.h3.span1}}</span><span>{{val.topBottom.h3.price}}</span></h3>
@@ -35,7 +35,7 @@ export default {
     },
     components:{
     },
-    props:["shiwu"]
+    props:["shiWu"]
 }
 
 </script>
