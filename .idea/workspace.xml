@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5348e6e3-4e7c-4cdc-aae4-d781c1f3de34" name="Default Changelist" comment="" />
+    <list default="true" id="5348e6e3-4e7c-4cdc-aae4-d781c1f3de34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/apis/wyyxServer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/commons/urls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/limitTime/wyyxLimitProdetailPros.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/limitTime/wyyxLimitTime.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProLimitBox.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxOne.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxPros.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxProsT.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProShaiXuan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/special/wyyxSpecialPros.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/pages/limitTime.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/pages/special.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/express/data/limitTime.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/express/data/newPro.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/demo_fontclass.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/demo_fontclass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/demo_symbol.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/demo_symbol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/demo_unicode.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/demo_unicode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/newPro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/newPro.vue" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -224,10 +251,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/app/node_modules" />
-    <handled-path value="$PROJECT_DIR$/express/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/app/package.json" />
@@ -323,12 +346,12 @@
       <option name="presentableId" value="Default" />
       <updated>1537156265281</updated>
       <workItem from="1537156267175" duration="4342000" />
-      <workItem from="1537168661903" duration="174272000" />
+      <workItem from="1537168661903" duration="174822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178628000" />
+    <option name="totallyTimeSpent" value="179164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
