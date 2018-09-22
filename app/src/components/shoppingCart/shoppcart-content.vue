@@ -54,6 +54,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
   import Bus from './bus.js'
   export default {
       name: "shoppcart-content",
@@ -140,6 +141,10 @@
           this.returnD()
         }
       }
+=======
+    export default {
+        name: "shoppcart-content",
+>>>>>>> 48ead13cc5e887cb4dffa534d16d154d834546e4
     }
 </script>
 

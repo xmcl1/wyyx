@@ -157,50 +157,50 @@
               {
                   "leftMenu":"居家",
                   "rightContent":{
-                  "contentBanner":require("../../assets/img/img4/fenlei-jujia-00.jpg"),
+                  "contentBanner":require("../../assets/img/img4/fenlei-juJia-00.jpg"),
                     "fenleiContent":[
                     {"fenleitext":"床品","fenleiContent":[
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(1).png"),"text":"床品件套"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(1).png"),"text":"床品件套"
                         },
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(2).png"),"text":"被枕"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(2).png"),"text":"被枕"
                         }
                       ]
                     },
                     {"fenleitext":"家具家装","fenleiContent":[
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(3).png"),"text":"家具"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(3).png"),"text":"家具"
                         },
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(4).png"),"text":"灯具"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(4).png"),"text":"灯具"
                         },
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(5).png"),"text":"布艺软装"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(5).png"),"text":"布艺软装"
                         },
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(6).png"),"text":"家饰"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(6).png"),"text":"家饰"
                         }
                       ]
                     },
                     {"fenleitext":"收纳","fenleiContent":[
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(7).png"),"text":"收纳"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(7).png"),"text":"收纳"
                         },
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(8).png"),"text":"旅行用品"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(8).png"),"text":"旅行用品"
                         },
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(9).png"),"text":"晾晒除味"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(9).png"),"text":"晾晒除味"
                         }
                       ]
                     },
                     {"fenleitext":"医疗宠物","fenleiContent":[
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(10).png"),"text":"家庭医疗"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(10).png"),"text":"家庭医疗"
                         },
                         {
-                          "imgs":require("../../assets/img/img4/fenlei-jujia-(11).png"),"text":"宠物"
+                          "imgs":require("../../assets/img/img4/fenlei-juJia-(11).png"),"text":"宠物"
                         }
                       ]
                     }

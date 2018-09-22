@@ -1,6 +1,6 @@
 <template>
     <swiper :options="swiperOption" ref="mySwiper"> 
-       <swiper-slide v-for="(val,index) in shiwu.slideOneImg"  :key="index">
+       <swiper-slide v-for="(val,index) in shiWu.slideOneImg"  :key="index">
           <img :src="val" />
        </swiper-slide>  
     </swiper>
@@ -10,7 +10,7 @@
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
   name: "test",
-  props:["shiwu"],
+  props:["shiWu"],
   data() {
     return {
       //msg: 'Welcome to Your e.js App',
