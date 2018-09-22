@@ -2,7 +2,7 @@
     <div class="index">
       <shoppcart-header></shoppcart-header>
       <div class="contents">
-        <shoppcart-content :temp="temp"></shoppcart-content>
+        <shoppcart-content></shoppcart-content>
         <shoppcart-tuijian></shoppcart-tuijian>
        </div>
       <shoppcart-jiesuan></shoppcart-jiesuan>
