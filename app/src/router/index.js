@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
-import newPro from '@/pages/newPro'
+
 // 以下是冯炳权的页面路由引入文件
 import shiwu from '@/pages/shiwu'
 
@@ -9,7 +9,9 @@ import shiwu from '@/pages/shiwu'
 // import shiwu from '@/pages/shiwu'
 
 // 以下是李欣媛的页面路由引入文件
-// import shiwu from '@/pages/shiwu'
+import newPro from '@/pages/newPro'
+import limitTime from '@/pages/limitTime'
+import special from '@/pages/special'
 
 // 以下是张鹏斌的页面路由引入文件
 // import shiwu from '@/pages/shiwu'
@@ -45,6 +47,16 @@ export default new Router({
       path: '/newPro',
       name: 'newPro',
       component: newPro
+    },
+    {
+      path: '/limitTime',
+      name: 'limitTime',
+      component: limitTime
+    },
+    {
+      path: '/special',
+      name: 'special',
+      component: special
     }
 
     // 以下是张鹏斌的页面路由

@@ -1,0 +1,314 @@
+[
+  {
+    "bannerN":[
+        "../../static/img/img3/new_banner1.jpg",
+        "../../static/img/img3/new_banner2.jpg"
+    ],
+    "limitContent":{
+        "title":"限时尝鲜",
+        "limitBox":[
+          {
+            "pic":"../../../static/img/img3/new_pro1.png",
+            "firstP":"小面包幼儿学步车",
+            "secondP":"稳定学步，不易摔倒",
+            "span1":"￥95.5",
+            "span2":"￥96",
+            "span3":"￥99",
+            "a":"立即抢购"
+          },
+          {
+            "pic":"../../../static/img/img3/new_pro3.png",
+            "firstP":"网易智造车载磁吸无线充店二合一支架",
+            "secondP":"车载磁吸+无线充二合一支架（苹果专用）",
+            "span1":"￥122",
+            "span2":"￥123",
+            "span3":"￥129",
+            "a":"立即抢购"
+          },
+          {
+            "pic":"../../../static/img/img3/new_pro2.png",
+            "firstP":"小面包幼儿学步车",
+            "secondP":"稳定学步，不易摔倒",
+            "span1":"￥95.5",
+            "span2":"￥96",
+            "span3":"￥99",
+            "a":"立即抢购"
+          }
+        ]
+    },
+    "recommendContent":{
+        "title":"推荐关注",
+        "recBox1":{
+            "pic":"../../../static/img/img3/new_pro11.png",
+            "p1":"随身离线翻译神器",
+            "p2":"网易有道翻译王2.0Pro",
+            "p3":"￥1688"
+        },
+        "recBox2":[
+          {
+            "pic":"../../../static/img/img3/new_pro4.png",
+            "topP":"一缕霞光杯中留，缥缈如烟似旧人",
+            "botP":"2只装 日本制造 渐变色凉水杯",
+            "price":"￥189"
+          },
+          {
+            "pic":"../../../static/img/img3/new_pro5.png",
+            "topP":"酸甜交织，一口喝出夏日缤纷清爽",
+            "botP":"日本制造 和歌山柚子梅酒 720毫升",
+            "price":"￥99"
+          },
+          {
+            "pic":"../../../static/img/img3/new_pro9.png",
+            "topP":"吸猫党的终极福利，时刻陪伴的猫爪杯",
+            "botP":"日本制造 海苔格子薯片 45克",
+            "price":"￥299"
+          },
+          {
+            "pic":"../../../static/img/img3/new_pro7.png",
+            "topP":"强效清洁口腔 还您自信笑容",
+            "botP":"日本制造 便携漱口水 清凉型 22条装",
+            "price":"￥199"
+          },
+          {
+            "pic":"../../../static/img/img3/new_pro8.png",
+            "topP":"99.99%除菌滤芯，安心直饮",
+            "botP":"日本除菌除氯净水龙头",
+            "price":"￥99"
+          },
+          {
+            "pic":"../../../static/img/img3/new_pro6.png",
+            "topP":"一瓶汽水，开启盛夏美好时光",
+            "botP":"日本制造 缤纷果味汽水 300毫升",
+            "price":"￥99"
+          }
+        ]
+    },
+    "selectContent":{
+        "title1":"每一次上新，都是万里挑一",
+        "title2":"本期新品",
+        "selectTab":{
+            "a1":"综合",
+            "a2":"价格",
+            "a3":"筛选"
+        },
+        "recBox2Num":[
+            {
+                "flag":0,
+                "proDetail":[
+                    {
+                      "pic":"../../../static/img/img3/new_pro4.png",
+                      "topP":"一缕霞光杯中留，缥缈如烟似旧人",
+                      "botP":"2只装 日本制造 渐变色凉水杯",
+                      "price":"￥189"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro9.png",
+                      "topP":"吸猫党的终极福利，时刻陪伴的猫爪杯",
+                      "botP":"日本制造 海苔格子薯片 45克",
+                      "price":"￥299"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro5.png",
+                      "topP":"酸甜交织，一口喝出夏日缤纷清爽",
+                      "botP":"日本制造 和歌山柚子梅酒 720毫升",
+                      "price":"￥99"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro7.png",
+                      "topP":"强效清洁口腔 还您自信笑容",
+                      "botP":"日本制造 便携漱口水 清凉型 22条装",
+                      "price":"￥199"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro6.png",
+                      "topP":"一瓶汽水，开启盛夏美好时光",
+                      "botP":"日本制造 缤纷果味汽水 300毫升",
+                      "price":"￥99"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro8.png",
+                      "topP":"99.99%除菌滤芯，安心直饮",
+                      "botP":"日本除菌除氯净水龙头",
+                      "price":"￥99"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro10.png",
+                      "topP":"酸甜交织，一口喝出夏日缤纷清爽",
+                      "botP":"日本制造 和歌山柚子梅酒 720毫升",
+                      "price":"￥99"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro9.png",
+                      "topP":"一缕霞光杯中留，缥缈如烟似旧人",
+                      "botP":"2只装 日本制造 渐变色凉水杯",
+                      "price":"￥189"
+                    }
+                ]
+            },
+            {
+                "flag":1,
+                "proDetail":[
+                    {
+                      "pic":"../../../static/img/img3/new_pro10.png",
+                      "topP":"酸甜交织，一口喝出夏日缤纷清爽",
+                      "botP":"日本制造 和歌山柚子梅酒 720毫升",
+                      "price":"￥99"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro6.png",
+                      "topP":"一缕霞光杯中留，缥缈如烟似旧人",
+                      "botP":"2只装 日本制造 渐变色凉水杯",
+                      "price":"￥199"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro4.png",
+                      "topP":"一缕霞光杯中留，缥缈如烟似旧人",
+                      "botP":"2只装 日本制造 渐变色凉水杯",
+                      "price":"￥299"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro9.png",
+                      "topP":"吸猫党的终极福利，时刻陪伴的猫爪杯",
+                      "botP":"日本制造 海苔格子薯片 45克",
+                      "price":"￥399"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro5.png",
+                      "topP":"酸甜交织，一口喝出夏日缤纷清爽",
+                      "botP":"日本制造 和歌山柚子梅酒 720毫升",
+                      "price":"￥499"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro7.png",
+                      "topP":"强效清洁口腔 还您自信笑容",
+                      "botP":"日本制造 便携漱口水 清凉型 22条装",
+                      "price":"￥599"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro6.png",
+                      "topP":"一瓶汽水，开启盛夏美好时光",
+                      "botP":"日本制造 缤纷果味汽水 300毫升",
+                      "price":"￥699"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro8.png",
+                      "topP":"99.99%除菌滤芯，安心直饮",
+                      "botP":"日本除菌除氯净水龙头",
+                      "price":"￥799"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro10.png",
+                      "topP":"酸甜交织，一口喝出夏日缤纷清爽",
+                      "botP":"日本制造 和歌山柚子梅酒 720毫升",
+                      "price":"￥899"
+                    },
+                    {
+                      "pic":"../../../static/img/img3/new_pro7.png",
+                      "topP":"一缕霞光杯中留，缥缈如烟似旧人",
+                      "botP":"2只装 日本制造 渐变色凉水杯",
+                      "price":"￥999"
+                    }
+                ]
+            },
+            {
+                "flag":2,
+               "proDetail":[
+                   {
+                     "pic":"../../../static/img/img3/new_pro5.png",
+                     "topP":"酸甜交织，一口喝出夏日缤纷清爽",
+                     "botP":"日本制造 和歌山柚子梅酒 720毫升",
+                     "price":"￥799"
+                   },
+                   {
+                     "pic":"../../../static/img/img3/new_pro7.png",
+                     "topP":"强效清洁口腔 还您自信笑容",
+                     "botP":"日本制造 便携漱口水 清凉型 22条装",
+                     "price":"￥699"
+                   },
+                  {
+                    "pic":"../../../static/img/img3/new_pro4.png",
+                    "topP":"一缕霞光杯中留，缥缈如烟似旧人",
+                    "botP":"2只装 日本制造 渐变色凉水杯",
+                    "price":"￥599"
+                  },
+                  {
+                    "pic":"../../../static/img/img3/new_pro9.png",
+                    "topP":"吸猫党的终极福利，时刻陪伴的猫爪杯",
+                    "botP":"日本制造 海苔格子薯片 45克",
+                    "price":"￥499"
+                  },
+                  {
+                    "pic":"../../../static/img/img3/new_pro5.png",
+                    "topP":"酸甜交织，一口喝出夏日缤纷清爽",
+                    "botP":"日本制造 和歌山柚子梅酒 720毫升",
+                    "price":"￥399"
+                  },
+                  {
+                    "pic":"../../../static/img/img3/new_pro7.png",
+                    "topP":"强效清洁口腔 还您自信笑容",
+                    "botP":"日本制造 便携漱口水 清凉型 22条装",
+                    "price":"￥299"
+                  },
+                  {
+                    "pic":"../../../static/img/img3/new_pro6.png",
+                    "topP":"一瓶汽水，开启盛夏美好时光",
+                    "botP":"日本制造 缤纷果味汽水 300毫升",
+                    "price":"￥199"
+                  },
+                  {
+                    "pic":"../../../static/img/img3/new_pro8.png",
+                    "topP":"99.99%除菌滤芯，安心直饮",
+                    "botP":"日本除菌除氯净水龙头",
+                    "price":"￥99"
+                  },
+                  {
+                    "pic":"../../../static/img/img3/new_pro10.png",
+                    "topP":"酸甜交织，一口喝出夏日缤纷清爽",
+                    "botP":"日本制造 和歌山柚子梅酒 720毫升",
+                    "price":"￥59"
+                  },
+                  {
+                    "pic":"../../../static/img/img3/new_pro5.png",
+                    "topP":"一缕霞光杯中留，缥缈如烟似旧人",
+                    "botP":"2只装 日本制造 渐变色凉水杯",
+                    "price":"￥49"
+                  }
+              ]
+            }
+        ],
+        "shaixuan":{
+            "price":"价格区间",
+            "spans":{
+                "sort":"分类",
+                "manufacture":"制造商",
+                "addr":"配送地区",
+                "xian":"西安"
+            },
+            "all":"全部",
+            "sortA":[
+              {"a":"居家"},
+              {"a":"餐厨"},
+              {"a":"鞋包配饰"},
+              {"a":"婴童"},
+              {"a":"服装"},
+              {"a":"饮食"},
+              {"a":"洗护"},
+              {"a":"文体"},
+              {"a":"特色区"}
+            ],
+            "manufactureA":[
+                {"a":"CK制造商"},
+                {"a":"海外制造商"},
+                {"a":"MK制造商"},
+                {"a":"法国Jacadi制造商"},
+                {"a":"日本Francfranc制造商"},
+                {"a":"MUJI制造商"}
+            ],
+            "as":[
+                {"a":"重置"},
+                {"a":"确定"}
+            ]
+        }
+    }
+  }
+]

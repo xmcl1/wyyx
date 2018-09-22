@@ -9,7 +9,6 @@ function resolve (dir) {
 }
 
 
-
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -79,4 +78,5 @@ module.exports = {
     tls: 'empty',
     child_process: 'empty'
   }
+
 }
