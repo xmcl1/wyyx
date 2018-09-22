@@ -17,23 +17,17 @@
       <change afterPath="$PROJECT_DIR$/express/data/limitTime.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/express/data/newPro.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/webpack.base.conf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/demo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/demo_fontclass.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/demo_fontclass.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/demo_symbol.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/demo_symbol.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/demo_unicode.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/demo_unicode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/assets/icon/font/iconfont.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/pages/newPro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/newPro.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/express/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/express/routes/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -250,10 +244,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/app/node_modules" />
-    <handled-path value="$PROJECT_DIR$/express/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/app/package.json" />
@@ -266,6 +256,7 @@
     <option name="width" value="1026" />
     <option name="height" value="728" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -333,12 +324,12 @@
       <option name="presentableId" value="Default" />
       <updated>1537156265281</updated>
       <workItem from="1537156267175" duration="4342000" />
-      <workItem from="1537168661903" duration="174272000" />
+      <workItem from="1537168661903" duration="174822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178614000" />
+    <option name="totallyTimeSpent" value="179164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
