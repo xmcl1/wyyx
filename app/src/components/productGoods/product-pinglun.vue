@@ -13,21 +13,15 @@
               <p>{{ value.userName }}</p>
               <img src="../../assets/img/img4/product-dengji.png" alt="" />
               <p>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span v-for="(val1) in value.daxing"></span>
               </p>
             </div>
-            <p><em>2018.09.12</em><em>18:51</em> <em>蓝色(床单款);1.5m</em></p>
+            <p><em>{{ value.time }}</em></p>
             <p>
-              买回来、因为还没过水洗、摸着很不舒、差点就退货了、看着颜色花色还行、就过水洗了、晾干后那
+              {{ value.comment }}
             </p>
             <p>
-              <img src="../../assets/img/img4/product-pingluns-imgs.png" alt="" />
-              <img src="../../assets/img/img4/product-pingluns-imgs.png" alt="" />
-              <img src="../../assets/img/img4/product-pingluns-imgs.png" alt="" />
+              <img v-for="(val02,index) in value.photo" :key="index" :src="val02" alt="" />
             </p>
           </div>
         </div>

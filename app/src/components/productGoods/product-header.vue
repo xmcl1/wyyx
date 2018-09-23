@@ -104,10 +104,6 @@
     font-style: normal;
     outline: none;
   }
-  .contents{
-    overflow-y: scroll;
-    height: 100%;
-  }
   .productheader{
     box-sizing: border-box;
     position: relative;
