@@ -6,7 +6,14 @@ var juJia = require('../data/juJia')
 var WYYX = require('../data/WYYX')
 var limitTime = require("../data/limitTime");
 var newPro = require("../data/newPro");
+var juJia = require("../data/juJia");
 
+router.get("/api/juJia", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With,Origin,Content-Type,Accept");
+  res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+  res.json(juJia)
+}),
 router.get("/api/limitTime", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With,Origin,Content-Type,Accept");
