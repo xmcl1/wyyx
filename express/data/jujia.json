@@ -4112,8 +4112,76 @@
 							"manEJian":"满额减"
 						}
 					}
+<<<<<<< HEAD
 				]
 			}
+=======
+				}
+			]
+		},
+		"chongWu": {
+			"id": "0011",
+			"title": "宠物",
+			"discription": "专业家庭医用好物",
+			"products": [
+				{
+					"index": "0",
+					"img": ["http://localhost:3000/images/juJiaImg/chongWu0.jpg"],
+					"disc": "优质食材，薯类膨化多肉配方",
+					"name": "自发热暖贴",
+					"price": "88"
+				},
+				{
+					"index": "1",
+					"img": ["http://localhost:3000/images/juJiaImg/chongWu1.jpg"],
+					"disc": "优质食材，薯类膨化多肉配方",
+					"name": "优质食材，薯类膨化多肉配方",
+					"price": "88"
+				},
+				{
+					"index": "2",
+					"img": ["http://localhost:3000/images/juJiaImg/chongWu2.jpg"],
+					"disc": "优质食材，薯类膨化多肉配方",
+					"name": "优质食材，薯类膨化多肉配方",
+					"price": "9.9"
+				},
+				{
+					"index": "3",
+					"img": ["http://localhost:3000/images/juJiaImg/chongWu3.jpg"],
+					"disc": "优质食材，薯类膨化多肉配方",
+					"name": "水胶体创口贴",
+					"price": "18.9"
+				},
+				{
+					"index": "4",
+					"img": ["http://localhost:3000/images/juJiaImg/chongWu4.jpg"],
+					"disc": "水胶体创口贴",
+					"name": "水胶体创口贴",
+					"price": "22"
+				},
+				{
+					"index": "5",
+					"img": ["http://localhost:3000/images/juJiaImg/chongWu5.jpg"],
+					"disc": "水胶体创口贴",
+					"name": " 鸡肉金针软丝(猫用)",
+					"price": "12.8"
+				},
+				{
+					"index": "6",
+					"img": ["http://localhost:3000/images/juJiaImg/chongWu6.jpg"],
+					"disc": "筵席上品牛腿筋，淡嫩不腻嚼劲十足",
+					"name": " 加筋牛肉丸（犬用）",
+					"price": "24"
+				},
+				{
+					"index": "7",
+					"img": ["http://localhost:3000/images/juJiaImg/chongWu7.jpg"],
+					"disc": "三层嫩肉，双肉营养",
+					"name": "三层嫩肉，双肉营养",
+					"price": "17"
+				}
+			]
+>>>>>>> 530ff982e4c4e82edf26609144566b41d62793f0
 		}
 	}
 ]
