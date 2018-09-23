@@ -1,32 +1,77 @@
 <template>
-  <div class="shoppingcart-jiesuan">
-    <div>
-      <p>
-        <input class="goos" type="checkbox" name="" id="for01" value="" /><label class="gooss" for="for01"></label>
-      </p>
-      <p>已选(<em>2</em>)</p>
-    </div>
-    <div>
-      <p>
-        <span>合计:￥<em>838.00</em></span>
-        <span>活动优惠:￥<em>69.00</em></span>
-      </p>
-      <a style="display: block;" href="#">
-        {{ temp }}
-      </a>
+  <div>
+    <div class="shoppingcart-jiesuan" v-if="returnD != null">
+      <div>
+        <p>
+          <input @click="checkout($event)" class="goos jies" type="checkbox" name="" id="for01" value="" /><label class="gooss" for="for01"></label>
+        </p>
+        <p>已选(<em>{{ returnD.reuu }}</em>)</p>
+      </div>
+      <div>
+        <p>
+          <span>合计:￥<em>{{ returnD.zongjines }}</em></span>
+          <span>活动优惠:￥<em>69.00</em></span>
+        </p>
+        <a style="display: block;" href="#">
+          立即下单
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-    export default {
-        name: "shoppcart-jiesuan",
-      props:["temp"]
+  import Bus from './bus.js'
+  export default {
+      name: "shoppcart-jiesuan",
+      data () {
+        return {
+          returnD:null,
+          zhuangtai:false,
+          "checkTep":false
+         }
+      },
+    created(){
+      var vm = this
+      // 用$on事件来接收参数
+        Bus.$on('returnData', (data) => {
+          console.log(data);
+          this.panduanxuanzhong(data)
+          vm.returnD = data
+        })
+      },
+      methods: {
+        checkout(evt){
+          this.checkTep = $(evt.target).is(':checked')
+          Bus.$emit('checkTep', this.checkTep)
+          $(".jies+.gooss").removeClass("gooo")
+          $(".jies+.gooss").removeClass("goo")
+        },
+        panduanxuanzhong(data){
+          let _this = this;
+          console.log(data.zhuangtai)
+          if(data.zhuangtai){
+            $(".jies").attr("checked",true)
+            $(".jies+.gooss").addClass("gooo")
+            $(".jies+.gooss").removeClass("goo")
 
-    }
+          }else{
+            $(".jies").removeAttr("checked")
+            $(".jies+.gooss").addClass("goo")
+            $(".jies+.gooss").removeClass("gooo")
+          }
+        }
+      }
+  }
 </script>
 
 <style scoped>
+  .goo:after{
+    background-position: 0 0.2rem!important;
+  }
+  .gooo:after{
+    background-position: 0 1.54rem!important;
+  }
   * {
     color: #000;
     font-size: 0.14rem;
