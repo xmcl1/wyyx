@@ -13,44 +13,25 @@
     <!--商品的详情-->
       <swiper class="swip" :options="swiperOption" ref="mySwiper">
         <!-- slides -->
-        <swiper-slide><img src="../../assets/img/img4/product-xiangqing-0.jpg" alt=""></swiper-slide>
-        <swiper-slide><img src="../../assets/img/img4/product-xiangqing-1.jpg" alt=""></swiper-slide>
-        <swiper-slide><img src="../../assets/img/img4/product-xiangqing-2.jpg" alt=""></swiper-slide>
-        <swiper-slide><img src="../../assets/img/img4/product-xiangqing-3.jpg" alt=""></swiper-slide>
-        <swiper-slide><img src="../../assets/img/img4/product-xiangqing-4.jpg" alt=""></swiper-slide>
+        <swiper-slide v-for="(value,index) in xiangqings.img" :key="index"><img :src="value" alt=""></swiper-slide>
          <!-- Optional controls -->
         <div class="swiper-pagination"  slot="pagination"></div>
       </swiper>
 
     <div class="miaoshu">
-      <div>
-        <img src="../../assets/img/img4/product-miaoshu-0.png" alt="" />
+      <div v-for="(value,index) in xiangqings.productDetails.pro.imgWord" :key="index">
+        <img :src="value.img" alt="" />
         <p>
-          <span>北欧花鸟</span>
-          <span>自然雀跃</span>
-        </p>
-      </div>
-      <div>
-        <img src="../../assets/img/img4/product-miaoshu-1.png" alt="" />
-        <p>
-          <span>全棉质地</span>
-          <span>双享亲肤</span>
-        </p>
-      </div>
-      <div>
-        <img src="../../assets/img/img4/product-miaoshu-2.png" alt="" />
-        <p>
-          <span>独立收纳</span>
-          <span>精巧方便</span>
+          <span v-for="(val,index) in value.word" :key="index">{{ val }}</span>
         </p>
       </div>
     </div>
     <!--product-wenjianmiaoshu-->
     <div class="product-wenjianmiaoshu">
-      <p>花鸟集4件套</p>
-      <p>北欧色彩美学，2种质感，双享体验</p>
+      <p>{{ xiangqings.name }}</p>
+      <p>{{ xiangqings.disc }}</p>
       <p>
-        <span>￥<em>399</em></span>
+        <span>￥<em>{{ xiangqings.price }}</em></span>
         <span>购买最高得39积分</span>
       </p>
       <a href="#">
@@ -71,6 +52,7 @@
   import { swiper,swiperSlide } from "vue-awesome-swiper"
     export default {
       name: "product-header",
+      props:["xiangqings"],
       data() {
         return {
           "swiperOption": {
@@ -85,6 +67,9 @@
       components: {
         swiper,
         swiperSlide
+      },
+      mounted(){
+        console.log(this.xiangqings)
       }
     }
 </script>

@@ -36,7 +36,7 @@
             <h3>{{val.title}}</h3>
             <p>{{val.discription}}</p>
             <div class="chuangPinJianTaoCon">
-                <div class="productOne" v-for="(val2,index) in val.products" :key="index">
+                <div class="productOne" v-for="(val2,index) in val.products" :key="index" @click="targetProduct(result.menuname,val.id,val2.index)">
                     <div class="top">
                         <div class="imgBox">
                             <img :src="val2.img[0]"/>
@@ -90,8 +90,16 @@ export default {
   methods: {
     foucs() {
       juJiaServer1.aaa(data => {
-        this.result = data;
+        this.result = data[0];
       });
+    },
+    targetProduct(fenleimenu,xiaofenlei,shangpinId){
+       this.$router.push({
+         name: 'product',
+         params:{
+           "fenleimenu":fenleimenu,"xiaofenlei":xiaofenlei,"shangpinId":shangpinId
+         }
+       })
     }
   },
   mounted() {
