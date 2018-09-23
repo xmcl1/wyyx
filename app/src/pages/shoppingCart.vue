@@ -2,12 +2,7 @@
     <div class="index" v-if="shangpin.length != 0 && zengpin.length != 0">
       <shoppcart-header></shoppcart-header>
       <div class="contents">
-<<<<<<< HEAD
-        <shoppcart-content  :shangpin="shangpin" :zengpin="zengpin"></shoppcart-content>
-        <shoppcart-content></shoppcart-content>
-=======
         <shoppcart-content :shangpin="shangpin" :zengpin="zengpin"></shoppcart-content>
->>>>>>> 44f5c7483f2c44e714f388c1d630cccd307ad8dd
         <shoppcart-tuijian></shoppcart-tuijian>
        </div>
       <shoppcart-jiesuan></shoppcart-jiesuan>
