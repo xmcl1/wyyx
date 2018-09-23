@@ -17,3 +17,12 @@ export class indexServices1 {
     })
   }
 }
+export class juJiaServer1 {
+  static aaa (cb) {
+    fetch(urls.JUJIA).then(response => {
+      response.json().then(data => {
+        cb(data)
+      })
+    })
+  }
+}

@@ -20,7 +20,8 @@ import shoppingcart from '@/pages/shoppingCart'
 import product from '@/pages/productGoods'
 
  // 以下是贺康的页面路由引入文件
- import geren from '@/pages/geren'
+import geren from '@/pages/geren'
+import juJia from '@/pages/juJia'
 
 Vue.use(Router)
 
@@ -94,6 +95,11 @@ export default new Router({
       path: '/geren',
       name: 'geren',
       component: geren
+    },
+    {
+      path: '/juJia',
+      name: 'juJia',
+      component: juJia
     }
   ]
 })
