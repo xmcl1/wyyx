@@ -1,12 +1,9 @@
 <template>
-    <div class="index">
+    <div class="index" v-if="shangpin.length != 0 && zengpin.length != 0">
       <shoppcart-header></shoppcart-header>
       <div class="contents">
-<<<<<<< HEAD
-        <shoppcart-content :shangpin="shangpin" :zengpin="zengpin"></shoppcart-content>
-=======
+        <shoppcart-content  :shangpin="shangpin" :zengpin="zengpin"></shoppcart-content>
         <shoppcart-content></shoppcart-content>
->>>>>>> 48ead13cc5e887cb4dffa534d16d154d834546e4
         <shoppcart-tuijian></shoppcart-tuijian>
        </div>
       <shoppcart-jiesuan></shoppcart-jiesuan>

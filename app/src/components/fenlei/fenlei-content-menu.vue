@@ -786,6 +786,7 @@
           } 
         },
         mounted(){
+          $(".fenlei-left-menus").eq(0).addClass("sign");
           this.initData()
         },
         methods:{

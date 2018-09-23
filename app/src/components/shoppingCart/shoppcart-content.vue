@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="zengpins">
     <!--包邮-->
     <div class="shoppcart-baoyou">
       <p class="baoyou"><span>已满足体条件</span></p>
@@ -10,14 +10,14 @@
       <div class="manjianqian">
         <p>
           <span>全场满赠</span>
-          <span>已满足满<em>200</em>元领取赠品</span>
-          <!--<span>再购<em>200</em>可领取赠品</span>-->
+          <span  v-if="returnData.zongjines>200">已满足满<em>200</em>元领取赠品</span>
+          <span v-if="returnData.zongjines<200">再购<em>{{ 200-returnData.zongjines }}</em>可领取赠品</span>
         </p>
-        <p>
+        <p v-if="returnData.zongjines>200">
           <a href="#">更换赠品</a>
         </p>
       </div>
-      <div class="zengpin">
+      <div class="zengpin"  v-if="returnData.zongjines>200">
         <p><img :src="zengpins[0].imgs" alt="" /></p>
         <div>
           <p>
@@ -31,7 +31,7 @@
     <div class="huise"></div>
     <!--shoppcart-goods-->
     <div class="shoppcart-goods">
-      <div v-for="(val,index) in shangpins">
+      <div v-for="(val,index) in shangpins" :key="index">
         <p>
           <input @click="checks(val,$event)" class="goos" type="checkbox" name="" :id="index" value="" /><label class="gooss" :for="index"></label>
         </p>
@@ -54,104 +54,98 @@
 </template>
 
 <script>
-<<<<<<< HEAD
   import Bus from './bus.js'
   export default {
-      name: "shoppcart-content",
-      props: ["shangpin", "zengpin"],
-      data(){
-        return{
-          "shangpins":this.shangpin,
-          "zengpins":this.zengpin,
-          "returnData":{zongjines:null,reuu:null,zhuangtai: false}
-        }
-      },
-      mounted(){
-        this.zongjie()
-        var vm = this
-        // 用$on事件来接收参数
-        let shpis = vm.shangpins;
-        Bus.$on('checkTep', (data) => {
-          for(let jjs in shpis){
-            shpis[jjs].xuanzhong = data;
-          }
-          this.quxuan();
-        })
-      },
-      methods: {
-        targetProduct(){
-          this.$router.push({ path:"/product" })
-        },
-        returnD(){
-          console.log("发送请求")
-          Bus.$emit('returnData',this.returnData)
-        },
-        checks(val,evt){
-          let xuanzhong = [];
-          val.xuanzhong=$(evt.target).is(":checked");
-          this.quxuan()
-          $(".goos").not(".jies").each(function (){
-            xuanzhong.push($(this).is(":checked"));
-          });
-          console.log(xuanzhong,xuanzhong.indexOf(false))
-          if(xuanzhong.indexOf(false)<=-1){
-            this.returnData.zhuangtai = true;
-          }else{
-            this.returnData.zhuangtai = false;
-          }
-          this.zongjie()
-        },
-        quxuan(){
-          let shpis= this.shangpins;
-          for(let jj in shpis){
-            if(shpis[jj].xuanzhong){
-              $(".goos").eq(jj).attr("checked",true)
-            }else{
-              $(".goos").eq(jj).removeAttr("checked")
-            }
-          }
-          this.zongjie()
-        },
-        jia(val,evt) {
-          $(evt.target).prev().prev().css("color","#000")
-          val.count += 1;
-          this.zongjie()
-        },
-        jian(val,evt) {
-          if(val.count > 1){
-            val.count -= 1;
-          }
-          if(val.count==1){
-            $(evt.target).css("color","#ccc")
-          }
-          this.zongjie();
-        },
-        zongjie(){
-          let zongjines= 0;
-          let reuu = 0;
-          let shpi= this.shangpins;
-          for(let j in shpi){
-            if(shpi[j].xuanzhong==true){
-              reuu+=1;
-              zongjines+=shpi[j].jiage*shpi[j].count;
-            }
-          }
-          this.returnData.zongjines = zongjines;
-          this.returnData.reuu = reuu;
-          this.returnD()
-        }
+    name: "shoppcart-content",
+    props: ["shangpin", "zengpin"],
+    data() {
+      return {
+        "shangpins": this.shangpin,
+        "zengpins": this.zengpin,
+        "returnData": {zongjines: null, reuu: null, zhuangtai: false}
       }
-=======
-    export default {
-        name: "shoppcart-content",
->>>>>>> 48ead13cc5e887cb4dffa534d16d154d834546e4
+    },
+    mounted() {
+      this.zongjie();
+      let vm = this;
+      // 用$on事件来接收参数
+      let shpis = vm.shangpins;
+      Bus.$on('checkTep', (data) => {
+        for (let jjs in shpis) {
+          shpis[jjs].xuanzhong = data;
+          vm.quxuan();
+        }
+      })
+    },
+    methods: {
+      targetProduct() {
+        this.$router.push({path: "/product"})
+      },
+      returnD() {
+        console.log("发送请求")
+        Bus.$emit('returnData', this.returnData)
+      },
+      checks(val, evt) {
+        let xuanzhong = [];
+        val.xuanzhong = $(evt.target).is(":checked");
+        $(".goos").not(".jies").each(function () {
+          xuanzhong.push($(this).is(":checked"));
+        });
+        console.log(xuanzhong, xuanzhong.indexOf(false))
+        if (xuanzhong.indexOf(false) <= -1) {
+          this.returnData.zhuangtai = true;
+        } else {
+          this.returnData.zhuangtai = false;
+        }
+        this.quxuan()
+        this.zongjie()
+      },
+      quxuan() {
+        let shpis = this.shangpins;
+        for (let jj in shpis) {
+          if (shpis[jj].xuanzhong) {
+            $(".goos").not(".jies").eq(jj).attr("checked", true)
+          } else {
+            $(".goos").not(".jies").eq(jj).removeAttr("checked")
+          }
+        }
+        this.zongjie()
+      },
+      jia(val, evt) {
+        $(evt.target).prev().prev().css("color", "#000")
+        val.count += 1;
+        this.zongjie()
+      },
+      jian(val, evt) {
+        if (val.count > 1) {
+          val.count -= 1;
+        }
+        if (val.count == 1) {
+          $(evt.target).css("color", "#ccc")
+        }
+        this.zongjie();
+      },
+      zongjie() {
+        console.log(this.shangpins)
+        let zongjines = 0;
+        let reuu = 0;
+        let shpi = this.shangpins;
+        for (let j in shpi) {
+          if (shpi[j].xuanzhong == true) {
+            reuu += 1;
+            zongjines += shpi[j].jiage * shpi[j].count;
+          }
+        }
+        this.returnData.zongjines = zongjines;
+        this.returnData.reuu = reuu;
+        console.log(this.returnData);
+        this.returnD()
+      }
     }
+  }
 </script>
 
 <style scoped>
-  #for01[checked]+label:after{
-    background-position: 0 1.54rem;
-  }
   * {
     color: #000;
     font-size: 0.14rem;
