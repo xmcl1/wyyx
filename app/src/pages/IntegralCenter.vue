@@ -114,7 +114,7 @@
         line-height: 0.45rem;
         padding-right:0.14rem;  
     }
-    section::-webkit-scrollbar {    
+    section::-webkit-scrollbar {
             width: 0px;
     }
     section{
