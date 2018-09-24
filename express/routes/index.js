@@ -23,6 +23,9 @@ router.all('*',function (req, res, next) {
     }
 });
 
+router.get("/index",function(req,res,next){
+  res.json(index);
+}),
 router.get("/api/juJia", (req, res) => {
   res.json(juJia)
 }),
@@ -39,6 +42,7 @@ router.get('/', function (req, res, next) {
     title: 'Express'
   });
 });
+
 
 router.get("/shiWu", function (req, res, next) {
   res.json(shiWu);
@@ -69,12 +73,7 @@ router.get("/api/productgoods", function (req, res, next) {
     }
     res.json(productgoods);
 });
-router.get("/index",function(req,res,next){
-  res.header("Access-Control-Allow-Origin","*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With,Origin,Content-Type,Accept");
-  res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
-  res.json(index);
-});
+
 
 
 module.exports = router;
