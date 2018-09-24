@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="zengpins">
     <!--包邮-->
     <div class="shoppcart-baoyou">
       <p class="baoyou"><span>已满足体条件</span></p>
@@ -10,59 +10,43 @@
       <div class="manjianqian">
         <p>
           <span>全场满赠</span>
-          <span>已满足满<em>649</em>元领取赠品 <img style="display: inline-block" src="img/shoppcart-zuo.png" alt="" /></span>
+          <span  v-if="returnData.zongjines>200">已满足满<em>200</em>元领取赠品</span>
+          <span v-if="returnData.zongjines<200">再购<em>{{ 200-returnData.zongjines }}</em>可领取赠品</span>
         </p>
-        <p>
+        <p v-if="returnData.zongjines>200">
           <a href="#">更换赠品</a>
         </p>
       </div>
-      <div class="zengpin">
-        <p><img src="../../assets/img/img4/shoppcart-zengpin.png" alt="" /></p>
+      <div class="zengpin"  v-if="returnData.zongjines>200">
+        <p><img :src="zengpins[0].imgs" alt="" /></p>
         <div>
           <p>
-            <span>赠品<em>圆形护颈苦荞麦枕</em> </span>
+            <span>赠品<em>{{ zengpins[0].mingcheng }}</em> </span>
             <span>x<em>1</em></span>
           </p>
-          <p>圆形</p>
+          <p>{{ zengpins[0].canshu }}</p>
         </div>
       </div>
     </div>
     <div class="huise"></div>
     <!--shoppcart-goods-->
     <div class="shoppcart-goods">
-      <div>
+      <div v-for="(val,index) in shangpins" :key="index">
         <p>
-          <input class="goos" type="checkbox" name="" id="for" value="" /><label class="gooss" for="for"></label>
+          <input @click="checks(val,$event)" class="goos" type="checkbox" name="" :id="index" value="" /><label class="gooss" :for="index"></label>
         </p>
-        <a href="#" >
-          <p>
-            <img style="display: inline-block;" src="../../assets/img/img4/shoppcart-shangpin-gouwuche.png" alt="" />
+        <div>
+          <p @click="targetProduct">
+            <img style="display: inline-block;" :src="val.imgs" alt="" />
           </p>
           <div>
             <p>
-              <span>花鸟集四件套</span>
-              <span>蓝色（床单款）;1.5m</span>
+              <span>{{ val.mingcheng }}</span>
+              <span>{{ val.canshu }}</span>
             </p>
-            <p class="jiage"><span>￥<em>339.00</em></span> <span><em>-</em><input type="text" value="1" /><em>+</em></span></p>
+            <p class="jiage"><span>￥<em>{{ val.jiage }}</em></span> <span><em @click="jian(val,$event);" :class="{colors:val.count==1}" >-</em><input type="text" :value="val.count==1?val.count=1:val.count" /><em  @click="jia(val,$event)">+</em></span></p>
           </div>
-        </a>
-      </div>
-      <div>
-        <p>
-          <input class="goos" type="checkbox" name="" id="fors" value="" /><label class="gooss" for="fors"></label>
-        </p>
-        <a href="#" >
-          <p>
-            <img style="display: inline-block;" src="../../assets/img/img4/shoppcart-shangpin-gouwuche.png" alt="" />
-          </p>
-          <div>
-            <p>
-              <span>花鸟集四件套</span>
-              <span>蓝色（床单款）;1.5m</span>
-            </p>
-            <p class="jiage"><span>￥<em>339.00</em></span> <span><em>-</em><input type="text" value="1" /><em>+</em></span></p>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
     <div class="huise"></div>
@@ -70,9 +54,95 @@
 </template>
 
 <script>
-    export default {
-        name: "shoppcart-content"
+  import Bus from './bus.js'
+  export default {
+    name: "shoppcart-content",
+    props: ["shangpin", "zengpin"],
+    data() {
+      return {
+        "shangpins": this.shangpin,
+        "zengpins": this.zengpin,
+        "returnData": {zongjines: null, reuu: null, zhuangtai: false}
+      }
+    },
+    mounted() {
+      this.zongjie();
+      let vm = this;
+      // 用$on事件来接收参数
+      let shpis = vm.shangpins;
+      Bus.$on('checkTep', (data) => {
+        for (let jjs in shpis) {
+          shpis[jjs].xuanzhong = data;
+          vm.quxuan();
+        }
+      })
+    },
+    methods: {
+      targetProduct() {
+        this.$router.push({path: "/product"})
+      },
+      returnD() {
+        console.log("发送请求")
+        Bus.$emit('returnData', this.returnData)
+      },
+      checks(val, evt) {
+        let xuanzhong = [];
+        val.xuanzhong = $(evt.target).is(":checked");
+        $(".goos").not(".jies").each(function () {
+          xuanzhong.push($(this).is(":checked"));
+        });
+        console.log(xuanzhong, xuanzhong.indexOf(false))
+        if (xuanzhong.indexOf(false) <= -1) {
+          this.returnData.zhuangtai = true;
+        } else {
+          this.returnData.zhuangtai = false;
+        }
+        this.quxuan()
+        this.zongjie()
+      },
+      quxuan() {
+        let shpis = this.shangpins;
+        for (let jj in shpis) {
+          if (shpis[jj].xuanzhong) {
+            $(".goos").not(".jies").eq(jj).attr("checked", true)
+          } else {
+            $(".goos").not(".jies").eq(jj).removeAttr("checked")
+          }
+        }
+        this.zongjie()
+      },
+      jia(val, evt) {
+        $(evt.target).prev().prev().css("color", "#000")
+        val.count += 1;
+        this.zongjie()
+      },
+      jian(val, evt) {
+        if (val.count > 1) {
+          val.count -= 1;
+        }
+        if (val.count == 1) {
+          $(evt.target).css("color", "#ccc")
+        }
+        this.zongjie();
+      },
+      zongjie() {
+        console.log(this.shangpins)
+        let zongjines = 0;
+        let reuu = 0;
+        let shpi = this.shangpins;
+        for (let j in shpi) {
+          if (shpi[j].xuanzhong == true) {
+            reuu += 1;
+            zongjines += shpi[j].jiage * shpi[j].count;
+          }
+        }
+        this.returnData.zongjines = zongjines;
+        this.returnData.reuu = reuu;
+        console.log(this.returnData);
+        this.returnD()
+      }
     }
+  }
 </script>
 
 <style scoped>
@@ -81,6 +151,9 @@
     font-size: 0.14rem;
     outline: none;
     font-style: normal;
+  }
+  .colors{
+    color: #ccc;
   }
   .huise{
     width:100%;
@@ -167,7 +240,7 @@
     background-size: 0.2rem auto;
     background-position: 0 0.2rem;
   }
-  .goos:checked+label:after{
+  .goos[checked]+label:after{
     background-position: 0 1.54rem;
   }
   /*shoppcart-baoyou*/
@@ -300,23 +373,23 @@
     top: -10px;
     left: 0;
   }
-  .shoppcart-goods > div > a:nth-of-type(1){
+  .shoppcart-goods > div > div:nth-of-type(1){
     flex: 1;
     height: 0.78rem;
     display: flex;
     padding-bottom:0.18rem;
     border-bottom: 1px solid #e6e4db;
   }
-  .shoppcart-goods > div:nth-last-child(1) > a{
+  .shoppcart-goods > div:nth-last-child(1) > div:nth-of-type(1){
     border-bottom: none;
   }
-  .shoppcart-goods > div > a:nth-of-type(1) > p:nth-of-type(1){
+  .shoppcart-goods > div > div:nth-of-type(1) > p:nth-of-type(1){
     padding: 0 0.14rem;
   }
-  .shoppcart-goods > div > a:nth-of-type(1) > p:nth-of-type(1) > img{
+  .shoppcart-goods > div > div:nth-of-type(1) > p:nth-of-type(1) > img{
     height: 0.84rem;
   }
-  .shoppcart-goods > div > a:nth-of-type(1) > div{
+  .shoppcart-goods > div > div:nth-of-type(1) > div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -324,41 +397,46 @@
 
   }
 
-  .shoppcart-goods> div > a:nth-of-type(1) > div > p:nth-of-type(1) > span:nth-of-type(1){
+  .shoppcart-goods> div > div:nth-of-type(1) > div > p:nth-of-type(1) > span:nth-of-type(1){
     display: block;
   }
-  .shoppcart-goods> div > a:nth-of-type(1) > div > p:nth-of-type(1) > span:nth-of-type(2){
+  .shoppcart-goods> div > div:nth-of-type(1) > div > p:nth-of-type(1) > span:nth-of-type(2){
     display: inline-block;
     padding-top: 0.008rem;
     color: #666;
     font-size: 0.12rem;
   }
-  .shoppcart-goods > div > a:nth-of-type(1) > div > p:nth-of-type(2){
+  .shoppcart-goods > div > div:nth-of-type(1) > div > p:nth-of-type(2){
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 2.18rem;
   }
-  .shoppcart-goods > div > a:nth-of-type(1) > div > p:nth-of-type(2) > span:nth-of-type(2){
+  .shoppcart-goods > div > div:nth-of-type(1) > div > p:nth-of-type(2) > span:nth-of-type(1) em,
+  .shoppcart-goods > div > div:nth-of-type(1) > div > p:nth-of-type(2) > span:nth-of-type(1) {
+    color: #a9181e;
+    font-weight: bold;
+  }
+  .shoppcart-goods > div > div:nth-of-type(1) > div > p:nth-of-type(2) > span:nth-of-type(2){
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     vertical-align: top;
   }
-  .shoppcart-goods > div > a:nth-of-type(1) > div .jiage > span:nth-of-type(2)  em{
+  .shoppcart-goods > div > div:nth-of-type(1) > div .jiage > span:nth-of-type(2)  em{
     display: inline-block;
     width: 0.3rem;
     height: 0.25rem ;
     line-height: 0.25rem;
     text-align: center;
   }
-  .shoppcart-goods > div > a:nth-of-type(1) > div .jiage > span:nth-of-type(2) em:nth-of-type(1){
+  .shoppcart-goods > div > div:nth-of-type(1) > div .jiage > span:nth-of-type(2) em:nth-of-type(1){
     border-right:1px solid #ccc;
   }
-  .shoppcart-goods > div > a:nth-of-type(1) > div .jiage > span:nth-of-type(2) em:nth-of-type(2){
+  .shoppcart-goods > div > div:nth-of-type(1) > div .jiage > span:nth-of-type(2) em:nth-of-type(2){
     border-left:1px solid #ccc;
   }
-  .shoppcart-goods > div > a:nth-of-type(1) > div .jiage > span:nth-of-type(2) > input{
+  .shoppcart-goods > div > div:nth-of-type(1) > div .jiage > span:nth-of-type(2) > input{
     display: inline-block;
     width: 0.3rem;
     height: 0.25rem ;

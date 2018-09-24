@@ -1,8 +1,9 @@
 <template>
-    <div class="index">
+    <div class="index" v-if="shangpin.length != 0 && zengpin.length != 0">
       <shoppcart-header></shoppcart-header>
       <div class="contents">
-        <shoppcart-content></shoppcart-content>
+        <shoppcart-content  :shangpin="shangpin" :zengpin="zengpin"></shoppcart-content>
+        <shoppcart-content :shangpin="shangpin" :zengpin="zengpin"></shoppcart-content>
         <shoppcart-tuijian></shoppcart-tuijian>
        </div>
       <shoppcart-jiesuan></shoppcart-jiesuan>
@@ -21,7 +22,17 @@
           shoppcartContent,
           shoppcartTuijian,
           shoppcartJiesuan
+        },
+      data(){
+        return{
+          "shangpin":[
+            { "id":"1001","xuanzhong":false,"imgs":"/static/img/shoppcart-shangpin-gouwuche.02698d4.png","mingcheng":"花鸟集四件套","canshu":"蓝色（床单款）;1.5m","jiage":339.00,"count":1 }
+            ],
+          "zengpin":[
+            { "id":"1001","mingcheng":"圆形护颈苦荞麦枕","imgs":"/static/img/shoppcart-zengpin.png","canshu":"圆形" }
+          ]
         }
+      }
     }
 </script>
 
@@ -37,4 +48,5 @@
   height: 100%;
   overflow-y: scroll;
 }
+
 </style>

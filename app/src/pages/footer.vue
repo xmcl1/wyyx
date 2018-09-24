@@ -9,7 +9,7 @@
                 <i class="iconfont icon-chouti"></i>
                 <span>分类</span>
             </a>
-            <a href="#/shiwu">
+            <a href="#/shiWu">
                 <i class="iconfont icon-top"></i>
                 <span>识物</span>
             </a>
@@ -26,7 +26,7 @@
     </div>
 </template>
 
-<script>
+<script scoped>
     export default {
 
         data() {
@@ -52,6 +52,7 @@
         display: flex;
         background: #fff;
         border-top: 1px solid #e3e3e3;
+      overflow: hidden;
     }
     footer a{
         display: block;

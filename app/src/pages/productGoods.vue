@@ -1,10 +1,10 @@
 <template>
-    <div class="index">
+    <div class="index" v-if="xiangqings">
       <div class="contents">
-        <product-header></product-header>
-        <product-guige></product-guige>
-        <product-pinglun></product-pinglun>
-        <product-tuijian></product-tuijian>
+        <product-header :xiangqings="xiangqings"></product-header>
+        <product-guige :xiangqings="xiangqings"></product-guige>
+        <product-pinglun :xiangqings="xiangqings"></product-pinglun>
+        <product-tuijian :xiangqings="xiangqings"></product-tuijian>
       </div>
       <product-bottom-menu></product-bottom-menu>
     </div>
@@ -17,6 +17,11 @@
   import productTuijian from "../components/productGoods/product-tuijian"
   import productBottomMenu from "../components/productGoods/product-bottom-menu"
     export default {
+        data(){
+          return{
+            xiangqings:null
+          }
+        },
         name: "productGoods",
         components:{
           productHeader,
@@ -24,7 +29,17 @@
           productPinglun,
           productTuijian,
           productBottomMenu
-        }
+        },
+        created(){
+          let tepParams = this.$route.params;
+          let urls = `fenleimenu=${tepParams.fenleimenu}&xiaofenlei=${tepParams.xiaofenlei}&shangpinId=${tepParams.shangpinId}`;
+          fetch(`http://localhost:3000/api/productgoods?${urls}`).then(response => {
+            response.json().then(data => {
+              this.xiangqings = data.products;
+            })
+          })
+        },
+
     }
 </script>
 

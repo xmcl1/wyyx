@@ -2,18 +2,17 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import index from '@/pages/index'
-import IntegralCenter from '@/pages/IntegralCenter'
-
-// import HelloWorld from '@/components/HelloWorld'
 
 // 以下是冯炳权的页面路由引入文件
-import shiwu from '@/pages/shiwu'
+import shiWu from '@/pages/shiWu'
 
 // 以下是张廷杰的页面路由引入文件
-// import shiwu from '@/pages/shiwu'
+// import shiWu from '@/pages/shiWu'
 
 // 以下是李欣媛的页面路由引入文件
 import newPro from '@/pages/newPro'
+import limitTime from '@/pages/limitTime'
+import special from '@/pages/special'
 
 // 以下是张鹏斌的页面路由引入文件
 import fenlei from '@/pages/fenlei'
@@ -21,7 +20,8 @@ import shoppingcart from '@/pages/shoppingCart'
 import product from '@/pages/productGoods'
 
  // 以下是贺康的页面路由引入文件
- import geren from '@/pages/geren'
+import geren from '@/pages/geren'
+import juJia from '@/pages/juJia'
 
 Vue.use(Router)
 
@@ -38,28 +38,23 @@ export default new Router({
       name: 'index',
       component: index
     },
-    {
-      path: '/IntegralCenter',
-      name: 'IntegralCenter',
-      component: IntegralCenter
-    },
     // 以下是冯炳权的页面路由
     {
-      path: '/shiwu',
-      name: 'shiwu',
-      component: shiwu
+      path: '/shiWu',
+      name: 'shiWu',
+      component: shiWu
     },
     // 以下是张廷杰的页面路由
     // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
+    //   path: '/shiWu',
+    //   name: 'shiWu',
+    //   component: shiWu
     // },
     // 以下是张廷杰的页面路由
     // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
+    //   path: '/shiWu',
+    //   name: 'shiWu',
+    //   component: shiWu
     // },
 
     // 以下是李欣媛的页面路由
@@ -67,6 +62,16 @@ export default new Router({
       path: '/newPro',
       name: 'newPro',
       component: newPro
+    },
+    {
+      path: '/limitTime',
+      name: 'limitTime',
+      component: limitTime
+    },
+    {
+      path: '/special',
+      name: 'special',
+      component: special
     },
 
     // 以下是张鹏斌的页面路由
@@ -90,6 +95,11 @@ export default new Router({
       path: '/geren',
       name: 'geren',
       component: geren
+    },
+    {
+      path: '/juJia',
+      name: 'juJia',
+      component: juJia
     }
   ]
 })

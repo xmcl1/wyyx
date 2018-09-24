@@ -1,15 +1,15 @@
 <template>
-    <div class="shiwu">
+    <div class="shiWu">
         <header-h></header-h>
         <section-s class="section"></section-s>
     </div>
 </template>
 
 <script>
-import headerH from "../components/shiwu/header"
-import sectionS from "../components/shiwu/section"
+import headerH from "../components/shiWu/header"
+import sectionS from "../components/shiWu/section"
 export default {
-    name:"shiwu",
+    name:"shiWu",
     components:{
         headerH,
         sectionS
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-.shiwu{
+.shiWu{
     width:100%;
     height:100%;
     display: flex;
