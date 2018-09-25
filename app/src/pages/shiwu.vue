@@ -1,30 +1,32 @@
 <template>
-    <div class="shiwu">
+    <div class="shiWu">
         <header-h></header-h>
-        <div class="slideTop">
-            <slide-one></slide-one>
-        </div>
+        <section-s class="section"></section-s>
     </div>
 </template>
 
 <script>
-import headerH from "../components/shiwu/header"
-import slideOne from "../components/shiwu/slideOne"
+import headerH from "../components/shiWu/header"
+import sectionS from "../components/shiWu/section"
 export default {
-    name:"shiwu",
+    name:"shiWu",
     components:{
         headerH,
-        slideOne
+        sectionS
     }
 }
 </script>
 
 <style scoped>
-.shiwu{
+.shiWu{
     width:100%;
     height:100%;
+    display: flex;
+    flex-direction:column;
+    font-size: 0.12rem;
 }
-.slideTop{
-    padding:.13rem 0;
+.section{
+    flex:1;
+    overflow-x:scroll;
 }
 </style>

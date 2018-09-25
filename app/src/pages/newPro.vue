@@ -215,7 +215,7 @@
   }
   .recBox2{
     display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
+    /* -webkit-flex-wrap: wrap; */
   }
   .recBox2 .product{
     width: 48.5%;
@@ -271,9 +271,6 @@
     color: #1d1d1d;
     line-height: 0.58rem;
     text-align: center;
-  }
-  .selectContent .selectBox{
-
   }
   .selectBox .selectTab{
     background: #ffffff;
