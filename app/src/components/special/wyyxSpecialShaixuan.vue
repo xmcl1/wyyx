@@ -124,8 +124,8 @@
   .sort .two{
     display: -webkit-flex;
     height:0.5rem;
-    -webkit-align-items: center;
-    -webkit-justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
   }
   .sort .two span:last-child{
     padding-right: 0.18rem;
@@ -135,8 +135,8 @@
   }
   .sortBox,.manufactureBox{
     display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
-    -webkit-justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .sortBox a{
     width: 30.3%;
@@ -187,8 +187,8 @@
   }
   .wrapper_footer{
     display: -webkit-flex;
-    -webkit-justify-content: space-between;
-    -webkit-align-items: center;
+    justify-content: space-between;
+    align-items: center;
     height: 0.54rem;
     border-top: 1px solid #e7e7e7;
     margin-top: 0.68rem;
