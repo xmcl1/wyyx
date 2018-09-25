@@ -40,13 +40,13 @@
               {{con.selectContent.selectTab.a1}}
             </a>
             <a href="javascript:;" class="a2">
-              <span @click="show(1)" :class="{active:istrue==1}"  @mouseover="istrue=1">{{con.selectContent.selectTab.a2}}</span>
+              <span @click="show(1)" :class="{active:istrue==1 || istrue==2}"  @mouseover="istrue=1 || istrue==2">{{con.selectContent.selectTab.a2}}</span>
               <i class="iconfont icon-shang" @click="show(1)" :class="{active:istrue==1}"  @mouseover="istrue=1"></i>
               <i class="iconfont icon-xia" @click="show(2)" :class="{active:istrue==2}"  @mouseover="istrue=2"></i>
             </a>
             <a href="javascript:;" class="a3" @click="show(3)" :class="{active:istrue==3}"  @mouseover="istrue=3">
               {{con.selectContent.selectTab.a3}}
-              <i class="iconfont icon-shaixuan"></i>
+              <i class="iconfont icon-shaixuan" @click="show(3)" :class="{active:istrue==3}"  @mouseover="istrue=3"></i>
             </a>
 
           </div>
@@ -58,7 +58,7 @@
             </div>
 
             <!--筛选-->
-            <wyyx-new-pro-shai-xuan :sx="con.selectContent.shaixuan" v-show="btn==3"></wyyx-new-pro-shai-xuan>
+            <wyyx-new-pro-shai-xuan :sx="con.selectContent.shaixuan" v-show="btn==3" @backLayout="sxLayout"></wyyx-new-pro-shai-xuan>
           </div>
         </div>
       </div>
@@ -106,7 +106,11 @@
           })
         },
         show(id){
-          this.btn = id
+            this.btn = id
+        },
+        sxLayout(){
+          // console.log(1)
+          document.getElementsByClassName('productBox')[0].children[2].style.display = 'flex'
         }
       },
       components: {
