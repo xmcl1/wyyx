@@ -6,7 +6,6 @@ var juJia = require('../data/juJia')
 var WYYX = require('../data/WYYX')
 var limitTime = require("../data/limitTime");
 var newPro = require("../data/newPro");
-var juJia = require("../data/juJia");
 
 // 解决跨域
 router.all('*',function (req, res, next) {
