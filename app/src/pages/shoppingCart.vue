@@ -3,7 +3,6 @@
       <shoppcart-header></shoppcart-header>
       <div class="contents">
         <shoppcart-content  :shangpin="shangpin" :zengpin="zengpin"></shoppcart-content>
-        <shoppcart-content :shangpin="shangpin" :zengpin="zengpin"></shoppcart-content>
         <shoppcart-tuijian></shoppcart-tuijian>
        </div>
       <shoppcart-jiesuan></shoppcart-jiesuan>
@@ -29,7 +28,7 @@
             { "id":"1001","xuanzhong":false,"imgs":"/static/img/shoppcart-shangpin-gouwuche.02698d4.png","mingcheng":"花鸟集四件套","canshu":"蓝色（床单款）;1.5m","jiage":339.00,"count":1 }
             ],
           "zengpin":[
-            { "id":"1001","mingcheng":"圆形护颈苦荞麦枕","imgs":"/static/img/shoppcart-zengpin.png","canshu":"圆形" }
+            { "id":"1001","mingcheng":"圆形护颈苦荞麦枕","imgs":"/static/img/shoppcart-zengpine.02698d4.png","canshu":"圆形" }
           ]
         }
       }

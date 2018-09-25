@@ -1,12 +1,12 @@
 <template>
     <div class="index" v-if="xiangqings">
-      <div class="contents">
+      <div class="contents" @scroll="gundong($event)">
         <product-header :xiangqings="xiangqings"></product-header>
         <product-guige :xiangqings="xiangqings"></product-guige>
         <product-pinglun :xiangqings="xiangqings"></product-pinglun>
         <product-tuijian :xiangqings="xiangqings"></product-tuijian>
       </div>
-      <product-bottom-menu></product-bottom-menu>
+      <product-bottom-menu :xiangqings="xiangqings"></product-bottom-menu>
     </div>
 </template>
 
@@ -20,6 +20,15 @@
         data(){
           return{
             xiangqings:null
+          }
+        },
+        methods:{
+          gundong(evt){
+            if(evt.target.scrollTop > 0){
+              $(".target-xi").css({"position":"fixed","backgroundColor":"rgba(0,0,0,.4)"})
+            }else{
+              $(".target-xi").css({"position":"absolute","backgroundColor":"rgba(0,0,0,0)"})
+            }
           }
         },
         name: "productGoods",

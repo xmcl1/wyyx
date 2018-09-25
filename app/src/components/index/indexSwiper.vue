@@ -1,15 +1,16 @@
 <template>
-    <div class="swiper">
+    <div class="swiper" v-if="this.indexbanner">
+        <!-- {{ indexbanner.banner }} -->
         <!--轮播图-->
         <swiper :options="swiperOption">
-        <swiper-slide><img src="../../assets/img/img2/index-banner1.jpg"></swiper-slide>
-        <swiper-slide><img src="../../assets/img/img2/index-banner2.jpg"></swiper-slide>
+        <swiper-slide v-for="(val,index) in indexbanner.banner" :key="index"><img :src="val"/></swiper-slide>
+        <!-- <swiper-slide><img src="../../assets/img/img2/index-banner2.jpg"></swiper-slide>
         <swiper-slide><img src="../../assets/img/img2/index-banner3.jpg"></swiper-slide>
         <swiper-slide><img src="../../assets/img/img2/index-banner4.jpg"></swiper-slide>
         <swiper-slide><img src="../../assets/img/img2/index-banner5.jpg"></swiper-slide>
         <swiper-slide><img src="../../assets/img/img2/index-banner6.jpg"></swiper-slide>
         <swiper-slide><img src="../../assets/img/img2/index-banner7.jpg"></swiper-slide>
-        <swiper-slide><img src="../../assets/img/img2/index-banner8.jpg"></swiper-slide>
+        <swiper-slide><img src="../../assets/img/img2/index-banner8.jpg"></swiper-slide> -->
         <!--分页器-->
         <div class="swiper-pagination" slot="pagination">
             <span></span>
@@ -29,6 +30,7 @@
  import { swiper, swiperSlide } from "vue-awesome-swiper"
     export default {
       name: "special",
+      props:["indexbanner"],
       data() {
         return {
           swiperOption: {
@@ -48,7 +50,18 @@
       components: {
         swiper,
         swiperSlide
+      },
+      mounted(){
+        console.log(this.indexbanner)
       }
+    //   motheds:{
+    //        ass(){
+    //            console.log(this.banner)
+    //        }
+    //   },
+    //   mounted(){
+    //       ass();
+    //   }
     }
 
 </script>

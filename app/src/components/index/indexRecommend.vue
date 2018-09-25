@@ -1,7 +1,7 @@
 <template>
     <div class="recommend">
         <a class="ClickCheck" href="#/IntegralCenter"><i class="iconfont icon-rili"></i>签到</a>
-        <index-swiper></index-swiper>
+        <index-swiper v-if="index != null" :indexbanner="index"></index-swiper>
         <div class="knowWyyx">
             <p>
                 <span><i class="iconfont icon-duigou"></i>网易自营品牌</span>
@@ -33,16 +33,16 @@
         </div>
         <div class="secOne">
             <p><a href="javascripy:;">品牌制造商提供</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
-            <index-section-one></index-section-one>
+            <index-section-one v-if="index != null" :secOne="index.secOne"></index-section-one>
         </div>
         <div class="secTwo">
             <img src="../../assets/img/img2/index-secTwo.png" alt="">
-            <index-section-one></index-section-one>
+            <index-section-one v-if="index != null" :secOne="index.secTwo"></index-section-one>
         </div>
         <div class="secThree">
             <p><a href="javascript:;">限时购<span>12</span>:<span>00</span>:<span>00</span></a>
             <a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
-            <index-time-limit></index-time-limit>
+            <index-time-limit v-if="index != null" :timeLimit="index.timeLimit"></index-time-limit>
         </div>
         <div class="secFour">
             <img src="../../assets/img/img2/index-secFour-1.png" alt="">
@@ -52,7 +52,7 @@
         </div>
         <div class="secFive">
             <p><a href="javascripy:;">品牌制造商提供</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
-            <index-people-like></index-people-like>
+            <index-people-like v-if="index != null" :peopleLike="index.peopleLike"></index-people-like>
         </div>
         <div class="secSix">
             <p>类目热销榜</p>
@@ -71,18 +71,18 @@
         </div>
         <div class="secSeven">
             <p><a href="javascripy:;">新品首发</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
-            <index-sec-seven></index-sec-seven> 
+            <index-sec-seven v-if="index != null" :newshop="index.newshop"></index-sec-seven> 
         </div>
         <div class="SecEight">
             <p><a href="javascripy:;">专题精选</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
-            <index-sec-eight></index-sec-eight>
+            <index-sec-eight v-if="index != null" :secEight="index.secEight"></index-sec-eight>
         </div>
         <div class="secNine">
             <p><a href="javascripy:;">众筹</a><a href="javascripy:;">更多<i class="iconfont icon-youjiantou"></i></a></p>
-            <index-sec-nine></index-sec-nine>
+            <index-sec-nine v-if="index != null" :secNine="index.secNine"></index-sec-nine>
         </div>
-        <index-sec-ten></index-sec-ten>
-        <may-be-like></may-be-like>
+        <index-sec-ten v-if="index != null" :secTen="index.secTen"></index-sec-ten>
+        <may-be-like v-if="index != null" :maybeLike="index.maybeLike"></may-be-like>
     </div>
 </template>
 
@@ -107,8 +107,20 @@
             indexSecNine,
             indexSecTen,
             mayBeLike
+        },
+        data(){
+            return{
+                index:null,
+            }
+        },
+        mounted(){
+        fetch ("http://localhost:3000/index").then(res=>{
+                return res.json() 
+            }).then(result=>{
+                // console.log(typeof JSON.parse(result));//string
+                this.index = result;
+            })
         }
-    
     }
 </script>
 

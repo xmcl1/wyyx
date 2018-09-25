@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+var index=require('../data/index')
 var shiWu = require('../data/shiWu')
 var juJia = require('../data/juJia')
 var WYYX = require('../data/WYYX')
@@ -21,6 +22,9 @@ router.all('*',function (req, res, next) {
     }
 });
 
+router.get("/index",function(req,res,next){
+  res.json(index);
+}),
 router.get("/api/juJia", (req, res) => {
   res.json(juJia)
 }),
@@ -37,6 +41,7 @@ router.get('/', function (req, res, next) {
     title: 'Express'
   });
 });
+
 
 router.get("/shiWu", function (req, res, next) {
   res.json(shiWu);
@@ -67,6 +72,7 @@ router.get("/api/productgoods", function (req, res, next) {
     }
     res.json(productgoods);
 });
+
 
 
 module.exports = router;

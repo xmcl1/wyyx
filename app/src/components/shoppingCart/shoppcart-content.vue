@@ -2,8 +2,8 @@
   <div v-if="zengpins">
     <!--包邮-->
     <div class="shoppcart-baoyou">
-      <p class="baoyou"><span>已满足体条件</span></p>
-      <p class="weixuanzhong"> <span><em></em>30天无忧退货</span> <span><em></em>48小时快速退款</span> <span><em></em>满88元免邮费</span> </p>
+      <p  v-if="returnData.zongjines>200" class="baoyou"><span>已满足体条件</span></p>
+      <p v-if="returnData.zongjines<200" class="weixuanzhong"> <span><em></em>30天无忧退货</span> <span><em></em>48小时快速退款</span> <span><em></em>满88元免邮费</span> </p>
     </div>
     <!--manjian-->
     <div class="shoppcart-manjian">
@@ -62,7 +62,7 @@
       return {
         "shangpins": this.shangpin,
         "zengpins": this.zengpin,
-        "returnData": {zongjines: null, reuu: null, zhuangtai: false}
+        "returnData": { zongjines: null, reuu: null, zhuangtai: false }
       }
     },
     mounted() {
@@ -136,10 +136,10 @@
             zongjines += shpi[j].jiage * shpi[j].count;
           }
         }
-        this.returnData.zongjines = zongjines;
+        this.returnData.zongjines = zongjines.toFixed(2);
         this.returnData.reuu = reuu;
         console.log(this.returnData);
-        this.returnD()
+        this.returnD();
       }
     }
   }
@@ -248,7 +248,6 @@
     width: 100%;
   }
   .shoppcart-baoyou .baoyou{
-    display: none;
     padding: 0.16rem 0.15rem;
     width: 100%;
     height: 100%;
