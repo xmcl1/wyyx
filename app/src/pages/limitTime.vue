@@ -15,7 +15,6 @@
             <span>{{tips.staus}}</span>
           </p>
         </div>
-
         <div class="detailBox" v-for="(dbs,lIndex3) in con.detailBoxNum" :key="lIndex3" v-show="btn == dbs.flag" :dbs="dbs">
           <wyyx-limit-time :ts="dbs.time"></wyyx-limit-time>
 
@@ -33,11 +32,11 @@
 </template>
 
 <script>
-    // import $ from '../../static/js/jquery-1.11.3'
-    import $ from 'jquery'
     import WyyxLimitProdetailPros from "../components/limitTime/wyyxLimitProdetailPros";
     import WyyxLimitTime from "../components/limitTime/wyyxLimitTime";
     import {indexServices0} from "../apis/wyyxServer"
+    // import $ from 'jquery';
+    import jquery from "../../static/js/jquery-1.11.3.js"
     export default {
       name: "limitTime",
       components: {WyyxLimitTime, WyyxLimitProdetailPros},
@@ -62,14 +61,16 @@
       created() {
         this.result();
         $(function () {
-          let oTop = $(".scroll_tip").offset().top;
+          let oTop = $(".scroll_tip").offset().top - $(".scroll_tip")[0].offsetHeight;
           let sTop = 0;
-          $(window).scroll(function(){
+          $(".limitTime").scroll(function(){
+            // console.log(oTop)
+            // console.log(sTop)
             sTop = $(this).scrollTop();
             if(sTop >= oTop){
-              $(".scroll_tip").css({"position":"fixed","top":"0"});
+              $(".scroll_tip").css({"position":"fixed","top":"0.85rem"});
             }else{
-              $(".scroll_tip").css({"position":"absolute","top":"-0.7rem"});
+              $(".scroll_tip").css({"position":"absolute","top":"-0.5rem"});
             }
           });
         })
@@ -84,6 +85,9 @@
     background: #f4f4f4;
     color: #333333;
     font-size: .12rem;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .limitTime img{
     display: block;
@@ -115,7 +119,7 @@
     width: 0.96rem;
     background: #f7e0c1 url("../assets/img/img3/line2.png") no-repeat right 0.1rem;
     background-size: 0.01rem 0.47rem;
-    padding: 0.1rem 0;
+    padding: 0.05rem 0;
     flex-shrink: 0;
   }
   .limitTime .scroll_tip p:last-child{
@@ -132,7 +136,7 @@
   }
   .limitTime .scroll_tip p span{
     display: block;
-    line-height: 0.25rem;
+    line-height: 0.2rem;
     white-space: nowrap;
     text-align: center;
   }

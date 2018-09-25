@@ -98,18 +98,20 @@
           "newProInfo":[]
         };
       },
+      mounted(){
+        console.log($(window).scrollTop());
+      },
       methods:{
         result() {
           indexServices1.indexInfoByUserId1((data) => {
             this.newProInfo = data;
-            console.log(this.newProInfo)
+            // console.log(this.newProInfo)
           })
         },
         show(id){
             this.btn = id
         },
         sxLayout(){
-          // console.log(1)
           document.getElementsByClassName('productBox')[0].children[2].style.display = 'flex'
           // document.getElementsByClassName('productBox')[0].children[2].style.flexWrap='wrap'
         }
@@ -129,12 +131,12 @@
             // selectBox
           let oTop = $(".selectTab")[0].offsetTop+$(".selectBox")[0].offsetHeight;
           let sTop = 0;
-          $(window).scroll(function(){
-            // console.log( $(".selectTab").offset().top)
+          $(".newPro").scroll(function(){
             sTop = $(this).scrollTop();
-
-            if(sTop >= oTop){
-              $(".selectTab").css({"position":"fixed","top":"0"});
+            // console.log(oTop);
+            // console.log(sTop);
+            if(sTop>= oTop){
+              $(".selectTab").css({"position":"fixed","top":"0.85rem"});
             }else{
               $(".selectTab").css({"position":"relative","top":"0"});
             }
@@ -153,6 +155,9 @@
     color: #333333;
     font-size: .12rem;
     /*overflow-y: hidden;*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex: 1;
   }
   .newPro img{
     display: block;
@@ -197,7 +202,6 @@
     color: #1d1d1d;
     line-height: 0.58rem;
     text-align: center;
-    /*font-weight: bold;*/
   }
 
   /*推荐关注*/
@@ -217,7 +221,7 @@
   }
   .newPro .recBox2{
     display: -webkit-flex;
-     -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; 
   }
   .newPro .recBox2 .product{
     width: 48.5%;

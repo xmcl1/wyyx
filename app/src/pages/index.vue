@@ -1,7 +1,6 @@
 <template>
     <div class="index">
         <index-header></index-header>
-        <!-- <index-recommend></index-recommend> -->
         <router-view></router-view>
     </div>
 </template>
@@ -12,7 +11,7 @@
     export default {
         components: {
             indexHeader,
-            // indexRecommend,
+            // indexRecommend
         }
     }
 </script>
