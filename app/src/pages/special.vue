@@ -1,7 +1,8 @@
 <template>
   <!--公共头部-->
 
-  <!--中间主体-->
+ <div class="special">
+    <!--中间主体-->
   <div class="contentS">
     <!--轮播图-->
     <swiper :options="swiperOption">
@@ -248,6 +249,7 @@
     </div>
 
   </div>
+ </div>
 
   <!--公共底部-->
 </template>
@@ -284,38 +286,39 @@
 <style>
   @import "../assets/icon/font/iconfont.css";
   /*公共样式*/
-  .contentS{
+  .special{
     font-family: PingFangSC-Light,helvetica,'Heiti SC';
     background: #f4f4f4;
     color: #333333;
     font-size: .12rem;
-    /*overflow-y: hidden;*/
+    flex: 1;
+    overflow-y: scroll;
   }
-  .contentS img{
+  .special img{
     display: block;
     border: none;
     width: 100%;
   }
   /*轮播图样式*/
-  .contentS .swiper-container{
+  .special .swiper-container{
     width: 100%;
     height: 2.0rem;
   }
-  .contentS .swiper-container .swiper-pagination{
+  .special .swiper-container .swiper-pagination{
     width:182%;
     height: 0.18rem;
   }
-  .contentS .swiper-pagination-bullet {
+  .special .swiper-pagination-bullet {
     width: 0.09rem;
     height: 0.13rem;
     background: url("../assets/img/img3/all_banner_indicator_white_ic.png") no-repeat;
     background-size: 100% 100%;
     opacity: 1;
   }
-  .contentS .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+  .special .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
     margin: 0 3px;
   }
-  .contentS .swiper-pagination-bullet-active {
+  .special .swiper-pagination-bullet-active {
     width: 0.1rem;
     height: 0.13rem;
     background: url("../assets/img/img3/all_banner_indicator_red_ic.png") no-repeat;
@@ -323,30 +326,30 @@
   }
 
   /*样品展示索引*/
-  .showBox{
+  .special .showBox{
     width: 100%;
     background: #ffffff;
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-justify-content: space-around;
   }
-  .showBox a{
+  .special .showBox a{
     width: 20%;
     text-align: center;
     padding-bottom: 0.16rem;
   }
-  .showBox a img{
+  .special .showBox a img{
     width: 0.37rem;
     height: 0.37rem;
     margin: 0.17rem auto;
   }
-  .showBox a span{
+  .special .showBox a span{
     display: block;
     color: #333333;
   }
 
   /*精选*/
-  .selectContent{
+  .special .selectContent{
     width: 100%;
     box-sizing: border-box;
     background: #ffffff;
@@ -355,7 +358,7 @@
   .selectContent .selectBox{
 
   }
-  .selectBox .selectTab{
+  .special .selectBox .selectTab{
     width: 100%;
     height: 0.4rem;
     display: flex;
@@ -363,59 +366,59 @@
     align-items: center;
     border-bottom: 1px solid #d9d9d9;
   }
-  .selectTab a{
+  .special .selectTab a{
     color: #333333;
     font-size: 0.15rem;
     display: block;
     position: relative;
   }
-  .selectTab i{
+  .special .selectTab i{
     color: #d2d2d2;
   }
-  .selectTab .a1{
+ .special .selectTab .a1{
     color: #a53533;
     font-size: 0.16rem;
   }
-  .a2 .icon-shang{
+  .special .a2 .icon-shang{
     position: absolute;
     top: 0.01rem;
     left: 0.34rem;
     font-size: 0.14rem;
   }
-  .a2 .icon-xia{
+  .special .a2 .icon-xia{
     position: absolute;
     top: 0.09rem;
     left: 0.34rem;
     font-size: 0.14rem;
   }
-  .a3 .icon-shaixuan{
+  .special .a3 .icon-shaixuan{
     position: absolute;
     left:0.34rem;
     top: 0.02rem;
   }
-  .selectBox .productBox{
+  .special .selectBox .productBox{
     padding: 0 0.1rem;
   }
 
-  .selectBox .tip_box{
+ .special .selectBox .tip_box{
     width: 100%;
     background: #ffffff;
     padding: 0.17rem 0 0.08rem;
     text-align: center;
   }
-  .tip_box span:first-child{
+  .special .tip_box span:first-child{
     font-size: 0.15rem;
     color: #111111;
     display: block;
     line-height: 0.25rem;
   }
-  .tip_box span:last-child{
+  .special .tip_box span:last-child{
     font-size: 0.13rem;
     color: #6b6b6b;
   }
-  .recBox2{
+  .special .recBox2{
     display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
 

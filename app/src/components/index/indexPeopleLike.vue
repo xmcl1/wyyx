@@ -28,14 +28,7 @@
 
 <script>
     export default {
-        props:["peopleLike"],
-        components: {
-
-        },
-        mounted(){
-            console.log(this.peopleLike.top.src)
-        }
-    
+        props:["peopleLike"]
     }
 </script>
 

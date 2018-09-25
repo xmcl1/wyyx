@@ -9,7 +9,7 @@
             <router-link to="/"><span class="show">推荐</span></router-link>
             <router-link to="/newPro"><span>新品</span></router-link>
             <span>福利社</span>
-            <span>限购</span>
+            <router-link to="/limitTime"><span>限购</span></router-link>
             <router-link to="/jujia"><span>居家</span></router-link>
             <span>鞋包配饰</span>
             <span>服装</span>
@@ -19,7 +19,7 @@
             <span>餐厨</span>
             <span>婴童</span>
             <span>文体</span>
-            <span>特色区</span>
+            <router-link to="/special"><span>特色区</span></router-link>
         </div>
     </div>
 </template>
@@ -37,6 +37,7 @@ export default {
     .header{
         height: 0.84rem;
         width: 100%;
+        border-bottom: 1px solid #dadada;
     }
     header{
         height: 0.42rem;

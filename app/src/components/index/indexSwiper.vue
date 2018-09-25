@@ -50,18 +50,7 @@
       components: {
         swiper,
         swiperSlide
-      },
-      mounted(){
-        console.log(this.indexbanner)
       }
-    //   motheds:{
-    //        ass(){
-    //            console.log(this.banner)
-    //        }
-    //   },
-    //   mounted(){
-    //       ass();
-    //   }
     }
 
 </script>
