@@ -10,6 +10,7 @@ import indexRecommend from "@/components/index/indexRecommend"
 
 // 以下是冯炳权的页面路由引入文件
 import shiwu from '@/pages/shiwu'
+import jujia from '@/pages/juJia'
 
 // 以下是张廷杰的页面路由引入文件
 // import shiwu from '@/pages/shiwu'
@@ -32,62 +33,20 @@ export default new Router({
 //首页
     {
       path: '/',
-      name: 'index',
-<<<<<<< HEAD
+      name: 'index', 
       component: index
     }, 
-=======
-      component: index,
-      redirect: '/indexRecommend',
-      children: [
-        {
-          path: 'indexRecommend',
-          name: 'indexRecommend',
-          component: indexRecommend
-        },{
-          path: 'newPro',
-          name: 'newPro',
-          component: newPro
-        }
-      ]
-    },
-    {
-      path: '/index',
-      name: 'index',
-      component: index,
-      redirect: '/indexRecommend',
-      children: [
-        {
-          path: 'indexRecommend',
-          name: 'indexRecommend',
-          component: indexRecommend
-        }
-      ]
-    },
-    {
-      path: '/IntegralCenter',
-      name: 'IntegralCenter',
-      component: IntegralCenter
-    },
->>>>>>> b483d8ea5943d0137699a67b390439747e042371
     // 以下是冯炳权的页面路由
     {
       path: '/shiwu',
       name: 'shiwu',
       component: shiwu
+    }, 
+     {
+      path: '/jujia',
+      name: 'jujia',
+      component: jujia
     },
-    // 以下是张廷杰的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // },
-    // 以下是张廷杰的页面路由
-    // {
-    //   path: '/shiwu',
-    //   name: 'shiwu',
-    //   component: shiwu
-    // },
 
     // 以下是李欣媛的页面路由
     {

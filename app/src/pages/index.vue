@@ -1,18 +1,18 @@
 <template>
     <div class="index">
         <index-header></index-header>
-        <!-- <index-recommend></index-recommend> -->
+        <index-recommend></index-recommend>
         <router-view></router-view>
     </div>
 </template>
 
 <script>
     import indexHeader from '../components/index/indexHeader.vue';
-    // import indexRecommend from '../components/index/indexRecommend.vue';
+    import indexRecommend from '../components/index/indexRecommend.vue';
     export default {
         components: {
             indexHeader,
-            // indexRecommend,
+            indexRecommend
         }
     }
 </script>
