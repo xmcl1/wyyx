@@ -217,7 +217,7 @@
   }
   .newPro .recBox2{
     display: -webkit-flex;
-     -webkit-flex-wrap: wrap; 
+     -webkit-flex-wrap: wrap;
   }
   .newPro .recBox2 .product{
     width: 48.5%;
