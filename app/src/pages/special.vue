@@ -284,37 +284,38 @@
 <style>
   @import "../assets/icon/font/iconfont.css";
   /*公共样式*/
-  body{
+  .contentS{
     font-family: PingFangSC-Light,helvetica,'Heiti SC';
     background: #f4f4f4;
     color: #333333;
+    font-size: .12rem;
     /*overflow-y: hidden;*/
   }
-  img{
+  .contentS img{
     display: block;
     border: none;
     width: 100%;
   }
   /*轮播图样式*/
-  .swiper-container{
+  .contentS .swiper-container{
     width: 100%;
     height: 2.0rem;
   }
-  .swiper-container .swiper-pagination{
+  .contentS .swiper-container .swiper-pagination{
     width:182%;
     height: 0.18rem;
   }
-  .swiper-pagination-bullet {
+  .contentS .swiper-pagination-bullet {
     width: 0.09rem;
     height: 0.13rem;
     background: url("../assets/img/img3/all_banner_indicator_white_ic.png") no-repeat;
     background-size: 100% 100%;
     opacity: 1;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+  .contentS .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
     margin: 0 3px;
   }
-  .swiper-pagination-bullet-active {
+  .contentS .swiper-pagination-bullet-active {
     width: 0.1rem;
     height: 0.13rem;
     background: url("../assets/img/img3/all_banner_indicator_red_ic.png") no-repeat;
