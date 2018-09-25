@@ -136,7 +136,7 @@
             // console.log(oTop);
             // console.log(sTop);
             if(sTop>= oTop){
-              $(".selectTab").css({"position":"fixed","top":"0.85rem"});
+              $(".selectTab").css({"position":"fixed","top":"0.84rem"});
             }else{
               $(".selectTab").css({"position":"relative","top":"0"});
             }

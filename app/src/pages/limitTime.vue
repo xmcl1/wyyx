@@ -68,7 +68,7 @@
             // console.log(sTop)
             sTop = $(this).scrollTop();
             if(sTop >= oTop){
-              $(".scroll_tip").css({"position":"fixed","top":"0.85rem"});
+              $(".scroll_tip").css({"position":"fixed","top":"0.84rem"});
             }else{
               $(".scroll_tip").css({"position":"absolute","top":"-0.5rem"});
             }
@@ -102,12 +102,13 @@
   }
   .limitTime .three{
     position: relative;
+    top: -0.2rem;
   }
   .limitTime .scroll_tip{
     width: 100%;
     position: absolute;
     left: 0;
-    top:-0.7rem;
+    top:-0.5rem;
     display: -webkit-flex;
     overflow-x: scroll;
     z-index: 99;
@@ -141,10 +142,10 @@
     text-align: center;
   }
   .limitTime .scroll_tip p span:first-child{
-    font-size: 0.16rem;
+    font-size: 0.15rem;
   }
   .limitTime .scroll_tip p span:last-child{
-    font-size: 0.14rem;
+    font-size: 0.13rem;
     color: #989898;
   }
 
