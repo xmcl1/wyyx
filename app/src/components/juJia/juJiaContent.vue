@@ -1,10 +1,10 @@
 <template>
-    <div class="juJia1">
+    <div class="juJia1" v-if="result">
         <swiper class="slideImg" :options="swiperOption" ref="mySwiper">
             <swiper-slide v-for="(val,index) in result.lunbo" :key="index"><img :src="val"/></swiper-slide>
         </swiper>
         <div class="sort">
-            <div class="sortOne" v-for="(val,index) in result.classify" :key="index">
+            <div class="sortOne" v-for="(val,index) in result.classify" :key="index" @click="toJuJiaSlide()">
                 <div class="imgBox1">
                     <img :src="val.img"/>
                 </div>
@@ -100,6 +100,9 @@ export default {
            "fenleimenu":fenleimenu,"xiaofenlei":xiaofenlei,"shangpinId":shangpinId
          }
        })
+    },
+    toJuJiaSlide(){
+      
     }
   },
   mounted() {
