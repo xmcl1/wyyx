@@ -99,7 +99,7 @@
         };
       },
       mounted(){
-        console.log($(window).scrollTop());
+        // console.log($(window).scrollTop());
       },
       methods:{
         result() {
@@ -118,9 +118,9 @@
       },
       components: {
         WyyxNewProRecBoxProsT,
+        WyyxNewProRecBoxPros,
         WyyxNewProShaiXuan,
         WyyxNewProRecBoxOne,
-        WyyxNewProRecBoxPros,
         WyyxNewProLimitBox,
         swiper,
         swiperSlide
@@ -133,8 +133,6 @@
           let sTop = 0;
           $(".newPro").scroll(function(){
             sTop = $(this).scrollTop();
-            // console.log(oTop);
-            // console.log(sTop);
             if(sTop>= oTop){
               $(".selectTab").css({"position":"fixed","top":"0.84rem"});
             }else{

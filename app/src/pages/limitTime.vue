@@ -48,7 +48,6 @@
         result() {
           indexServices0.indexInfoByUserId0((data) => {
             this.limitInfo = data;
-            console.log(this.limitInfo)
           })
         },
         show(id){
@@ -61,8 +60,6 @@
           let oTop = $(".scroll_tip").offset().top - $(".scroll_tip")[0].offsetHeight;
           let sTop = 0;
           $(".limitTime").scroll(function(){
-            // console.log(oTop)
-            // console.log(sTop)
             sTop = $(this).scrollTop();
             if(sTop >= oTop){
               $(".scroll_tip").css({"position":"fixed","top":"0.84rem"});

@@ -28,10 +28,7 @@
 
 <script>
     export default {
-        props:["peopleLike"],
-        components: {
-
-        },    
+        props:["peopleLike"]
     }
 </script>
 
