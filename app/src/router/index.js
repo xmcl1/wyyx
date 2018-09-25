@@ -2,17 +2,20 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import index from '@/pages/index'
+import IntegralCenter from '@/pages/IntegralCenter'
+import indexRecommend from "@/components/index/indexRecommend"
+// import newPro from "@/pages/newPro"
+
+// import HelloWorld from '@/components/HelloWorld'
 
 // 以下是冯炳权的页面路由引入文件
-import shiWu from '@/pages/shiWu'
+import shiwu from '@/pages/shiwu'
 
 // 以下是张廷杰的页面路由引入文件
-// import shiWu from '@/pages/shiWu'
+// import shiwu from '@/pages/shiwu'
 
 // 以下是李欣媛的页面路由引入文件
 import newPro from '@/pages/newPro'
-import limitTime from '@/pages/limitTime'
-import special from '@/pages/special'
 
 // 以下是张鹏斌的页面路由引入文件
 import fenlei from '@/pages/fenlei'
@@ -20,36 +23,70 @@ import shoppingcart from '@/pages/shoppingCart'
 import product from '@/pages/productGoods'
 
  // 以下是贺康的页面路由引入文件
-import geren from '@/pages/geren'
-import juJia from '@/pages/juJia'
+ import geren from '@/pages/geren'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    // 首页-张廷杰
+//首页
     {
       path: '/',
       name: 'index',
+<<<<<<< HEAD
       component: index
     }, 
+=======
+      component: index,
+      redirect: '/indexRecommend',
+      children: [
+        {
+          path: 'indexRecommend',
+          name: 'indexRecommend',
+          component: indexRecommend
+        },{
+          path: 'newPro',
+          name: 'newPro',
+          component: newPro
+        }
+      ]
+    },
+    {
+      path: '/index',
+      name: 'index',
+      component: index,
+      redirect: '/indexRecommend',
+      children: [
+        {
+          path: 'indexRecommend',
+          name: 'indexRecommend',
+          component: indexRecommend
+        }
+      ]
+    },
+    {
+      path: '/IntegralCenter',
+      name: 'IntegralCenter',
+      component: IntegralCenter
+    },
+>>>>>>> b483d8ea5943d0137699a67b390439747e042371
     // 以下是冯炳权的页面路由
     {
-      path: '/shiWu',
-      name: 'shiWu',
-      component: shiWu
+      path: '/shiwu',
+      name: 'shiwu',
+      component: shiwu
     },
     // 以下是张廷杰的页面路由
     // {
-    //   path: '/shiWu',
-    //   name: 'shiWu',
-    //   component: shiWu
+    //   path: '/shiwu',
+    //   name: 'shiwu',
+    //   component: shiwu
     // },
     // 以下是张廷杰的页面路由
     // {
-    //   path: '/shiWu',
-    //   name: 'shiWu',
-    //   component: shiWu
+    //   path: '/shiwu',
+    //   name: 'shiwu',
+    //   component: shiwu
     // },
 
     // 以下是李欣媛的页面路由
@@ -57,16 +94,6 @@ export default new Router({
       path: '/newPro',
       name: 'newPro',
       component: newPro
-    },
-    {
-      path: '/limitTime',
-      name: 'limitTime',
-      component: limitTime
-    },
-    {
-      path: '/special',
-      name: 'special',
-      component: special
     },
 
     // 以下是张鹏斌的页面路由
@@ -90,11 +117,6 @@ export default new Router({
       path: '/geren',
       name: 'geren',
       component: geren
-    },
-    {
-      path: '/juJia',
-      name: 'juJia',
-      component: juJia
     }
   ]
 })
