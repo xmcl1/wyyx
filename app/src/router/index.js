@@ -35,7 +35,7 @@ export default new Router({
       path: '/',
       name: 'index', 
       component: index
-    }, 
+    },
     // 以下是冯炳权的页面路由
     {
       path: '/shiwu',
