@@ -10,7 +10,7 @@
             <router-link to="/newPro"><span>新品</span></router-link>
             <span>福利社</span>
             <span>限购</span>
-            <span>居家</span>
+            <router-link to="/jujia"><span>居家</span></router-link>
             <span>鞋包配饰</span>
             <span>服装</span>
             <span>电器</span>

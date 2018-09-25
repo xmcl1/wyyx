@@ -16,7 +16,7 @@
           <span>{{sx.all}}</span>
         </div>
         <div class="sortBox">
-          <a href="javascript:;" v-for="(sa,sid) in sx.sortA" :key="sid">{{sa.a}}</a>
+          <a href="javascript:;" v-for="(sa,sid) in sx.sortA" :key="sid" :class="{link:istrue1==sid}" @mouseover="istrue1=sid"><i>{{sa.a}}</i></a>
         </div>
       </div>
 
@@ -25,8 +25,8 @@
           <span>{{sx.spans.manufacture}}</span>
           <span>{{sx.all}}</span>
         </div>
-        <div class="sortBox manufactureBox">
-          <a href="javascript:;" v-for="(ma,mid) in sx.manufactureA" :key="mid">{{ma.a}}</a>
+        <div class="manufactureBox">
+          <a href="javascript:;" v-for="(ma,mid) in sx.manufactureA" :key="mid" :class="{link1:istrue2==mid}" @mouseover="istrue2=mid"><i>{{ma.a}}</i></a>
         </div>
       </div>
 
@@ -35,12 +35,13 @@
           <span style="background: none; color: #464646;">{{sx.spans.addr}}</span>
         </div>
         <div class="sortBox">
-          <a href="javascript:;">{{sx.spans.xian}}</a>
+          <a href="javascript:;" :class="{link:istrue3==0}" @mouseover="istrue3=0"><i>{{sx.spans.xian}}</i></a>
         </div>
       </div>
 
       <div class="wrapper_footer">
-        <a href="javascript:;" v-for="(a,i) in sx.as" :key="i">{{a.a}}</a>
+        <a href="javascript:;" >{{sx.as.a1}}</a>
+        <a href="javascript:;" class="confirm" @click="sShow" @mouseover="back()">{{sx.as.a2}}</a>
       </div>
 
     </div>
@@ -50,7 +51,23 @@
 <script>
     export default {
         name: "wyyxNewProShaiXuan",
-        props:["sx"]
+        props:["sx"],
+        data(){
+            return{
+              istrue1:null,
+              istrue2:null,
+              istrue3:0,
+              count:0
+            }
+        },
+        methods:{
+          sShow(){
+            document.getElementsByClassName("confirm")[0].parentNode.parentNode.parentNode.style.display= "none"
+          },
+          back(){
+            this.$emit("backLayout")
+          }
+        }
     }
 </script>
 
@@ -116,7 +133,7 @@
     background: url("../../assets/img/img3/bot.png") no-repeat right center;
     background-size: 0.1rem 0.08rem;
   }
-  .sortBox{
+  .sortBox,.manufactureBox{
     display: -webkit-flex;
     -webkit-flex-wrap: wrap;
     -webkit-justify-content: space-between;
@@ -136,6 +153,37 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    height: 0.28rem;
+    line-height: 0.28rem;
+    text-align: center;
+    color: #464646;
+    font-size: 0.15rem;
+    border: 1px solid #cecece;
+    border-radius:4px;
+  }
+  .manufactureBox .link1 i{
+    font-style: normal;
+    padding-left: 0.12rem;
+    background: url("../../assets/img/img3/sx_dui.png") no-repeat left center;
+    background-size: 0.1rem 0.1rem;
+  }
+  .sortBox i,.manufactureBox i{
+    font-style: normal;
+    padding-left: 0.12rem;
+  }
+  .manufactureBox .link1{
+    color: #7b2f32;
+    border: 1px solid #7b2f32;
+  }
+  .sortBox .link{
+    color: #7b2f32;
+    border: 1px solid #7b2f32;
+  }
+  .sortBox .link i{
+    font-style: normal;
+    padding-left: 0.12rem;
+    background: url("../../assets/img/img3/sx_dui.png") no-repeat left center;
+    background-size: 0.1rem 0.1rem;
   }
   .wrapper_footer{
     display: -webkit-flex;

@@ -79,26 +79,27 @@
 
 <style>
   /*公共样式*/
-  body{
+  .limitTime{
     font-family: PingFangSC-Light,helvetica,'Heiti SC';
     background: #f4f4f4;
     color: #333333;
+    font-size: .12rem;
   }
-  img{
+  .limitTime img{
     display: block;
     border: none;
     width: 100%;
   }
 
   /*轮播图*/
-  .bannerL{
+  .limitTime .bannerL{
     width: 100%;
     height: 2.0rem;
   }
-  .three{
+  .limitTime .three{
     position: relative;
   }
-  .scroll_tip{
+  .limitTime .scroll_tip{
     width: 100%;
     position: absolute;
     left: 0;
@@ -107,50 +108,50 @@
     overflow-x: scroll;
     z-index: 99;
   }
-  .scroll_tip::-webkit-scrollbar {
+  .limitTime .scroll_tip::-webkit-scrollbar {
     width: 0 !important;
   }
-  .scroll_tip p{
+  .limitTime .scroll_tip p{
     width: 0.96rem;
     background: #f7e0c1 url("../assets/img/img3/line2.png") no-repeat right 0.1rem;
     background-size: 0.01rem 0.47rem;
     padding: 0.1rem 0;
     flex-shrink: 0;
   }
-  .scroll_tip p:last-child{
+  .limitTime .scroll_tip p:last-child{
     background-image: none;
   }
-  .scroll_tip .on{
+  .limitTime .scroll_tip .on{
     background: #f49018;
   }
-  .scroll_tip .on span{
+  .limitTime .scroll_tip .on span{
     color: #ffffff;
   }
-  .scroll_tip .on span:last-child{
+  .limitTime .scroll_tip .on span:last-child{
     color: #ffffff;
   }
-  .scroll_tip p span{
+  .limitTime .scroll_tip p span{
     display: block;
     line-height: 0.25rem;
     white-space: nowrap;
     text-align: center;
   }
-  .scroll_tip p span:first-child{
+  .limitTime .scroll_tip p span:first-child{
     font-size: 0.16rem;
   }
-  .scroll_tip p span:last-child{
+  .limitTime .scroll_tip p span:last-child{
     font-size: 0.14rem;
     color: #989898;
   }
 
-  .detailBox{
+  .limitTime  .detailBox{
     margin-top: 0.7rem;
   }
 
-  .all{
+  .limitTime .all{
     margin:0.14rem;
   }
-  .all a{
+  .limitTime  .all a{
     display: block;
     background: #ffffff;
     height: 0.47rem;
