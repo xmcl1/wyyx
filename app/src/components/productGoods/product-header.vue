@@ -1,12 +1,12 @@
 <template>
   <div class="contents">
   <div class="productheader">
-    <div>
+    <div class="target-xi">
       <p>
-        <a href="#"><img src="../../assets/img/img4/product-zuo.png" alt="" /></a>
+        <a @click="targetBack()" href="javascript:;"><img src="../../assets/img/img4/product-zuo.png" alt="" /></a>
       </p>
       <p>
-        <a href="#"><img src="../../assets/img/img4/product-home.png" alt="" /></a>
+        <a href="/"><img src="../../assets/img/img4/product-home.png" alt="" /></a>
         <a href="#"><img src="../../assets/img/img4/product-fenxiang.png" alt="" /></a>
       </p>
     </div>
@@ -70,6 +70,11 @@
       },
       mounted(){
         console.log(this.xiangqings)
+      },
+      methods:{
+        targetBack(){
+          window.history.back(-1);
+        }
       }
     }
 </script>
