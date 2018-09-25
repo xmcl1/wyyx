@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="footer">
         <footer>
             <a href="#/" class="checked">
                 <i class="iconfont icon-shouye"></i>
@@ -27,6 +27,7 @@
 </template>
 
 <script scoped>
+    import $ from "jquery";
     export default {
 
         data() {
@@ -37,7 +38,14 @@
 
         },
         mounted(){
-            // console.log("aaa");
+            this.checkme();
+        },
+        methods:{
+            checkme(){
+                $("footer a").click(function(){
+                    $(this).addClass("checked").siblings().removeClass("checked");
+                })
+            }
         },
 
         components: {
