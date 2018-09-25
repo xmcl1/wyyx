@@ -27,6 +27,10 @@ import product from '@/pages/productGoods'
 
  // 以下是贺康的页面路由引入文件
  import geren from '@/pages/geren'
+import shezhi from '@/pages/shezhi'
+import loginChoose from '@/pages/loginChoose'
+import phonelogin from '@/pages/phonelogin'
+import phoneregister from '@/pages/phoneregister'
 
 Vue.use(Router)
 
@@ -116,6 +120,26 @@ export default new Router({
       path: '/geren',
       name: 'geren',
       component: geren
+    },
+    {
+      path: '/shezhi',
+      name: 'shezhi',
+      component: shezhi
+    },
+    {
+      path: '/loginChoose',
+      name: 'loginChoose',
+      component: loginChoose
+    },
+    {
+      path: '/phonelogin',
+      name: 'phonelogin',
+      component: phonelogin
+    },
+    {
+      path: '/phoneregister',
+      name: 'phoneregister',
+      component: phoneregister
     }
   ]
 })
