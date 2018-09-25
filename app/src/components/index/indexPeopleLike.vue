@@ -31,11 +31,7 @@
         props:["peopleLike"],
         components: {
 
-        },
-        mounted(){
-            console.log(this.peopleLike.top.src)
-        }
-    
+        },    
     }
 </script>
 

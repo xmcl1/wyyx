@@ -51,17 +51,6 @@
         swiper,
         swiperSlide
       },
-      mounted(){
-        console.log(this.indexbanner)
-      }
-    //   motheds:{
-    //        ass(){
-    //            console.log(this.banner)
-    //        }
-    //   },
-    //   mounted(){
-    //       ass();
-    //   }
     }
 
 </script>
@@ -70,7 +59,6 @@
     .swiper{
         width: 100%;
         height: 1.84rem;
-        background: #ac0;
     }
     .swiper img{
         width: 100%;

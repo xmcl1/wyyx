@@ -80,8 +80,8 @@
   }
   .pro_right p:last-child{
     display: -webkit-flex;
-    -webkit-justify-content: space-between;
-    -webkit-align-items: center;
+    justify-content: space-between;
+    align-items: center;
   }
   .pro_right p:last-child span{
     width: 0.88rem;

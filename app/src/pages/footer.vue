@@ -1,7 +1,7 @@
 <template>
     <div class="">
         <footer>
-            <a href="#/index" class="checked">
+            <a href="#/" class="checked">
                 <i class="iconfont icon-shouye"></i>
                 <span>首页</span>
             </a>
@@ -35,6 +35,9 @@
 
             }
 
+        },
+        mounted(){
+            // console.log("aaa");
         },
 
         components: {

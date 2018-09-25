@@ -17,15 +17,12 @@
         </div>
         <div class="detailBox" v-for="(dbs,lIndex3) in con.detailBoxNum" :key="lIndex3" v-show="btn == dbs.flag" :dbs="dbs">
           <wyyx-limit-time :ts="dbs.time"></wyyx-limit-time>
-
           <div class="proDetail">
             <wyyx-limit-prodetail-pros v-for="(ps,n) in dbs.proDetail" :key="n" :ps="ps"></wyyx-limit-prodetail-pros>
           </div>
         </div>
-
         <div class="all"><a href="">{{con.all}}</a></div>
       </div>
-
     </div>
   </div>
 
