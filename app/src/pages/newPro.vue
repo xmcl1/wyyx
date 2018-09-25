@@ -118,9 +118,9 @@
       },
       components: {
         WyyxNewProRecBoxProsT,
+        WyyxNewProRecBoxPros,
         WyyxNewProShaiXuan,
         WyyxNewProRecBoxOne,
-        WyyxNewProRecBoxPros,
         WyyxNewProLimitBox,
         swiper,
         swiperSlide
