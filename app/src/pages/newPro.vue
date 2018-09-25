@@ -111,6 +111,7 @@
         sxLayout(){
           // console.log(1)
           document.getElementsByClassName('productBox')[0].children[2].style.display = 'flex'
+          // document.getElementsByClassName('productBox')[0].children[2].style.flexWrap='wrap'
         }
       },
       components: {
@@ -216,7 +217,7 @@
   }
   .newPro .recBox2{
     display: -webkit-flex;
-    /* -webkit-flex-wrap: wrap; */
+     -webkit-flex-wrap: wrap; 
   }
   .newPro .recBox2 .product{
     width: 48.5%;

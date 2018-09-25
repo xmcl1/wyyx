@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5348e6e3-4e7c-4cdc-aae4-d781c1f3de34" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/pages/limitTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/limitTime.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/pages/newPro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/newPro.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/special.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/special.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,7 +64,7 @@
         <counts>
           <entry key="js" value="227" />
           <entry key="json" value="1451" />
-          <entry key="vue" value="13161" />
+          <entry key="vue" value="13179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -74,7 +72,7 @@
         <counts>
           <entry key="JSON" value="1451" />
           <entry key="JavaScript" value="227" />
-          <entry key="Vue.js" value="13161" />
+          <entry key="Vue.js" value="13179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -82,7 +80,7 @@
           <entry key="css" value="2" />
           <entry key="js" value="25" />
           <entry key="json" value="11" />
-          <entry key="vue" value="55" />
+          <entry key="vue" value="57" />
           <entry key="www" value="1" />
         </counts>
       </usages-collector>
@@ -92,18 +90,18 @@
           <entry key="CSS" value="2" />
           <entry key="JSON" value="11" />
           <entry key="JavaScript" value="26" />
-          <entry key="Vue.js" value="55" />
+          <entry key="Vue.js" value="57" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/pages/newPro.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="305" column="14" lean-forward="true" selection-start-line="305" selection-start-column="14" selection-end-line="305" selection-end-column="14" />
+            <state relative-caret-position="210">
+              <caret line="219" column="30" lean-forward="true" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
               <folding>
                 <element signature="n#swiper#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#swiper#0;n#div#0;n#div#0;n#template#0;n#!!top" />
@@ -116,11 +114,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProShaiXuan.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1539">
+              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#p#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/pages/special.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="290" column="21" selection-start-line="290" selection-start-column="21" selection-end-line="290" selection-end-column="21" />
+            <state>
+              <caret line="255" selection-start-line="255" selection-end-line="255" />
             </state>
           </provider>
         </entry>
@@ -184,9 +198,9 @@
         <option value="$PROJECT_DIR$/app/src/apis/wyyxServer.js" />
         <option value="$PROJECT_DIR$/express/data/newPro.json" />
         <option value="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProShaiXuan.vue" />
-        <option value="$PROJECT_DIR$/app/src/pages/newPro.vue" />
         <option value="$PROJECT_DIR$/app/src/pages/limitTime.vue" />
         <option value="$PROJECT_DIR$/app/src/pages/special.vue" />
+        <option value="$PROJECT_DIR$/app/src/pages/newPro.vue" />
       </list>
     </option>
   </component>
@@ -231,6 +245,21 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wyyx" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wyyx" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="newPro" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="wyyx" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -304,12 +333,12 @@
       <workItem from="1537168661903" duration="174272000" />
       <workItem from="1537609192433" duration="2276000" />
       <workItem from="1537777948773" duration="438000" />
-      <workItem from="1537838553460" duration="2027000" />
+      <workItem from="1537838553460" duration="2729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197083000" />
+    <option name="totallyTimeSpent" value="197785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -451,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProLimitBox.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxOne.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -530,20 +552,6 @@
     <entry file="file://$PROJECT_DIR$/app/node_modules/jquery/dist/jquery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProShaiXuan.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="34" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#p#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/express/data/newPro.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -581,10 +589,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/pages/special.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="255" selection-start-line="255" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProLimitBox.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProShaiXuan.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#p#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/pages/newPro.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="305" column="14" lean-forward="true" selection-start-line="305" selection-start-column="14" selection-end-line="305" selection-end-column="14" />
+        <state relative-caret-position="210">
+          <caret line="219" column="30" lean-forward="true" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
           <folding>
             <element signature="n#swiper#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#swiper#0;n#div#0;n#div#0;n#template#0;n#!!top" />
@@ -593,13 +629,6 @@
             <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/pages/special.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="290" column="21" selection-start-line="290" selection-start-column="21" selection-end-line="290" selection-end-column="21" />
         </state>
       </provider>
     </entry>
