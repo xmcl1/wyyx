@@ -65,7 +65,7 @@
             // console.log(sTop)
             sTop = $(this).scrollTop();
             if(sTop >= oTop){
-              $(".scroll_tip").css({"position":"fixed","top":"0.85rem"});
+              $(".scroll_tip").css({"position":"fixed","top":"0.84rem"});
             }else{
               $(".scroll_tip").css({"position":"absolute","top":"-0.5rem"});
             }
@@ -139,10 +139,10 @@
     text-align: center;
   }
   .limitTime .scroll_tip p span:first-child{
-    font-size: 0.16rem;
+    font-size: 0.15rem;
   }
   .limitTime .scroll_tip p span:last-child{
-    font-size: 0.14rem;
+    font-size: 0.13rem;
     color: #989898;
   }
 
