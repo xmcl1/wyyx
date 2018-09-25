@@ -122,7 +122,7 @@
       <img src="../../assets/img/img5/f16-15.jpg">
       <p>商务合作</p>
     </a>
-    <a href="#" class="F16-a1">
+    <a href="#/shezhi" class="F16-a1">
       <img src="../../assets/img/img5/f16-16.jpg">
       <p>&nbsp;&nbsp;&nbsp;设置&nbsp;&nbsp;&nbsp;</p>
     </a>
