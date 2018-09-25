@@ -1,30 +1,22 @@
 <template>
     <div class="sec9">
-        <div>
-            <img src="../../assets/img/img2/index-secNine-1.png" alt="">
+        <div v-for="(n,secNinth) in secNine" :key="secNinth">
+            <img :src="n.src" alt="">
             <div>
-                <p>日本制造 高岗铜器孙竹梅香炉</p>
-                <p><span>￥<b>799</b></span> 起</p>
-                <p><span><a><b></b></a></span><span>73%</span></p>
-                <p>167人支持</p>
+                <p>{{n.title}}</p>
+                <p><span>￥<b>{{n.price}}</b></span> 起</p>
+                <p><span><a><b></b></a></span><span>{{n.percent}}</span></p>
+                <p>{{n.people}}</p>
             </div>
-        </div>
-        <div>
-            <img src="../../assets/img/img2/index-secNine-1.png" alt="">
-            <div>
-                <p>日本制造 高岗铜器孙竹梅香炉</p>
-                <p><span>￥<b>799</b></span> 起</p>
-                <p><span><a><b></b></a></span><span>73%</span></p>
-                <p>167人支持</p>
-            </div>
-        </div>
+        </div>                                                                                                                                                                                                                              
     </div>
 </template>
 
 <script>
     export default {
+        props:["secNine"],
         components: {
-
+            
         }
     
     }

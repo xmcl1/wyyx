@@ -1,14 +1,15 @@
 <template>
-    <div class="indexOnlyImg">    
-        <img src="../../assets/img/img2/index-secOne-1.png" alt="">
-        <img src="../../assets/img/img2/index-secOne-2.png" alt="">
+    <div class="indexOnlyImg">
+        <img  v-for="(m,secO) in secOne" :key="secO" :src="m" alt="">
+        <!-- <img src="../../assets/img/img2/index-secOne-2.png" alt="">
         <img src="../../assets/img/img2/index-secOne-3.png" alt="">
-        <img src="../../assets/img/img2/index-secOne-4.png" alt="">
+        <img src="../../assets/img/img2/index-secOne-4.png" alt=""> -->
     </div>
 </template>
 
 <script>
     export default {
+        props:["secOne"],
         components: {
     
         }

@@ -1,12 +1,12 @@
 <template>
     <div class="limit">
-        <div>
-            <img src="../../assets/img/img2/timeLimit-1.png" alt="">
+        <div v-for="(m,timeli) in timeLimit" :key="timeli">
+            <img :src="m.src" alt="">
             <p>
-                <span>￥<b>69</b></span><span>￥<b>79</b></span>
+                <span>￥<b>{{m.newPrice}}</b></span><span>￥<b>{{m.newPrice}}</b></span>
             </p>
         </div>
-        <div>
+        <!-- <div>
             <img src="../../assets/img/img2/timeLimit-1.png" alt="">
             <p>
                 <span>￥<b>69</b></span><span><b>79</b></span>
@@ -17,13 +17,13 @@
             <p>
                 <span>￥<b>69</b></span><span>￥<b>79</b></span>
             </p>
-        </div>
+        </div> -->
     </div>
 </template>
 
 <script>
     export default {
-    
+        props:["timeLimit"],
         components: {
 
         }
