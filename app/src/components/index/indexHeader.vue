@@ -9,7 +9,7 @@
             <router-link to="/"><span class="show">推荐</span></router-link>
             <router-link to="/newPro"><span>新品</span></router-link>
             <span>福利社</span>
-            <span>限购</span>
+            <router-link to="/limitTime"><span>限购</span></router-link>
             <span>居家</span>
             <span>鞋包配饰</span>
             <span>服装</span>
@@ -37,6 +37,7 @@ export default {
     .header{
         height: 0.84rem;
         width: 100%;
+        border-bottom: 1px solid #dadada;
     }
     header{
         height: 0.42rem;

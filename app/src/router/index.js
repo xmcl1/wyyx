@@ -16,6 +16,7 @@ import shiwu from '@/pages/shiwu'
 
 // 以下是李欣媛的页面路由引入文件
 import newPro from '@/pages/newPro'
+import limitTime from '@/pages/limitTime'
 
 // 以下是张鹏斌的页面路由引入文件
 import fenlei from '@/pages/fenlei'
@@ -44,6 +45,10 @@ export default new Router({
           path: 'newPro',
           name: 'newPro',
           component: newPro
+        },{
+          path: 'limitTime',
+          name: 'limitTime',
+          component: limitTime
         }
       ]
     },
@@ -85,11 +90,11 @@ export default new Router({
     // },
 
     // 以下是李欣媛的页面路由
-    {
-      path: '/newPro',
-      name: 'newPro',
-      component: newPro
-    },
+    // {
+    //   path: '/newPro',
+    //   name: 'newPro',
+    //   component: newPro
+    // },
 
     // 以下是张鹏斌的页面路由
     {
