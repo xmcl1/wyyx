@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5348e6e3-4e7c-4cdc-aae4-d781c1f3de34" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/pages/newPro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/newPro.vue" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="821648426">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="2" />
+          <entry key="json" value="1" />
+          <entry key="vue" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Vue.js" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="json" value="3" />
+          <entry key="vue" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="3" />
+          <entry key="Vue.js" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+    <session id="-1479246030">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="227" />
+          <entry key="json" value="1451" />
+          <entry key="vue" value="13179" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="1451" />
+          <entry key="JavaScript" value="227" />
+          <entry key="Vue.js" value="13179" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="2" />
+          <entry key="js" value="25" />
+          <entry key="json" value="11" />
+          <entry key="vue" value="57" />
+          <entry key="www" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="2" />
+          <entry key="JSON" value="11" />
+          <entry key="JavaScript" value="26" />
+          <entry key="Vue.js" value="57" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/pages/newPro.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="219" column="30" lean-forward="true" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
+              <folding>
+                <element signature="n#swiper#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#swiper#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProShaiXuan.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1539">
+              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#p#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/pages/special.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="255" selection-start-line="255" selection-end-line="255" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/pages/limitTime.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="152" column="3" lean-forward="true" selection-start-line="152" selection-start-column="3" selection-end-line="152" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>top</find>
+      <find>calculateTime</find>
+      <find>03</find>
+      <find>selectTab</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>3</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/package-lock.json" />
+        <option value="$PROJECT_DIR$/app/src/pages/speccial.vue" />
+        <option value="$PROJECT_DIR$/app/src/components/test.vue" />
+        <option value="$PROJECT_DIR$/app/src/router/index.js" />
+        <option value="$PROJECT_DIR$/app/src/components/limitTime/scrollTipP.vue" />
+        <option value="$PROJECT_DIR$/app/src/components/special/wyyxSpecialPros.vue" />
+        <option value="$PROJECT_DIR$/express/data/package.json" />
+        <option value="$PROJECT_DIR$/app/src/components/limitTime/wyyxLimitProdetailPros.vue" />
+        <option value="$PROJECT_DIR$/app/src/components/limitTime/wyyxLimitscrollTipP.vue" />
+        <option value="$PROJECT_DIR$/app/src/App.vue" />
+        <option value="$PROJECT_DIR$/app/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/app/src/main.js" />
+        <option value="$PROJECT_DIR$/express/data/limitTime.json" />
+        <option value="$PROJECT_DIR$/app/src/components/limitTime/wyyxLimitTime.vue" />
+        <option value="$PROJECT_DIR$/express/routes/index.js" />
+        <option value="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProLimitBox.vue" />
+        <option value="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxOne.vue" />
+        <option value="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxPros.vue" />
+        <option value="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxProsT.vue" />
+        <option value="$PROJECT_DIR$/app/src/commons/urls.js" />
+        <option value="$PROJECT_DIR$/app/src/apis/wyyxServer.js" />
+        <option value="$PROJECT_DIR$/express/data/newPro.json" />
+        <option value="$PROJECT_DIR$/app/src/components/newPro/wyyxNewProShaiXuan.vue" />
+        <option value="$PROJECT_DIR$/app/src/pages/limitTime.vue" />
+        <option value="$PROJECT_DIR$/app/src/pages/special.vue" />
+        <option value="$PROJECT_DIR$/app/src/pages/newPro.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/app/package.json" />
+      <path value="$PROJECT_DIR$/express/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="269" />
+    <option name="y" value="17" />
+    <option name="width" value="1026" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="wyyx" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="wyyx" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wyyx" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wyyx" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wyyx" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="newPro" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wyyx" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wyyx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wyyx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wyyx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wyyx" type="462c0819:PsiDirectoryNode" />
+              <item name="express" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/express/bin">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.www" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5348e6e3-4e7c-4cdc-aae4-d781c1f3de34" name="Default Changelist" comment="" />
+      <created>1537156265281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537156265281</updated>
+      <workItem from="1537156267175" duration="4342000" />
+      <workItem from="1537168661903" duration="174272000" />
+      <workItem from="1537609192433" duration="2276000" />
+      <workItem from="1537777948773" duration="438000" />
+      <workItem from="1537838553460" duration="2729000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="197785000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17113096" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4420168" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22184874" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19345239" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23361345" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="4598" column="6" selection-start-line="4598" selection-start-column="6" selection-end-line="4598" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/test.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/pages/shiwu.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/assets/icon/font/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="869">
+          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/special/wyyxSpecialPros.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="121" column="24" lean-forward="true" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/express/data/package.json" />
+    <entry file="file://$PROJECT_DIR$/app/src/components/limitTime/wyyxLimitscrollTipP.vue" />
+    <entry file="file://$PROJECT_DIR$/app/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-891" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/swiper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/limitTime/wyyxLimitProdetailPros.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/limitTime/wyyxLimitTime.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/express/data/limitTime.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxOne.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxPros.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProRecBoxProsT.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/express/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/express/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/commons/urls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/apis/wyyxServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-729" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/node_modules/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/express/data/newPro.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
+          <folding>
+            <element signature="e#20#124#0" />
+            <element signature="e#145#1000#0" />
+            <element signature="e#190#994#0" />
+            <element signature="e#202#448#0" />
+            <element signature="e#460#726#0" />
+            <element signature="e#738#984#0" />
+            <element signature="e#1025#2385#0" />
+            <element signature="e#1069#1228#0" />
+            <element signature="e#1248#2379#0" />
+            <element signature="e#2589#9729#0" />
+            <element signature="e#2603#4669#0" />
+            <element signature="e#4412#4637#0" />
+            <element signature="e#9986#10237#0" />
+            <element signature="e#10266#10484#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/express/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/pages/limitTime.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="152" column="3" lean-forward="true" selection-start-line="152" selection-start-column="3" selection-end-line="152" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/pages/special.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="255" selection-start-line="255" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProLimitBox.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/components/newPro/wyyxNewProShaiXuan.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#p#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/pages/newPro.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="219" column="30" lean-forward="true" selection-start-line="219" selection-start-column="30" selection-end-line="219" selection-end-column="30" />
+          <folding>
+            <element signature="n#swiper#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#swiper#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

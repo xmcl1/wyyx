@@ -2,10 +2,66 @@
     <div class="likes">
         <h3>猜你喜欢</h3>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li v-for="(n,smsg) in maybeLike" :key="smsg">
+                <div>
+                    <img :src="n.src" alt="">
+                    <p>{{n.picdesc}}</p>
+                </div>
+                <div>
+                    <p>{{n.desc}}</p>
+                    <p>{{n.peice}}</p>
+                </div>
+            </li>
+            <!-- <li>
+                <div>
+                    <img src="../../assets/img/img2/IntegSec6-s02.png" alt="">
+                    <p>浓香纯肉，猫咪喜欢</p>
+                </div>
+                <div>
+                    <p>轻薄便捷羽绒服</p>
+                    <p>￥9.9</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="../../assets/img/img2/IntegSec6-s03.png" alt="">
+                    <p>浓香纯肉，猫咪喜欢</p>
+                </div>
+                <div>
+                    <p>轻薄便捷羽绒服</p>
+                    <p>￥9.9</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="../../assets/img/img2/IntegSec6-s04.png" alt="">
+                    <p>浓香纯肉，猫咪喜欢</p>
+                </div>
+                <div>
+                    <p>轻薄便捷羽绒服</p>
+                    <p>￥9.9</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="../../assets/img/img2/IntegSec6-s05.png" alt="">
+                    <p>浓香纯肉，猫咪喜欢</p>
+                </div>
+                <div>
+                    <p>轻薄便捷羽绒服</p>
+                    <p>￥9.9</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="../../assets/img/img2/IntegSec6-s06.png" alt="">
+                    <p>浓香纯肉，猫咪喜欢</p>
+                </div>
+                <div>
+                    <p>轻薄便捷羽绒服</p>
+                    <p>￥9.9</p>
+                </div>
+            </li> -->
         </ul>
         <div class="bigLikes">
             <img src="../../assets/img/img2/index-end-1.png" alt="">
@@ -17,7 +73,7 @@
 
 <script>
     export default {
-    
+        props:["maybeLike"],
         components: {
 
         }
@@ -40,17 +96,48 @@
         line-height: 0.58rem;
     }
     .likes ul{
-        width: 100%;
-        flex: 1;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-    .likes ul li{
-        width: 1.73rem;
-        height: 2.5rem;
-        background: #ac0;
-        margin-bottom: 0.1rem;
+    .likes li{
+        width: 1.7rem;
+        margin-bottom: 0.15rem;
+    }
+    .likes li div:first-of-type{
+        height: 2.08rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.05rem;
+        overflow: hidden;
+    }
+    .likes li div:first-of-type img{
+        width: 100%;
+    }
+    .likes li div:first-of-type p{
+        flex: 1;
+        font-size: 0.11rem;
+        color: #b5aa85;
+        line-height: 0.34rem;
+        background: #f8efe7;
+        text-indent: 0.05rem;
+    }
+    .likes li div:last-of-type p:first-of-type{
+        line-height: 0.26rem;
+        font-size: 0.14rem;
+        color: #5b5b5b;
+        padding-top: 0.07rem;
+    }
+    .likes li div:last-of-type p:nth-of-type(2){
+        line-height: 0.26rem;
+        font-size: 0.12rem;
+        color: #bb0001;
+    }
+    .likes li div:last-of-type p:nth-of-type(3){
+        line-height: 0.26rem;
+        font-size: 0.12rem;
+        color: #b8a980;
     }
     .bigLikes{
         width: 100%;

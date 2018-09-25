@@ -6,8 +6,8 @@
             <div><i class="iconfont icon-xiaoxi"></i><span>消息</span></div>
         </header>
          <div class="indexList">
-            <span class="show">推荐</span>
-            <span>新品</span>
+            <router-link to="/"><span class="show">推荐</span></router-link>
+            <router-link to="/newPro"><span>新品</span></router-link>
             <span>福利社</span>
             <span>限购</span>
             <router-link to="/jujia"><span>居家</span></router-link>

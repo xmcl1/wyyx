@@ -1,6 +1,10 @@
 <template>
     <div class="sec7">
-        <div>
+        <div v-for="(n,news) in newshop" :key="news">
+            <img :src="n.src" alt="">
+            <p>{{n.title}}<span>￥<b>{{n.price}}</b></span></p>
+        </div>
+        <!-- <div>
             <img src="../../assets/img/img2/idnex-secSeven6.png" alt="">
             <p>网易有道翻译王2.0pro<span>￥<b>1688</b></span></p>
         </div>
@@ -19,21 +23,15 @@
         <div>
             <img src="../../assets/img/img2/idnex-secSeven6.png" alt="">
             <p>网易有道翻译王2.0pro<span>￥<b>1688</b></span></p>
-        </div>
-        <div>
-            <img src="../../assets/img/img2/idnex-secSeven6.png" alt="">
-            <p>网易有道翻译王2.0pro<span>￥<b>1688</b></span></p>
-        </div>
+        </div> -->
     </div>
 </template>
 
 <script>
     export default {
-    
+        props:["newshop"],
         components: {
-    
-    
-    
+
         }
     
     }

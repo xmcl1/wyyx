@@ -1,36 +1,39 @@
 <template>
     <div class="peopleLike">
         <div class="top">
-            <img src="../../assets/img/img2/idnex-secFivr-1.png" alt="">
+            <img :src="peopleLike.top.src" alt="">
             <div>
-                <P><span>三石福利价</span></P>
-                <P>玩趣彩虹四季拖鞋</P>
-                <P>10种颜色可选，柔软好心情</P>
-                <P>￥<span>14.9</span></P>
+                <P><span>{{peopleLike.top.msg.Welfare}}</span></P>
+                <P>{{peopleLike.top.msg.title}}</P>
+                <P>{{peopleLike.top.msg.color}}</P>
+                <P>￥{{peopleLike.top.msg.price}}</P>
             </div>
         </div>
-        <div class="bottom">
-            <div>
-                <img src="../../assets/img/img2/idnex-secFivr-down1.png" alt="">
-                <p>即食燕窝 70g*6瓶 30%<span>￥<b>258</b></span></p>
+        <div class="bottom">    
+            <div  v-for="(n,peoLike) in peopleLike.bottom" :key="peoLike">
+                <img :src="n.src" alt="">
+                <p>{{n.title}}<span>￥<b>{{n.price}}</b></span></p>
             </div>
-            <div>
+            <!-- <div>
                 <img src="../../assets/img/img2/idnex-secFivr-down1.png" alt="">
                 <p>即食燕窝 70g*6瓶 30%<span>￥<b>258</b></span></p>
             </div>
             <div>
                 <img src="../../assets/img/img2/idnex-secFivr-down1.png" alt="">
                 <p>网易云音乐苹果速数据线MF...<span>￥<b>258</b></span></p>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
 
 <script>
     export default {
-    
+        props:["peopleLike"],
         components: {
 
+        },
+        mounted(){
+            console.log(this.peopleLike.top.src)
         }
     
     }

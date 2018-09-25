@@ -1,6 +1,11 @@
 <template>
     <div class="sec8">
-        <div>
+        <div v-for="(n,secEig) in secEight" :key="secEig">
+            <img :src="n.src" alt="">
+            <p>{{n.title}}</p>
+            <p>{{n.discount}}</p>
+        </div>
+        <!-- <div>
             <img src="../../assets/img/img2/index-secEight-1.png" alt="">
             <p>不好吃的月饼，不适合上推荐热卖</p>
             <p> 茗月夜月饼礼盒，限时8折优惠</p>
@@ -9,18 +14,13 @@
             <img src="../../assets/img/img2/index-secEight-1.png" alt="">
             <p>不好吃的月饼，不适合上推荐热卖</p>
             <p> 茗月夜月饼礼盒，限时8折优惠</p>
-        </div>
-        <div>
-            <img src="../../assets/img/img2/index-secEight-1.png" alt="">
-            <p>不好吃的月饼，不适合上推荐热卖</p>
-            <p> 茗月夜月饼礼盒，限时8折优惠</p>
-        </div>
+        </div> -->
     </div>
 </template>
 
 <script>
     export default {
-    
+        props:["secEight"],
         components: {
 
         }
@@ -41,6 +41,7 @@
         background: #f5f5f5;
         flex-shrink: 0;
         border-radius: 0.05rem;
+        overflow: hidden;
     }
     .sec8 div:last-of-type{
         padding: 0;

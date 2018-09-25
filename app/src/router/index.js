@@ -3,6 +3,8 @@ import Router from 'vue-router'
 
 import index from '@/pages/index'
 import IntegralCenter from '@/pages/IntegralCenter'
+import indexRecommend from "@/components/index/indexRecommend"
+// import newPro from "@/pages/newPro"
 
 // import HelloWorld from '@/components/HelloWorld'
 
@@ -27,16 +29,36 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    // 首页-张廷杰
+//首页
     {
       path: '/',
       name: 'index',
-      component: index
+      component: index,
+      redirect: '/indexRecommend',
+      children: [
+        {
+          path: 'indexRecommend',
+          name: 'indexRecommend',
+          component: indexRecommend
+        },{
+          path: 'newPro',
+          name: 'newPro',
+          component: newPro
+        }
+      ]
     },
     {
       path: '/index',
       name: 'index',
-      component: index
+      component: index,
+      redirect: '/indexRecommend',
+      children: [
+        {
+          path: 'indexRecommend',
+          name: 'indexRecommend',
+          component: indexRecommend
+        }
+      ]
     },
     {
       path: '/IntegralCenter',

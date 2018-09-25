@@ -1,9 +1,9 @@
 <template>
-    <div v-if="this.shiwu" class="sectionInner">
+    <div v-if="this.shiWu" class="sectionInner">
         <div class="slideOne">
-            <slide-one :shiwu="shiwu"></slide-one>
+            <slide-one :shiWu="shiWu"></slide-one>
             <div class="slideTwo">
-                <div class="slide1" v-for="(val,index) in shiwu.slideTwo" :key="index">
+                <div class="slide1" v-for="(val,index) in shiWu.slideTwo" :key="index">
                     <img :src="val.img"/>
                     <span>{{val.span}}</span>
                 </div>
@@ -11,23 +11,23 @@
         </div>
         <div class="recommandForYou">
             <h3>为你推荐</h3>
-            <recommand-for-you :shiwu="shiwu"></recommand-for-you>
+            <recommand-for-you :shiWu="shiWu"></recommand-for-you>
             <!-- <recommand-for-you></recommand-for-you> -->
         </div>
         <div class="clock">
-            <h3>{{shiwu.clock.title}}</h3>
+            <h3>{{shiWu.clock.title}}</h3>
             <swiper :options="swiperOption" ref="mySwiper">
-                <swiper-slide><clock-con  :clock="shiwu.clock"></clock-con></swiper-slide>
+                <swiper-slide><clock-con  :clock="shiWu.clock"></clock-con></swiper-slide>
                 <swiper-slide><clock-con></clock-con></swiper-slide>
                 <swiper-slide><clock-con></clock-con></swiper-slide>
             </swiper>
         </div>
         <div class="YXZhenPin">
             <h3>严选甄品</h3>
-            <y-x-zhen-pin :YXZhenPin="shiwu.YXZhenPin"></y-x-zhen-pin>
+            <y-x-zhen-pin :YXZhenPin="shiWu.YXZhenPin"></y-x-zhen-pin>
         </div>
         <div class="YXLook">
-            <y-x-look :YXLook="shiwu.YXLook"></y-x-look>
+            <y-x-look :YXLook="shiWu.YXLook"></y-x-look>
         </div>
         <div class="more">
             <h3>
@@ -35,7 +35,7 @@
                 <span>更对精彩</span>
                 <span></span>
             </h3>
-            <more-one v-for="(val,index) in shiwu.more" :key="index" :more="val"></more-one>
+            <more-one v-for="(val,index) in shiWu.more" :key="index" :more="val"></more-one>
         </div>
     </div>
 </template>
@@ -66,20 +66,19 @@ export default {
             swiperOption: {
                 autoplay: false,
             },
-            shiwu:null
+            shiWu:null
         };
     },
     mounted:function(){
-        fetch("http://localhost:3000/shiwu").then(data=>{
+        fetch("http://localhost:3000/shiWu").then(data=>{
             return data.json();
             // console.log(data.text())
         }).then(result=>{ 
-            this.shiwu=result; 
+            this.shiWu=result; 
         });
         // setTimeout(() => {
-        //     console.log(this.shiwu)
+        //     console.log(this.shiWu)
         // }, 0);
-
     }
 }
 

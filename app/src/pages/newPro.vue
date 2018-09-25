@@ -1,62 +1,88 @@
 <template>
-  <!--公共头部-->
 
-  <!--中间主体-->
-  <div class="content">
-    <!--轮播图-->
-    <swiper :options="swiperOption">
-      <swiper-slide><img src="../assets/img/img3/new_banner1.jpg"></swiper-slide>
-      <swiper-slide><img src="../assets/img/img3/new_banner2.jpg"></swiper-slide>
-      <!--分页器-->
-      <div class="swiper-pagination" slot="pagination">
-        <span></span>
-        <span></span>
+  <div class="newPro">
+    <!--中间主体-->
+    <div class="content" v-for="(con,nIndex) in newProInfo" :key="nIndex" :con="con">
+      <!--轮播图-->
+      <swiper :options="swiperOption">
+        <swiper-slide v-for="(imgs,i) in con.bannerN" :key="i"><img :src="imgs"></swiper-slide>
+        <!--分页器-->
+        <div class="swiper-pagination" slot="pagination">
+          <span></span>
+          <span></span>
+        </div>
+      </swiper>
+
+      <!--限时-->
+      <div class="limitContent">
+        <p class="title">{{con.limitContent.title}}</p>
+        <wyyx-new-pro-limit-box v-for="(lb,m) in con.limitContent.limitBox" :key="m" :lb="lb"></wyyx-new-pro-limit-box>
       </div>
-    </swiper>
 
-    <!--限时-->
-    <div class="limitContent">
-        <p class="title">限时尝鲜</p>
-        <div class="limitBox">
-          <div class="box_left"><img src="../assets/img/img3/new_pro1.png"></div>
-          <div class="box_right">
-            <p class="firstP">小面包幼儿学步车</p>
-            <p class="secondP">稳定学步，不易摔倒</p>
-            <div class="thirdTxt">
-              <p>
-                <span>￥95.5</span>
-                <span>今日价</span>
-              </p>
-              <p>
-                <span>￥96</span>
-                <span>明日价</span>
-              </p>
-              <p>
-                <span>￥99</span>
-                <span>原价</span>
-              </p>
+      <!--推荐关注-->
+      <div class="recommendContent">
+        <p class="title">{{con.recommendContent.title}}</p>
+        <wyyx-new-pro-rec-box-one :bo="con.recommendContent.recBox1"></wyyx-new-pro-rec-box-one>
+
+        <div class="recBox2">
+          <wyyx-new-pro-rec-box-pros v-for="(bp,pid) in con.recommendContent.recBox2" :key="pid" :bp="bp"></wyyx-new-pro-rec-box-pros>
+        </div>
+      </div>
+
+      <!--精选-->
+      <div class="selectContent">
+        <p class="title">{{con.selectContent.title1}}</p>
+
+        <!--综合&价格&筛选-->
+        <div class="selectBox">
+          <div class="selectTab" id="selectTab">
+            <a href="javascript:;" class="a1" :class="{active:istrue==0}" @mouseover="istrue=0" @click="show(0)">
+              {{con.selectContent.selectTab.a1}}
+            </a>
+            <a href="javascript:;" class="a2">
+              <span @click="show(1)" :class="{active:istrue==1 || istrue==2}"  @mouseover="istrue=1 || istrue==2">{{con.selectContent.selectTab.a2}}</span>
+              <i class="iconfont icon-shang" @click="show(1)" :class="{active:istrue==1}"  @mouseover="istrue=1"></i>
+              <i class="iconfont icon-xia" @click="show(2)" :class="{active:istrue==2}"  @mouseover="istrue=2"></i>
+            </a>
+            <a href="javascript:;" class="a3" @click="show(3)" :class="{active:istrue==3}"  @mouseover="istrue=3">
+              {{con.selectContent.selectTab.a3}}
+              <i class="iconfont icon-shaixuan" @click="show(3)" :class="{active:istrue==3}"  @mouseover="istrue=3"></i>
+            </a>
+
+          </div>
+          <div class="newPro">{{con.selectContent.title2}}</div>
+
+          <div class="productBox">
+            <div class="recBox2" v-for="(proB,bid) in con.selectContent.recBox2Num" :key="bid" :proB="proB" v-show="btn==proB.flag">
+              <wyyx-new-pro-rec-box-pros-t v-for="(pros,pid) in proB.proDetail" :key="pid" :pros="pros"></wyyx-new-pro-rec-box-pros-t>
             </div>
-            <a href="javascript:;">立即抢购</a>
-          </div>
-        </div>
-        <div class="limitBox">
-          <div class="box_left"><img src="../assets/img/img3/new_pro2.png"></div>
-          <div class="box_right">
 
+            <!--筛选-->
+            <wyyx-new-pro-shai-xuan :sx="con.selectContent.shaixuan" v-show="btn==3" @backLayout="sxLayout"></wyyx-new-pro-shai-xuan>
           </div>
         </div>
+      </div>
+
     </div>
   </div>
 
-  <!--公共底部-->
 </template>
 
 <script>
   import { swiper, swiperSlide } from "vue-awesome-swiper"
+  import WyyxNewProLimitBox from "../components/newPro/wyyxNewProLimitBox";
+  import WyyxNewProRecBoxPros from "../components/newPro/wyyxNewProRecBoxPros";
+  import WyyxNewProRecBoxOne from "../components/newPro/wyyxNewProRecBoxOne";
+  import WyyxNewProShaiXuan from "../components/newPro/wyyxNewProShaiXuan";
+  import WyyxNewProRecBoxProsT from "../components/newPro/wyyxNewProRecBoxProsT";
+  import {indexServices1} from "../apis/wyyxServer"
+  import $ from 'jquery'
     export default {
-      name: "special",
+      name: "newPro",
       data() {
         return {
+          istrue:0,
+          btn:0,
           swiperOption: {
             loop: true,
             effect: 'slide',
@@ -68,46 +94,91 @@
               el: '.swiper-pagination',
               clickable: true,
             }
-          }
+          },
+          "newProInfo":[]
         };
       },
+      methods:{
+        result() {
+          indexServices1.indexInfoByUserId1((data) => {
+            this.newProInfo = data;
+            console.log(this.newProInfo)
+          })
+        },
+        show(id){
+            this.btn = id
+        },
+        sxLayout(){
+          // console.log(1)
+          document.getElementsByClassName('productBox')[0].children[2].style.display = 'flex'
+          // document.getElementsByClassName('productBox')[0].children[2].style.flexWrap='wrap'
+        }
+      },
       components: {
+        WyyxNewProRecBoxProsT,
+        WyyxNewProShaiXuan,
+        WyyxNewProRecBoxOne,
+        WyyxNewProRecBoxPros,
+        WyyxNewProLimitBox,
         swiper,
         swiperSlide
+      },
+      created(){
+          this.result()
+          $(function () {
+            // selectBox
+          let oTop = $(".selectTab")[0].offsetTop+$(".selectBox")[0].offsetHeight;
+          let sTop = 0;
+          $(window).scroll(function(){
+            // console.log( $(".selectTab").offset().top)
+            sTop = $(this).scrollTop();
+
+            if(sTop >= oTop){
+              $(".selectTab").css({"position":"fixed","top":"0"});
+            }else{
+              $(".selectTab").css({"position":"relative","top":"0"});
+            }
+          });
+        })
       }
     }
 </script>
 
 <style>
+  @import "../assets/icon/font/iconfont.css";
   /*公共样式*/
-  body{
+  .newPro{
     font-family: PingFangSC-Light,helvetica,'Heiti SC';
     background: #f4f4f4;
     color: #333333;
+    font-size: .12rem;
+    /*overflow-y: hidden;*/
   }
-  img{
+  .newPro img{
+    display: block;
+    border: none;
     width: 100%;
   }
   /*轮播图样式*/
-.swiper-container{
+  .newPro .swiper-container{
   width: 100%;
   height: 2.0rem;
 }
-  .swiper-container .swiper-pagination{
+  .newPro .swiper-container .swiper-pagination{
     width:182%;
     height: 0.18rem;
   }
-  .swiper-pagination-bullet {
+  .newPro .swiper-pagination-bullet {
     width: 0.09rem;
     height: 0.13rem;
     background: url("../assets/img/img3/all_banner_indicator_white_ic.png") no-repeat;
     background-size: 100% 100%;
     opacity: 1;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+  .newPro .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
     margin: 0 3px;
   }
-  .swiper-pagination-bullet-active {
+  .newPro .swiper-pagination-bullet-active {
     width: 0.1rem;
     height: 0.13rem;
     background: url("../assets/img/img3/all_banner_indicator_red_ic.png") no-repeat;
@@ -115,86 +186,150 @@
   }
 
   /*限时*/
-  .limitContent{
+  .newPro  .limitContent{
     width: 100%;
     margin-top: 0.11rem;
     background: #ffffff;
   }
-  .limitContent .title{
+  .newPro  .limitContent .title{
     height: 0.58rem;
-    font-size: 0.14rem;
+    font-size: 0.15rem;
     color: #1d1d1d;
     line-height: 0.58rem;
     text-align: center;
-    font-weight: bold;
-  }
-  .limitBox{
-    display: -webkit-flex;
-    border-top: 1px solid #dadada;
-  }
-  .limitBox:first-child{
-    border-top: 2px solid #dadada;
-  }
-  .limitBox .box_left{
-    width: 44%;
-  }
-  .limitBox .box_right{
-    flex: 1;
-    padding: 0.22rem 0;
+    /*font-weight: bold;*/
   }
 
-  .box_right .firstP{
+  /*推荐关注*/
+  .newPro .recommendContent{
+    width: 100%;
+    padding: 0 0.1rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    margin-top: 0.11rem;
+  }
+  .newPro .recommendContent .title{
+    height: 0.58rem;
     font-size: 0.15rem;
-    width: 95%;
-    color: #060606;
-    line-height: 0.25rem;
+    color: #1d1d1d;
+    line-height: 0.58rem;
+    text-align: center;
   }
-  .box_right .secondP{
-    width: 95%;
-    color: #767676;
-    line-height: 0.21rem;
-  }
-  .box_right .thirdTxt{
+  .newPro .recBox2{
     display: -webkit-flex;
-    margin: 0.1rem 0;
+     -webkit-flex-wrap: wrap; 
   }
-  .box_right .thirdTxt p{
-    width: 33.3%;
-    color: #767676;
-    text-align: center;
-    background: url("../assets/img/img3/line.png") no-repeat right center;
-    background-size: 2px 0.21rem;
+  .newPro .recBox2 .product{
+    width: 48.5%;
+    margin-top: 0.15rem;
+    box-sizing: border-box;
   }
-  .box_right .thirdTxt p:last-child{
-    background: none;
+  .newPro .recBox2 .product:last-child, .recBox2 .product:nth-last-child(2){
+    margin-bottom: 0.15rem;
   }
-  .box_right .thirdTxt p:first-child{
-    text-align: left;
+  .newPro .recBox2 .product:nth-child(2n+1){
+    margin-right: 1.5%;
   }
-  .box_right .thirdTxt p span{
-    display: block;
-    line-height: 0.18rem;
+  .newPro .recBox2 .product:nth-child(2n){
+    margin-left: 1.5%;
   }
-  .box_right .thirdTxt p:first-child span:first-child{
-    color: #b72b46;
+  .newPro .recBox2 .product .proTop{
+    background: #f4f4f4;
   }
-  .box_right .thirdTxt p:first-child span:last-child{
-    color: #2f2f2f;
-  }
-  .box_right .thirdTxt p:nth-child(2) span:first-child{
-    text-align: left;
-    text-indent: 0.16rem;
-  }
-  .box_right a{
-    display: block;
-    width: 1.05rem;
-    height: 0.29rem;
-    text-align: center;
-    line-height: 0.29rem;
-    background: #f49119;
-    color: #fafff0;
-    font-size: 0.13rem;
+  .newPro .recBox2 .product .proTop p{
+    background: #f0ece1;
+    height: 0.35rem;
+    line-height: 0.35rem;
     letter-spacing: 1px;
-    border-radius: 4px;
+    padding: 0 0.05rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #a49983;
   }
+  .newPro .recBox2 .product .proBottom p:first-child{
+    line-height: 0.32rem;
+    letter-spacing: 1px;
+    padding: 0 0.05rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .newPro .recBox2 .product .proBottom p:last-child{
+    color: #b8303a;
+    font-weight: bold;
+  }
+
+  /*精选*/
+  .newPro .selectContent{
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    margin-top: 0.11rem;
+  }
+  .newPro .selectContent .title{
+    height: 0.58rem;
+    font-size: 0.15rem;
+    color: #1d1d1d;
+    line-height: 0.58rem;
+    text-align: center;
+  }
+  .newPro .selectBox .selectTab{
+    background: #ffffff;
+    width: 100%;
+    height: 0.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+    position: relative;
+    top:0;
+  }
+  .newPro .selectTab a{
+    color: #333333;
+    font-size: 0.15rem;
+    display: block;
+    position: relative;
+  }
+  .newPro .selectTab i{
+    color: #d2d2d2;
+  }
+  .newPro .selectTab .active{
+    color: #a53533;
+  }
+  .newPro .a2 .icon-shang{
+    position: absolute;
+    top: 0.01rem;
+    left: 0.34rem;
+    font-size: 0.14rem;
+  }
+  .newPro .a2 .icon-xia{
+    position: absolute;
+    top: 0.09rem;
+    left: 0.34rem;
+    font-size: 0.14rem;
+  }
+  .newPro .a3 .icon-shaixuan{
+    position: absolute;
+    left:0.34rem;
+    top: 0.02rem;
+  }
+  .newPro .selectBox .newPro{
+    padding: 0 0.1rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    text-indent: 0.1rem;
+    font-size: 0.13rem;
+    background: url("../assets/img/img3/red_line.png") no-repeat 0.1rem center;
+    background-size: 0.05rem 0.18rem;
+  }
+
+  .newPro .selectBox .productBox{
+    padding: 0 0.1rem;
+  }
+  .newPro .productBox .recBox2 .product:first-child,.productBox .recBox2 .product:nth-child(2){
+    margin-top: 0;
+  }
+
+
 </style>
