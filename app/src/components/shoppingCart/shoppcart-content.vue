@@ -82,7 +82,7 @@
         this.$router.push({path: "/product"})
       },
       returnD() {
-        console.log("发送请求")
+        // console.log("发送请求")
         Bus.$emit('returnData', this.returnData)
       },
       checks(val, evt) {
@@ -91,7 +91,7 @@
         $(".goos").not(".jies").each(function () {
           xuanzhong.push($(this).is(":checked"));
         });
-        console.log(xuanzhong, xuanzhong.indexOf(false))
+        // console.log(xuanzhong, xuanzhong.indexOf(false))
         if (xuanzhong.indexOf(false) <= -1) {
           this.returnData.zhuangtai = true;
         } else {
@@ -126,7 +126,7 @@
         this.zongjie();
       },
       zongjie() {
-        console.log(this.shangpins)
+        // console.log(this.shangpins)
         let zongjines = 0;
         let reuu = 0;
         let shpi = this.shangpins;
@@ -138,7 +138,7 @@
         }
         this.returnData.zongjines = zongjines.toFixed(2);
         this.returnData.reuu = reuu;
-        console.log(this.returnData);
+        // console.log(this.returnData);
         this.returnD();
       }
     }

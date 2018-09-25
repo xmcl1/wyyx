@@ -17,15 +17,12 @@
         </div>
         <div class="detailBox" v-for="(dbs,lIndex3) in con.detailBoxNum" :key="lIndex3" v-show="btn == dbs.flag" :dbs="dbs">
           <wyyx-limit-time :ts="dbs.time"></wyyx-limit-time>
-
           <div class="proDetail">
             <wyyx-limit-prodetail-pros v-for="(ps,n) in dbs.proDetail" :key="n" :ps="ps"></wyyx-limit-prodetail-pros>
           </div>
         </div>
-
         <div class="all"><a href="">{{con.all}}</a></div>
       </div>
-
     </div>
   </div>
 
@@ -102,12 +99,13 @@
   }
   .limitTime .three{
     position: relative;
+    top: -0.2rem;
   }
   .limitTime .scroll_tip{
     width: 100%;
     position: absolute;
     left: 0;
-    top:-0.7rem;
+    top:-0.5rem;
     display: -webkit-flex;
     overflow-x: scroll;
     z-index: 99;

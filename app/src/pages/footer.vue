@@ -36,6 +36,9 @@
             }
 
         },
+        mounted(){
+            // console.log("aaa");
+        },
 
         components: {
 

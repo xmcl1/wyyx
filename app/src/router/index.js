@@ -59,20 +59,12 @@ export default new Router({
           path: 'special',
           name: 'special',
           component: special
-        }
-      ]
-    },
-    {
-      path: '/index',
-      name: 'index',
-      component: index,
-      redirect: '/indexRecommend',
-      children: [
+        },
         {
-          path: 'indexRecommend',
-          name: 'indexRecommend',
-          component: indexRecommend
-        }
+          path: 'jujia',
+          name: 'jujia',
+          component: jujia  
+        },
       ]
     },
     {
@@ -86,11 +78,11 @@ export default new Router({
       name: 'shiwu',
       component: shiwu
     }, 
-     {
-      path: '/jujia',
-      name: 'jujia',
-      component: jujia
-    },
+    //  {
+    //   path: '/jujia',
+    //   name: 'jujia',
+    //   component: jujia
+    // },
 
     // 以下是李欣媛的页面路由
     // {
