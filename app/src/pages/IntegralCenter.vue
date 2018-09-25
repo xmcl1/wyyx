@@ -1,7 +1,7 @@
 <template>
     <div class="IntegralCenter">
         <header>
-            <a href="#/index"><i class="iconfont icon-chaicon"></i></a>
+            <a href="#/"><i class="iconfont icon-chaicon"></i></a>
             <span>积分中心</span>
             <span>积分指南</span>
         </header>

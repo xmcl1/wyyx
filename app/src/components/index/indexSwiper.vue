@@ -50,7 +50,7 @@
       components: {
         swiper,
         swiperSlide
-      }
+      },
     }
 
 </script>
@@ -59,7 +59,6 @@
     .swiper{
         width: 100%;
         height: 1.84rem;
-        background: #ac0;
     }
     .swiper img{
         width: 100%;

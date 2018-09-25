@@ -35,7 +35,6 @@
       var vm = this
       // 用$on事件来接收参数
         Bus.$on('returnData', (data) => {
-          // console.log(data);
           this.panduanxuanzhong(data)
           vm.returnD = data
         })
@@ -49,7 +48,6 @@
         },
         panduanxuanzhong(data){
           let _this = this;
-          // console.log(data.zhuangtai)
           if(data.zhuangtai){
             $(".jies").attr("checked",true)
             $(".jies+.gooss").addClass("gooo")

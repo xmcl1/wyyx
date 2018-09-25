@@ -17,15 +17,12 @@
         </div>
         <div class="detailBox" v-for="(dbs,lIndex3) in con.detailBoxNum" :key="lIndex3" v-show="btn == dbs.flag" :dbs="dbs">
           <wyyx-limit-time :ts="dbs.time"></wyyx-limit-time>
-
           <div class="proDetail">
             <wyyx-limit-prodetail-pros v-for="(ps,n) in dbs.proDetail" :key="n" :ps="ps"></wyyx-limit-prodetail-pros>
           </div>
         </div>
-
         <div class="all"><a href="">{{con.all}}</a></div>
       </div>
-
     </div>
   </div>
 
@@ -51,7 +48,6 @@
         result() {
           indexServices0.indexInfoByUserId0((data) => {
             this.limitInfo = data;
-            // console.log(this.limitInfo)
           })
         },
         show(id){
@@ -64,8 +60,6 @@
           let oTop = $(".scroll_tip").offset().top - $(".scroll_tip")[0].offsetHeight;
           let sTop = 0;
           $(".limitTime").scroll(function(){
-            // console.log(oTop)
-            // console.log(sTop)
             sTop = $(this).scrollTop();
             if(sTop >= oTop){
               $(".scroll_tip").css({"position":"fixed","top":"0.84rem"});
