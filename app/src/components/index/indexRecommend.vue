@@ -116,7 +116,8 @@
         },
         mounted(){
             // console.log($(".recommend"))
-            this.change()
+        this.change();
+        this.clickMe();
         fetch ("http://localhost:3000/index").then(res=>{
                 return res.json() 
             }).then(result=>{
@@ -132,6 +133,12 @@
                     }else{
                         $(".ClickCheck").css({"right":"0"})
                     }
+                })
+            },
+
+            clickMe(){
+                $(".ClickCheck").click(function(){
+                    $("footer").css({"display":"none"})
                 })
             }
         }
