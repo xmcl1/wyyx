@@ -21,8 +21,10 @@
 <style scoped>
   .recBox2 .product{
     width: 48.5%;
-    margin-top: 0.15rem;
     box-sizing: border-box;
+  }
+  .recBox2 .product:nth-child(n+4){
+    margin-top: 0.15rem;
   }
   .recBox2 .product:last-child, .recBox2 .product:nth-last-child(2){
     margin-bottom: 0.15rem;

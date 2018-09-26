@@ -2,7 +2,7 @@
   <div class="login-choose-header1">
   <!-- 头部 -->
   <div class="login-choose-header">
-    <a href="#">
+    <a href="#/" class="appear">
       <img src="../../assets/img/img5/longinclose.jpg">
     </a>
     <img src="../../assets/img/img5/loginlogo.jpg" class="header-login">
@@ -15,8 +15,20 @@
 </template>
 
 <script>
+  import $ from 'jquery'
     export default {
-        name: "loginChooseHeader"
+        name: "loginChooseHeader",
+      methods:{
+        appear(){
+          $('.appear').click(function () {
+            $('footer').css({'display':'flex'})
+            $('footer a').eq(0).addClass("checked").siblings().removeClass("checked");
+          })
+        }
+      },
+      mounted(){
+        this.appear()
+      }
     }
 </script>
 

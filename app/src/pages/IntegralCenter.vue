@@ -1,7 +1,7 @@
 <template>
     <div class="IntegralCenter">
         <header>
-            <a href="#/"><i class="iconfont icon-chaicon"></i></a>
+            <a href="#/" class="closeInteg"><i class="iconfont icon-chaicon"></i></a>
             <span>积分中心</span>
             <span>积分指南</span>
         </header>
@@ -59,6 +59,7 @@
 </template>
 
 <script>
+    import $ from "jquery"
     import IntegOne from '../components/IntegralCenter/integOne.vue';
     import integTwo from '../components/IntegralCenter/integTwo.vue';
     import integThree from '../components/IntegralCenter/integThree.vue';
@@ -69,6 +70,18 @@
             integTwo,
             integThree,
             integFour,
+        },
+        mounted(){
+            this.closeInteg();
+        },
+        methods:{
+            closeInteg(){
+                console.log("xiaojiejie")
+                $(".closeInteg").click(function(){
+                console.log("dagege")
+                    $("footer").css({"display":"flex"})
+                })
+            }
         }
     
     }

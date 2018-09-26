@@ -96,6 +96,7 @@
     import indexSecNine from '../index/indexSecNine.vue';
     import indexSecTen from '../index/indexSecTen.vue';
     import mayBeLike from '../index/mayBeLike.vue';
+    import $ from "jquery";
     export default {
         components: {
             indexSwiper,
@@ -114,12 +115,32 @@
             }
         },
         mounted(){
+            // console.log($(".recommend"))
+        this.change();
+        this.clickMe();
         fetch ("http://localhost:3000/index").then(res=>{
                 return res.json() 
             }).then(result=>{
                 // console.log(typeof JSON.parse(result));//string
                 this.index = result;
             })
+        },
+        methods:{
+            change(){
+                $(".recommend").scroll(function(){  
+                    if($(this).scrollTop() >= $("body").height()){
+                        $(".ClickCheck").css({"right":"-0.6rem","transition":"all 0.5s"})
+                    }else{
+                        $(".ClickCheck").css({"right":"0"})
+                    }
+                })
+            },
+
+            clickMe(){
+                $(".ClickCheck").click(function(){
+                    $("footer").css({"display":"none"})
+                })
+            }
         }
     }
 </script>

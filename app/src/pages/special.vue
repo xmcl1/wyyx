@@ -14,7 +14,6 @@
         <span></span>
       </div>
     </swiper>
-
     <!--样品展示索引图-->
     <div class="showBox">
       <a href="">
@@ -222,7 +221,7 @@
     background: #ffffff;
     display: -webkit-flex;
     flex-wrap: wrap;
-    -webkit-justify-content: space-around;
+    justify-content: space-around;
   }
   .special .showBox a{
     width: 20%;
@@ -245,9 +244,6 @@
     box-sizing: border-box;
     background: #ffffff;
     margin-top: 0.11rem;
-  }
-  .selectContent .selectBox{
-
   }
   .special .selectBox .selectTab{
     width: 100%;
@@ -314,5 +310,4 @@
     display: -webkit-flex;
     flex-wrap: wrap;
   }
-
 </style>
