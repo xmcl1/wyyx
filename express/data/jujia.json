@@ -109,47 +109,6 @@
 						"price": "499",
 						"status": {
 							"xinPin":"新品"
-						},
-						"productDetails": {
-							"pro": {
-								"imgWord": [
-									{
-										"img": "http://localhost:3000/images/juJiaImg/productMiaoshu0.jpg",
-										"word": ["生态磨毛","软糯绒暖"]
-									},
-									{
-										"img": "http://localhost:3000/images/juJiaImg/productMiaoshu1.jpg",
-										"word": ["活性印花","如墨晕染"]
-									},
-									{
-										"img": "http://localhost:3000/images/juJiaImg/productMiaoshu2.jpg",
-										"word": ["厚软蓬松","均匀细腻"]
-									}
-								],
-								"userComment": [
-									{
-										"photo": ["http://localhost:3000/images/juJiaImg/chuangPin8.jpg"],
-										"daxing":5,
-										"userName": "1****3",
-										"time": "2018.09.16 21:32  1.8m",
-										"comment": "手感柔软，还没用，希望是自己所期待的吧！"
-									},
-									{
-										"photo": ["http://localhost:3000/images/juJiaImg/userComment1.jpg"],
-										"daxing":4,
-										"userName": "小****玉",
-										"time": "2018.09.21 10:17  1.8m",
-										"comment": "不错！"
-									},
-									{
-										"photo": ["http://localhost:3000/images/juJiaImg/userComment2.jpg"],
-										"daxing":2,
-										"userName": "w****0",
-										"time": "2018.09.16 20:02  1.8m",
-										"comment": "好看"
-									}
-								]
-							}
 						}
 					},
 					{

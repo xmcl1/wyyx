@@ -69,7 +69,7 @@
         swiperSlide
       },
       mounted(){
-        console.log(this.xiangqings)
+        // console.log(this.xiangqings)
       },
       methods:{
         targetBack(){

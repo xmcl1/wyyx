@@ -133,8 +133,19 @@
 </template>
 
 <script>
+  import $ from 'jquery'
     export default {
-        name: "gerenContent"
+        name: "gerenContent",
+        methods:{
+           disappear(){
+             $('.F16-a1').click(function () {
+               $('footer').css({'display':'none'})
+             })
+           }
+        },
+      mounted(){
+          this.disappear()
+      }
     }
 </script>
 

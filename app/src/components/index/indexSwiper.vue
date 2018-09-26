@@ -1,5 +1,5 @@
 <template>
-    <div class="swiper" v-if="this.indexbanner">
+    <div class="swiperIndex" id="swiperIndex" v-if="this.indexbanner">
         <!-- {{ indexbanner.banner }} -->
         <!--轮播图-->
         <swiper :options="swiperOption">
@@ -12,7 +12,7 @@
         <swiper-slide><img src="../../assets/img/img2/index-banner7.jpg"></swiper-slide>
         <swiper-slide><img src="../../assets/img/img2/index-banner8.jpg"></swiper-slide> -->
         <!--分页器-->
-        <div class="swiper-pagination" slot="pagination">
+        <!-- <div class="swiper-pagination" slot="pagination">
             <span></span>
             <span></span>
             <span></span>
@@ -21,7 +21,7 @@
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </div> -->
         </swiper>
     </div>
 </template>
@@ -33,7 +33,7 @@
       props:["indexbanner"],
       data() {
         return {
-          swiperOption: {
+           swiperOption: {
             loop: true,
             effect: 'slide',
             speed: 600,
@@ -44,40 +44,57 @@
               el: '.swiper-pagination',
               clickable: true,
             }
-          }
+          },
         };
       },
       components: {
         swiper,
         swiperSlide
       },
-      mounted(){
-        console.log(this.indexbanner)
-      }
-    //   motheds:{
-    //        ass(){
-    //            console.log(this.banner)
-    //        }
-    //   },
-    //   mounted(){
-    //       ass();
-    //   }
     }
 
 </script>
 
 <style scoped>
-    .swiper{
-        width: 100%;
-        height: 1.84rem;
-        background: #ac0;
-    }
-    .swiper img{
+    #swiperIndex{
         width: 100%;
         height: 1.84rem;
     }
-    .swiper swiper-slide{
+    #swiperIndex img{
+        width: 100%;
+        height: 1.84rem;
+    }
+    #swiperIndex swiper-slide{
         height: 1.84rem;
         width: 100%;
+    }
+    #swiperIndex .swiper-container{
+    width: 100%;
+    height: 2.0rem;
+    }
+    #swiperIndex .swiper-container .swiper-pagination{
+        width:100%;
+        height: 0.18rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+        bottom: 20px;
+    }
+      .swiper-pagination .swiper-pagination-bullet {
+        width: 0.09rem;
+        height: 0.13rem;
+        background: url("../../assets/img/img3/all_banner_indicator_white_ic.png") no-repeat ;
+        background-size: 100% 100%;
+        opacity: 1;
+    }
+     .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 0 3px; 
+    }
+     .swiper-pagination .swiper-pagination-bullet-active {
+        width: 0.1rem;
+        height: 0.13rem;
+        background: url("../../assets/img/img3/all_banner_indicator_red_ic.png") no-repeat;
+        background-size: 90% 100%;
     }
 </style>

@@ -1,7 +1,7 @@
 <template>
-    <div class="">
+    <div class="footer">
         <footer>
-            <a href="#/index" class="checked">
+            <a href="#/" class="checked">
                 <i class="iconfont icon-shouye"></i>
                 <span>首页</span>
             </a>
@@ -27,6 +27,7 @@
 </template>
 
 <script scoped>
+    import $ from "jquery";
     export default {
 
         data() {
@@ -35,6 +36,16 @@
 
             }
 
+        },
+        mounted(){
+            this.checkme();
+        },
+        methods:{
+            checkme(){
+                $("footer a").click(function(){
+                    $(this).addClass("checked").siblings().removeClass("checked");
+                })
+            }
         },
 
         components: {
