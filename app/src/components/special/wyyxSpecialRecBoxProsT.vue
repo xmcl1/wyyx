@@ -23,7 +23,7 @@
     width: 48.5%;
     box-sizing: border-box;
   }
-  .recBox2 .product:nth-child(n+2){
+  .recBox2 .product:nth-child(n+4){
     margin-top: 0.15rem;
   }
   .recBox2 .product:last-child, .recBox2 .product:nth-last-child(2){
