@@ -63,12 +63,6 @@ export default new Router({
          path: '/jujia',
          name: 'jujia',
          component: jujia,
-        //  redirect: '/classifyJJ',
-         children:[{
-           path:'classifyJJ',
-           name:'classifyJJ',
-           component:classifyJJ
-         }]
        }
       ]
     },
